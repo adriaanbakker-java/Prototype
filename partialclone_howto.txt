@@ -1,0 +1,14 @@
+git clone --filter from git 2.19 now works on GitHub (tested 2020-09-18, git 2.25.1)
+
+This option was added together with an update to the remote protocol, and it truly prevents objects from being downloaded from the server.
+
+E.g., to clone only objects required for d1 of this repository: https://github.com/cirosantilli/test-git-partial-clone I can do:
+
+git clone \
+  --depth 1 \
+  --filter=blob:none \
+  --no-checkout \
+  https://github.com/cirosantilli/test-git-partial-clone \
+;
+cd test-git-partial-clone
+git checkout master -- d1

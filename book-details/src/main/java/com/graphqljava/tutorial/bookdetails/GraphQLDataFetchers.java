@@ -1,6 +1,7 @@
 package com.graphqljava.tutorial.bookdetails;
 
 import com.google.common.collect.ImmutableMap;
+import graphql.execution.ExecutionStepInfo;
 import graphql.schema.DataFetcher;
 import org.springframework.stereotype.Component;
 
@@ -38,9 +39,15 @@ public class GraphQLDataFetchers {
                     "lastName", "Rice")
     );
 
+
+    String field_afnemer = "nog leeg";
+
     public DataFetcher getBookByIdDataFetcher() {
         return dataFetchingEnvironment -> {
             String bookId = dataFetchingEnvironment.getArgument("id");
+            field_afnemer = dataFetchingEnvironment.getArgument( "afnemer");
+            System.out.println("afnemer:" + field_afnemer);
+
             return books
                     .stream()
                     .filter(book -> book.get("id").equals(bookId))
@@ -50,9 +57,17 @@ public class GraphQLDataFetchers {
     }
 
     public DataFetcher getAuthorDataFetcher() {
+
         return dataFetchingEnvironment -> {
+
             Map<String,String> book = dataFetchingEnvironment.getSource();
             String authorId = book.get("authorId");
+
+            System.out.println(" getAuthorDataFetcher(): field_afnemer = " + field_afnemer);
+
+            if (!field_afnemer.equals("TWI platform")) {
+                throw new Exception("Only TWI platform may issue request to show author");
+            }
             return authors
                     .stream()
                     .filter(author -> author.get("id").equals(authorId))
