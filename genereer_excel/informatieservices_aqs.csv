@@ -1,0 +1,37 @@
+Nr;Naam;Vragen per informatieservice
+1;Om doel bemiddeling naar leerwerktrajecten irt algemene bijstand vast te stellen;"AQ150, AQ1, AQ2, 
+END274, END275"
+2;Om recht op bemiddeling naar beschut werk irt algemene bijstand vast te stellen;"AQ68, AQ176, AQ177, AQ178, AQ69, AQ179, AQ180, AQ184, AQ182, AQ183, AQ185, AQ187, AQ181, AQ186, 
+END272, END273"
+3;Om ontheffing arbeidsplicht irt algemene bijstand vast te stellen;"AQ176, AQ71, AQ39, AQ42, AQ41, AQ43, AQ73, AQ150
+BQ45, BQ46, BQ72
+END74, END303, END304"
+4;Om recht op bemiddeling naar werk irt algemene bijstand vast te stellen;"AQ4, AQ2, AQ173, AQ39, AQ41, AQ43, AQ176, AQ177, AQ178, AQ179, AQ185, AQ180, AQ182, AQ183, AQ184, AQ187, AQ76, AQ77
+END345, END346"
+5;Om leefsituatie aanvrager irt algemene bijstand vast te stellen ;"AQ4, AQ5, AQ6, AQ7, AQ8, AQ9, AQ10, AQ18, AQ2, AQ39, AQ152, AQ153, AQ154, AQ20 
+BQ19, BA79, BQ80, BQ11, BQ12, BQ13, BQ21
+END276, END277"
+6;Om kerngegevens partner aanvrager irt algemene bijstand te bieden;AQ20, AQ359, AQ360, AQ361, AQ362, AQ363, AQ364, AQ365, AQ366, AQ367, AQ368, AQ369, AQ370, AQ371, AQ372, AQ373, AQ374
+7;Om leefsituatie kind(eren) aanvrager irt algemene bijstand vast te stellen;AQ43, AQ347, AQ348, AQ349, AQ350, AQ351, AQ352, AQ353, AQ354, AQ355, AQ356, AQ357, AQ358
+8;Om leefsituatie medebewoners aanvrager irt algemene bijstand vast te stellen;"AQ20, AQ49, AQ51, AQ52, AQ62, AQ63, AQ64, AQ53, AQ55, AQ57, AQ59,
+BQ66, BQ340
+END278, END279"
+9;Om vast te stellen of medebewoners kostendelers irt algemene bijstand zijn;"AQ20, AQ49, AQ51, AQ52, AQ62, AQ63, AQ64, AQ53, AQ55, AQ57, AQ59,
+BQ66, BQ340
+END278, END279"
+10;Om voorliggende voorzieningen tov algemene bijstand vast te stellen;IOAZ 
+11;Om inkomen aanvrager irt algemene bijstand vast te stellen;"AQ81, AQ88, AQ95, AQ96, AQ98, AQ99, AQ100, AQ101, AQ104, AQ105, AQ117, AQ118, AQ119, AQ198, AQ199, AQ200, AQ201, AQ83, AQ115, AQ116, AQ203, AQ204, AQ189, AQ190, AQ191, AQ205, AQ188, AQ124, AQ192, AQ193, AQ194, AQ85, AQ154, AQ155, 
+BQ342, BQ92, BQ93, BQ139, BQ140, BQ141, BQ133, BQ134, BQ135, BQ136, BQ137, BQ138, BQ120, BQ121, BQ122, BQ114, BQ196, BQ129, BQ130, BQ131, BQ206, BQ207, BQ197, BQ132
+END84, END276, END287"
+12;Om inkomen partner irt algemene bijstand vast te stellen;"AQ209, AQ232, AQ239, AQ240, AQ241, AQ241, AQ211, AQ212, AQ215, AQ216, AQ243, AQ244, AQ245, AQ246, AQ247, AQ248, AQ249, AQ256, AQ257, AQ258, AQ259, AQ250, AQ251, AQ224, AQ253, AQ233, AQ234, AQ223, AQ236, AQ237, AQ238, AQ293, AQ294, AQ296, AQ297, AQ298
+BQ343,  BQ260, BQ261, BQ262, BQ263, BQ264, BQ265, BQ266, BQ267, BQ268, BQ269, BQ270, BQ219, BQ221, BQ271, BQ288, BQ289, BQ290, BQ291, BQ292, BQ254, BQ255, 
+END235, END295"
+13;Om vermogen aanvrager irt algemene bijstand vast te stellen;"AQ225, AQ228, AQ306, AQ229, AQ302, AQ317, AQ39, AQ319, AQ20, AQ321, AQ324, AQ325, AQ328, AQ339
+BQ226, BQ227, BQ305, BQ315, BQ230, BQ307, BQ308, BQ309, BQ310, BQ311, BQ312, BQ313, BQ314, BQ322, BQ323, BQ326, BQ327, BQ329, BQ330, BQ331, BQ332, BQ333, BQ334, BQ335, BQ336, BQ337 
+END316, END318, END338, END341 "
+14;Om vermogen partner irt algemene bijstand vast te stellen;"Zie tabblad vermogen van burger
+AQ321, AQ322, AQ323, AQ324, AQ325, AQ326, AQ327, AQ328, AQ329, AQ330, AQ331, AQ332, AQ333, AQ334, AQ335, AQ336, AQ337, AQ338, AQ339, AQ341"
+15;Om huishouden irt algemene bijstand vast te stellen;"AQ49, AQ43, AQ20, AQ320
+END280, END286, END285, END283, END282, END279, END280, END281, END284"
+16;Om conclusies over recht hoogte en duur irt algemene bijstand vast te stellen;"AQ25, AQ43, AQ302, AQ231, 
+END276"

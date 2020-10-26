@@ -26,12 +26,14 @@ public class GraphQLProvider {
     GraphQLDataFetchers graphQLDataFetchers;
 
     private GraphQL graphQL;
+    private int fase = 0;
 
     @PostConstruct
     public void init() throws IOException {
         URL url = Resources.getResource("schema.graphqls");
         String sdl = Resources.toString(url, Charsets.UTF_8);
         GraphQLSchema graphQLSchema = buildSchema(sdl);
+        fase = 0;
         this.graphQL = GraphQL.newGraphQL(graphQLSchema).build();
     }
 
