@@ -1,54 +1,54 @@
 "Nummer
 Aantal met nr: 304
-(eerst vrije nr: 375)";Type;Benodigde SGR/SuwiML elementen voor berekening;SuwiML bericht;Benodigde elementen over transactie voor berekening;;;;
+(eerst vrije nr: 375)";Type;Benodigde SGR/SuwiML elementen voor berekening;SuwiML bericht;Benodigde elementen over transactie voor berekening
 173;AQ;"AANVRAAG UITKERING
 * DatAanvraagUitkering
 
 SZ Wet
-* CdSzWet";Bijstandsregelingen-v0500;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-1;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum;;;;
-2;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum;;;;
-4;AQ;Geboortedat;BRPDossierPersoonVraag;* Aangeleverde peildatum;;;;
+* CdSzWet";Bijstandsregelingen-v0500;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+1;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum
+2;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum
+4;AQ;Geboortedat;BRPDossierPersoonVraag;* Aangeleverde peildatum
 5;AQ;"ADRES NEDERLAND
 * Domicilie adres
 
 ADRESHOUDING
 * DatBAdres
-* DatEAdres";BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
+* DatEAdres";BRPDossierPersoon-Sets;* Aangeleverde peildatum
 6;AQ;"NATIONALITEIT
 * CdNationaliteit
 * DatBNationaliteit
 * DatENationaliteit
-* CdBijzonderNederlanderschap";BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
+* CdBijzonderNederlanderschap";BRPDossierPersoon-Sets;* Aangeleverde peildatum
 7;AQ;"VERBLIJFSTITEL
 * DatBVerblijfstitel
 * DatEVerblijfstitel
-* CdVerblijfstitel";BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-8;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum;;;;
-9;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-10;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-11;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-12;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-13;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-18;AQ;Geboortedat;BRPDossierPersoon;* Aangeleverde peildatum;;;;
-19;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-25;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
-231;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
+* CdVerblijfstitel";BRPDossierPersoon-Sets;* Aangeleverde peildatum
+8;AQ;Geboortedat;BRPDossierPersoonUWV/v0200;* Aangeleverde peildatum
+9;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+10;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+11;BQ;Geen;Geen;* Aangeleverde peildatum
+12;BQ;Geen;Geen;* Aangeleverde peildatum
+13;BQ;Geen;Geen;* Aangeleverde peildatum
+18;AQ;Geboortedat;BRPDossierPersoon;* Aangeleverde peildatum
+19;BQ;Geen;Geen;* Aangeleverde peildatum
+25;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
+231;AQ;Geboortedat;BRPDossierPersoon-Sets;* Aangeleverde peildatum
 302;AQ;"GEHUWD
 AFGELOPEN 2 JAAR GEHUWD
 BLOEDVERWANT EERSTE GRAAD
@@ -57,7 +57,7 @@ BLOEDVERWANT TWEEDE GRAAD
 AANVERWANT TWEEDE GRAAD
 ZORGBEHOEFTE
 
-";BRPDossierPersoon Sets & BRPDossierPersoonBewonersvraag & SVBDossierPersoon;* Aangeleverde peildatum;;;;
+";BRPDossierPersoon Sets & BRPDossierPersoonBewonersvraag & SVBDossierPersoon;* Aangeleverde peildatum
  ;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -74,10 +74,10 @@ INKOMSTENOPGAVE
 * WaardeBedr
 * CDPeriodeEenheidGeldigheidBedr
 
-";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 84;END2;;"UWVDossierWerknemersverzekeringen
 SVBDossierPersoon
-Bijstandsregelingen";Peildatum voor berekening rekenregel;;;;
+Bijstandsregelingen";Peildatum voor berekening rekenregel
 85;AQ;"UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
@@ -109,7 +109,7 @@ BRUTO UITKERINGSBEDRAG (UWV)
 BIJSTANDSUITKERINGEN (GSD)
 * BedrBetaalbaarGesteldeUitkering";"UWVdossierWerknemersverzekeringen
 SVBDossierPersoon
-Bijstandsregelingen";;;;;
+Bijstandsregelingen";
 88;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -126,7 +126,7 @@ Bedr p36 (IK: pag 163 ent&geg.el?)
 * CDPeriodeEenheidGeldigheidBedr
 
 INKOMSTENPERIODE
-*CdSrtIkv";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+*CdSrtIkv";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 89;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -140,7 +140,7 @@ Bedr p36 (IK: pag 163 ent&geg.el?)
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 90;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -154,7 +154,7 @@ Bedr p36 (IK: pag 163 ent&geg.el?)
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 91;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -168,13 +168,13 @@ Bedr p36 (IK: pag 163 ent&geg.el?)
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 92;BQ;"AANSPRAAK OP INKOMEN
 * CdSrtAanspraakOpInkomen
 * DatBAanspraakOpInkomen
 * DatEAanspraakOpInkomen
-";;Peildatum voor berekening rekenregel;;;;
-93;BQ;;;;;;;
+";;Peildatum voor berekening rekenregel
+93;BQ;;;
 95;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -184,7 +184,7 @@ INKOMSTENOPGAVE
 * DatEIko
 * BedrExtraPrdSalaris
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 96;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -196,7 +196,7 @@ INKOMSTENOPGAVE
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 98;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -207,7 +207,7 @@ INKOMSTENOPGAVE
 * BedrOpgbRechtVakantietoeslag
 * BedrVakantietoeslag
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 99;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -217,7 +217,7 @@ INKOMSTENOPGAVE
 * DatEIko
 * BedrVakantietoeslag
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 100;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -229,7 +229,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 101;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -242,7 +242,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Periode voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Periode voor berekening rekenregel
 104;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -252,7 +252,7 @@ INKOMSTENOPGAVEN
 * DatEIko
 * BedrVergoedingReiskostenOnbelast
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr??";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr??";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 105;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -264,28 +264,28 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 111;AQ;"MAATSCHAPPELIJKE ACTIVITEIT
 * InschrijvingsnrKvK 
 * DatBMaatschappelijkeActiviteit
-* DatEMaatschappelijkeActiviteit";NHR Dossier;Peildatum voor berekening rekenregel;;;;
+* DatEMaatschappelijkeActiviteit";NHR Dossier;Peildatum voor berekening rekenregel
 112;AQ;"MAATSCHAPPELIJKE ACTIVITEIT
 * InschrijvingsnrKvK 
 * DatBMaatschappelijkeActiviteit
 * DatEMaatschappelijkeActiviteit
 
 HANDELSNAAM
-* Handelsnaam";NHR Dossier;Peildatum voor berekening rekenregel;;;;
+* Handelsnaam";NHR Dossier;Peildatum voor berekening rekenregel
 113;AQ;"BEDRAG NETTO INKOMSTEN UIT WERKZAAMHEDEN ANDERS DAN IN ARBEIDSVERHOUDING
-* CdContextWerkBuitenArbeidsverh";;;;;;
+* CdContextWerkBuitenArbeidsverh";;
 114;BQ;"OVERIGE INKOMSTEN
 *CdSrtOverigeInkomsten
-";Bijstandsregelingen;;;;;
+";Bijstandsregelingen;
 115;AQ;"OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 116;AQ;"OVERIGE INKOMSTEN
 * CdSrtOverigeInkomsten
-* BedrOverigeInkomstencomponent";Bijstandsregelingen;;;;;
+* BedrOverigeInkomstencomponent";Bijstandsregelingen;
 117;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -294,8 +294,8 @@ INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp
 * CdSrtIkv
-";UWVDossierInkomsten;;;;;
-118;AQ;;;;;;;
+";UWVDossierInkomsten;
+118;AQ;;;
 119;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -304,44 +304,44 @@ INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp
 * CdSrtIkv
-";UWVDossierInkomsten;;;;;
+";UWVDossierInkomsten;
 120;BQ;"OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 121;BQ;"OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 122;BQ;"OVERIGE INKOMSTEN
 * CdSrtOverigeInkomsten
-* BedrOverigeInkomstencomponent";Bijstandsregelingen;;;;;
-126;AQ;;;;;;;
-127;AQ;;;;;;;
-128;AQ;;;;;;;
-129;BQ;;;;;;;
-130;BQ;;;;;;;
-131;BQ;;;;;;;
+* BedrOverigeInkomstencomponent";Bijstandsregelingen;
+126;AQ;;;
+127;AQ;;;
+128;AQ;;;
+129;BQ;;;
+130;BQ;;;
+131;BQ;;;
 132;BQ;"RE-INTEGRATIE INZET
 * DatBReIntegratieInzet
-* DatEReIntegratieInzet";;;;;;
-133;BQ;;;;;;;
-134;BQ;;;;;;;
-135;BQ;;;;;;;
+* DatEReIntegratieInzet";;
+133;BQ;;;
+134;BQ;;;
+135;BQ;;;
 136;BQ;"OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 137;BQ;"OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 138;BQ;"OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 139;BQ;"OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 140;BQ;"OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
-141;BQ;;Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
+141;BQ;;Bijstandsregelingen;
 196;BQ;"OVERIGE INKOMSTEN
 *CdSrtOverigeInkomsten
-* BedrTotaalOverigeInkomsten";;;;;;
-197;BQ;Niet bekend in SGR;;;;;;
+* BedrTotaalOverigeInkomsten";;
+197;BQ;Niet bekend in SGR;;
 198;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -353,9 +353,9 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
+;AQ;;;
+;AQ;;;
 199;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -367,7 +367,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 200;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -379,7 +379,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 201;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -387,7 +387,7 @@ INKOMSTENOPGAVEN
 INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp 
-* IndLoonheffingskortingToegepast";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* IndLoonheffingskortingToegepast";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 202;AQ;"INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
@@ -395,25 +395,25 @@ INKOMSTENPERIODE
 INKOMSTENOPGAVE
 * DatBIko
 * DatEIko
-";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
-203;AQ;;;;;;;
-204;AQ;;;;;;;
+";UWVDossierInkomsten;Peildatum voor berekening rekenregel
+203;AQ;;;
+204;AQ;;;
 205;AQ;"INKOMSTENPERIODE
 *CdSrtIkv
 * DatBIkp
 * DatEIkp
 
-";UWVDossierInkomsten;;;;;
-206;BQ;;;;;;;
-207;BQ;;;;;;;
-287;END1;;;;;;;
-344;END1;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;END2;;;;;;;
+";UWVDossierInkomsten;
+206;BQ;;;
+207;BQ;;;
+287;END1;;;
+344;END1;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;END2;;;
 39;AQ;"ClientSuwi/Huwelijk/DatHuwelijkssluiting
 ClientSuwi/Huwelijk/DatOntbindingHuwelijk
 ClientSuwi/Ouder1/Burgerservicenr
@@ -444,15 +444,15 @@ ClientSuwiKind/IndKinderbijslag
 BRPDossierPersoonBewonersvraag-v0200
 
 
-SVBDossierPersoon-v0300";* Aangeleverde peildatum;;;;
+SVBDossierPersoon-v0300";* Aangeleverde peildatum
 41;AQ;ClientSuwi/Kind/Geboortedat;"BRPDossierPersoonVraag
 
 ER:
-BRPDossierPersoonUWV";* Aangeleverde peildatum;;;;
+BRPDossierPersoonUWV";* Aangeleverde peildatum
 42;AQ;ClientSuwi/Kind/Geboortedat;"BRPDossierPersoonVraag
 
 ER:
-BRPDossierPersoonUWV";* Aangeleverde peildatum;;;;
+BRPDossierPersoonUWV";* Aangeleverde peildatum
 43;AQ;"ClientSuwi/Kind/IndKinderbijslag
 
 
@@ -470,30 +470,30 @@ Indien waarde = 1 (Ja), dan is het antwoord JA, anders is het antwoord NEE";"SVB
 
 
 EB:
-SVBDossierPersoon";* Aangeleverde peildatum;;;;
-45;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-46;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
+SVBDossierPersoon";* Aangeleverde peildatum
+45;BQ;Geen;Geen;* Aangeleverde peildatum
+46;BQ;Geen;Geen;* Aangeleverde peildatum
+;AQ;;;
+;AQ;;;
 347;AQ;"Kind
-* Burgerservicenr";BRPDossierPersoon;* Aangeleverde peildatum;;;;
-348;AQ;;;;;;;
+* Burgerservicenr";BRPDossierPersoon;* Aangeleverde peildatum
+348;AQ;;;
 349;AQ;"Kind
-*SignificantDeelVanDeAchternaam";BRPDossierPersoon;;;;;
+*SignificantDeelVanDeAchternaam";BRPDossierPersoon;
 350;AQ;"Kind
-*Voorvoegsel";BRPDossierPersoon;;;;;
-351;AQ;;;;;;;
+*Voorvoegsel";BRPDossierPersoon;
+351;AQ;;;
 352;AQ;"Kind
-*Voornamen";BRPDossierPersoon;;;;;
+*Voornamen";BRPDossierPersoon;
 353;AQ;"Kind
-*Voornamen";BRPDossierPersoon;;;;;
+*Voornamen";BRPDossierPersoon;
 354;AQ;"Kind
 *Burgerservicenr
 
 DUDossierPersoon
 * Onderwijsovereenkomst/DeelnameOpleidingGeregistrDuo/DatBDeelnameOpleiding";"BRPDossierPersoon
 
-DuoDossierPersoon";;;;;
+DuoDossierPersoon";
 355;AQ;"Kind
 *Burgerservicenr
 
@@ -504,7 +504,7 @@ DUDossierPersoon
 * CdLeerWegMbo";"BRPDossierPersoon
 
 
-DuoDossierPersoon";;;;;
+DuoDossierPersoon";
 356;AQ;"Kind
 *Burgerservicenr
 
@@ -516,7 +516,7 @@ DUDossierPersoon
 ";"BRPDossierPersoon
 
 
-DuoDossierPersoon";;;;;
+DuoDossierPersoon";
 357;AQ;"Kind
 *Burgerservicenr
 
@@ -527,7 +527,7 @@ DUDossierPersoon
 * InhoudDeelnameOpleidingDuo/CdNiveauOpleidingDuo";"BRPDossierPersoon
 
 
-DuoDossierPersoon";;;;;
+DuoDossierPersoon";
 358;AQ;"Kind
 *Burgerservicenr
 
@@ -538,65 +538,65 @@ DUDossierPersoon
 * InhoudDeelnameOpleidingDuo/NaamOpleidingKortDuo";"BRPDossierPersoon
 
 
-DuoDossierPersoon";;;;;
+DuoDossierPersoon";
 124;AQ;"INKOMSTENPERIODE 
 *CdSrtIkv
 
 INKOMSTENVERHOUDINGEN
 * DatBIkv
-* DatEIkv";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* DatEIkv";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 176;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum
 177;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";SVBDossierPersoon-v0300;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";SVBDossierPersoon-v0300;* Aangeleverde peildatum
 178;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum
 179;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";Bijstandregelingen-v0500;* Aangeleverde peildatum
 180;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 181;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 182;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 183;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 184;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 185;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 186;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 187;AQ;"Uitkeringsverhouding
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
-* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
+* SzWet/CdSzWet";UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
 188;AQ;"* DatBUitkeringsverhouding 
 * DatEUitkeringsverhouding 
 * CdSzWet";"Bijstandsregelingen
-SVBDossierPersoon";;;;;
+SVBDossierPersoon";
 189;AQ;"UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
@@ -604,7 +604,7 @@ SVBDossierPersoon";;;;;
 SZ Wet
 * CdSzWet";"SVBDossierPersoon 
 
-";Peildatum voor berekening rekenregel;;;;
+";Peildatum voor berekening rekenregel
 190;AQ;"UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding
@@ -624,7 +624,7 @@ BrutoUitkeringsbedr
 * CdUitkeringsperiode
 ";"SVBDossierPersoon 
 
-";Peildatum voor berekening rekenregel;;;;
+";Peildatum voor berekening rekenregel
 191;AQ;"UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
 * DatEUitkeringsverhouding 
@@ -643,7 +643,7 @@ Bruto Uitkeringsbedr
 * WaardeBedr
 * CdUitkeringsperiode";"SVBDossierPersoon 
 
-BL: mogelijk ook in UWVDossierinkomsten of UWVDossierWerknemersverzekeringen";Peildatum voor berekening rekenregel;;;;
+BL: mogelijk ook in UWVDossierinkomsten of UWVDossierWerknemersverzekeringen";Peildatum voor berekening rekenregel
 192;AQ;"UITKERINGSVERHOUDINGEN
 *DatBUitkeringsverhouding
 *DatEUitkeringsverhouding
@@ -659,7 +659,7 @@ REDENMAATREGELMBTBIJSTANDUITK
 REDENMAATREGELMBTUITKERINGUWV
 *DatBMaatregelmbtuitkering
 *DatEMaatregelmbtuitkering";"Bijstandsregelingen
-UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel;;;;
+UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel
 193;AQ;"UITKERINGSVERHOUDINGEN
 *DatBUitkeringsverhouding
 *DatEUitkeringsverhouding
@@ -675,53 +675,53 @@ REDENMAATREGELMBTBIJSTANDUITK
 REDENMAATREGELMBTUITKERINGUWV
 *DatBMaatregelmbtuitkering
 *DatEMaatregelmbtuitkering";"Bijstandsregelingen
-UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel;;;;
-194;AQ;;;;;;;
-276;END2;;;;;;;
-277;END1;;;;;;;
+UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel
+194;AQ;;;
+276;END2;;;
+277;END1;;;
 49;AQ;"MEDEBEWONER
 * BSN MEDEBEWONER
 
 
-";BRPDossierPersoonBewonersvraag;* Aangeleverde peildatum;;;;
+";BRPDossierPersoonBewonersvraag;* Aangeleverde peildatum
 51;AQ;"MEDEBEWONER
-* Geboortedat";BRPDossierPersoonBewonersvraag;;;;;
+* Geboortedat";BRPDossierPersoonBewonersvraag;
 52;AQ;"MEDEBEWONER
-* Geboortedat";BRPDossierPersoonBewonersvraag;;;;;
+* Geboortedat";BRPDossierPersoonBewonersvraag;
 53;AQ;"MEDEBEWONER
 KIND
 OUDER 1
-OUDER 2";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;;;;;
+OUDER 2";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;
 55;AQ;"MEDEBEWONER
 KLEINKIND
 GROOTOUDER
 BROER
-ZUS";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;;;;;
+ZUS";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;
 57;AQ;"MEDEBEWONER
 PARTNER
 KIND
 OUDER 1
-OUDER 2";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;;;;;
+OUDER 2";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;
 59;AQ;"MEDEBEWONER
 PARTNER
 KLEINKIND
 GROOTOUDER
 BROER
-ZUS";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;;;;;
+ZUS";BRPDossierPersoonvraag & BRPDossierPersoonBewonersvraag;
 62;AQ;"MEDEBEWONER
 STUDIEFINANCIERING
-* IndRechtOpStudiefinanciering";BRPDossierPersoonvraag & DUODossierPersoon;;;;;
+* IndRechtOpStudiefinanciering";BRPDossierPersoonvraag & DUODossierPersoon;
 63;AQ;"MEDEBEWONER 
 STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
 * IndToekenningWtosVo18
-";DUODossierStudiefinanciering;;;;;
+";DUODossierStudiefinanciering;
 64;AQ;"MEDEBEWONER
 DEELNAME OPLEIDING GEREGISTREERD BIJ DUO
 * DatBDeelnameOpleiding
 * DatEDeelnameOpleiding
-* CdLeerwegMbo";BRPDossierPersoonBewonersvraag & DUODossierPersoon;Peildatum voor berekening rekenregel;;;;
+* CdLeerwegMbo";BRPDossierPersoonBewonersvraag & DUODossierPersoon;Peildatum voor berekening rekenregel
 66;BQ;"MEDEBEWONER
 Huwelijk/geregistreerd partnerschap
 * DatHuwelijkssluiting
@@ -730,38 +730,38 @@ Huwelijk/geregistreerd partnerschap
 KIND
 MEDEBEWONER (gezamelijke huishouding, kostendelers relatie)
 ";BRPDossierPersoon-Sets;"BSN 
-Peildatum";;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-320;AQ;;BRPDossierPersoonBewonersvraag;;;;;
-;AQ;;;;;;;
-340;BQ;;;;;;;
-150;AQ;ClientSuwi/IndStartkwalificatieDuo;DUODossierPersoon-v0600;* Aangeleverde peildatum;;;;
-151;AQ;;;;;;;
+Peildatum"
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+320;AQ;;BRPDossierPersoonBewonersvraag;
+;AQ;;;
+340;BQ;;;
+150;AQ;ClientSuwi/IndStartkwalificatieDuo;DUODossierPersoon-v0600;* Aangeleverde peildatum
+151;AQ;;;
 152;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
-";DUODossierStudiefinanciering;* Aangeleverde peildatum;;;;
+";DUODossierStudiefinanciering;* Aangeleverde peildatum
 153;AQ;"DEELNAME OPLEIDING GEREGISTREERD BIJ DUO
 * DatBDeelnameOpleiding
 * DatEDeelnameOpleiding
 
-";DUODossierPersoon;Peildatum voor berekening rekenregel;;;;
+";DUODossierPersoon;Peildatum voor berekening rekenregel
 154;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
-";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
+";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
 155;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
-* CdStatusPartnertoeslagStufi";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
+* CdStatusPartnertoeslagStufi";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
 156;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
-* CdStatusEenOudertoeslagStufi";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
+* CdStatusEenOudertoeslagStufi";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
 157;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
@@ -791,7 +791,7 @@ BedrAanvullendeToelageWtosVo18
 * WaardeBedr 
 * CdPeriodeEenheidGeldigheidBedr
 
-";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
+";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
 158;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
@@ -821,24 +821,24 @@ BedrAanvullendeToelageWtosVo18
 * WaardeBedr 
 * CdPeriodeEenheidGeldigheidBedr
 
-";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
-159;AQ;;;;;;;
+";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
+159;AQ;;;
 160;AQ;"STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
 * IndToekenningWtosVo18
-";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
-161;AQ;;;;;;;
-162;AQ;;;;;;;
-275;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-274;END2;;;;;;;
-;;;;;;;;
-303;END1;;;;;;;
-342;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
+";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
+161;AQ;;;
+162;AQ;;;
+275;AQ;;;
+;AQ;;;
+;AQ;;;
+274;END2;;;
+;;;;
+303;END1;;;
+342;AQ;;;
+;AQ;;;
+;AQ;;;
 20;AQ;"Als gebruiker wil ik van een PERSOON weten of hij op de aangeleverde peildatum GEHUWD is of de AFGELOPEN 2 JAAR GEHUWD GEWEEST is. Indien dit het geval is dan heeft hij een partner voor de bijstand en is het antwoord JA, anders NEE.
 Indien dit niet het geval is dan wil ik weten of hij een GEZAMELIJKE HUISHOUDING VOERT of een KOSTENDELERS RELATIE heeft. Is dit het geval dan is het antwoord JA, anders heeft hij geen partner en is het antwoord NEE. 
 
@@ -849,15 +849,15 @@ Een medebewoner waarmee je een GEZAMELIJKE HUISHOUDING voert heeft invloed op he
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 
-PARTNER""";BRPDossierPersoon-Sets;* Aangeleverde peildatum;;;;
+PARTNER""";BRPDossierPersoon-Sets;* Aangeleverde peildatum
 21;BQ;PARTNER voor bijstand;Geen;"
-* Aangeleverde peildatum";;;;
+* Aangeleverde peildatum"
 209;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
 * DatEIkv
-* NaamAdministratieveEenheid";BRPDossierPersoon Sets & UWVDossierInkomsten;;;;;
-210;AQ;;;;;;;
+* NaamAdministratieveEenheid";BRPDossierPersoon Sets & UWVDossierInkomsten;
+210;AQ;;;
 211;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -868,7 +868,7 @@ INKOMSTENOPGAVE
 * DatEIko
 * BedrVakantietoeslag
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 212;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -882,9 +882,9 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Periode voor berekening rekenregel;;;;
-213;AQ;;;;;;;
-214;AQ;;;;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Periode voor berekening rekenregel
+213;AQ;;;
+214;AQ;;;
 215;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -893,7 +893,7 @@ INKOMSTENVERHOUDINGEN
 INKOMSTENOPGAVE
 * DatBIko
 * DatEIko
-* BedrVergoedingReiskostenOnbelast";BRPDossierPersoonvraag & UWVDossierInkomsten;;;;;
+* BedrVergoedingReiskostenOnbelast";BRPDossierPersoonvraag & UWVDossierInkomsten;
 216;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -902,18 +902,18 @@ INKOMSTENVERHOUDINGEN
 INKOMSTENOPGAVE
 * DatBIko
 * DatEIko
-* BedrVergoedingReiskostenOnbelast";BRPDossierPersoonvraag & UWVDossierInkomsten;;;;;
-217;AQ;;;;;;;
-218;AQ;;;;;;;
+* BedrVergoedingReiskostenOnbelast";BRPDossierPersoonvraag & UWVDossierInkomsten;
+217;AQ;;;
+218;AQ;;;
 219;BQ;"PARTNER
 OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
-220;AQ;;;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
+220;AQ;;;
 221;BQ;"PARTNER
 OVERIGE INKOMSTEN
 * CdSrtOverigeInkomsten
-* BedrOverigeInkomstencomponent";Bijstandsregelingen;;;;;
-222;AQ;;;;;;;
+* BedrOverigeInkomstencomponent";Bijstandsregelingen;
+222;AQ;;;
 223;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN 
 * DatBUitkeringsverhouding
@@ -925,12 +925,12 @@ UITKERINGSPERIODE
 
 MAATREGEL MBT UITKERING
 * DatBMaatregelMbtUitkering 
-* DatEMaatregelMbtUitkering ";UWVDossierWerknemersverzekeringen;Bijstandsregelingen;;;;
-224;AQ;;;;;;;
-232;AQ; ;;;;;;
-233;AQ;;;;;;;
-234;AQ;;;;;;;
-235;END2;;;;;;;
+* DatEMaatregelMbtUitkering ";UWVDossierWerknemersverzekeringen;Bijstandsregelingen
+224;AQ;;;
+232;AQ; ;;
+233;AQ;;;
+234;AQ;;;
+235;END2;;;
 236;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN
 *DatBUitkeringsverhouding
@@ -946,7 +946,7 @@ REDENMAATREGELMBTBIJSTANDUITK
 
 GEVOLGENMAATREGELMBTBIJSTANDUITK
 *BedrVerminderingUitkmbtMaatregel";"Bijstandsregelingen
-";Peildatum voor berekening rekenregel;;;;
+";Peildatum voor berekening rekenregel
 237;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN
 *DatBUitkeringsverhouding
@@ -963,8 +963,8 @@ REDENMAATREGELMBTBIJSTANDUITK
 REDENMAATREGELMBTUITKERINGUWV
 *DatBMaatregelmbtuitkering
 *DatEMaatregelmbtuitkering";"Bijstandsregelingen
-UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel;;;;
-238;AQ;;;;;;;
+UWVdossierWerknemersverzekeringen";Peildatum voor berekening rekenregel
+238;AQ;;;
 239;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -975,7 +975,7 @@ INKOMSTENOPGAVE
 * DatEIko
 * BedrExtraPrdSalaris
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 240;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -988,7 +988,7 @@ INKOMSTENOPGAVE
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 241;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1000,7 +1000,7 @@ INKOMSTENOPGAVE
 * BedrOpgbRechtVakantietoeslag
 * BedrVakantietoeslag
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 242;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1013,7 +1013,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 243;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1023,8 +1023,8 @@ INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp
 * CdSrtIkv
-";UWVDossierInkomsten;;;;;
-244;AQ;;;;;;;
+";UWVDossierInkomsten;
+244;AQ;;;
 245;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1034,7 +1034,7 @@ INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp
 * CdSrtIkv
-";UWVDossierInkomsten;;;;;
+";UWVDossierInkomsten;
 246;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1047,7 +1047,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 247;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1060,7 +1060,7 @@ INKOMSTENOPGAVEN
 * CdMunteenheid
 * CdPositiefNegatief
 * WaardeBedr
-* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* CDPeriodeEenheidGeldigheidBedr";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 248;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1069,7 +1069,7 @@ INKOMSTENVERHOUDINGEN
 INKOMSTENPERIODE
 * DatBIkp
 * DatEIkp 
-* IndLoonheffingskortingToegepast";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+* IndLoonheffingskortingToegepast";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 249;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1087,7 +1087,7 @@ INKOMSTENOPGAVE
 * WaardeBedr
 * CDPeriodeEenheidGeldigheidBedr
 
-";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
+";UWVDossierInkomsten;Peildatum voor berekening rekenregel
 250;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
@@ -1096,7 +1096,7 @@ UITKERINGSVERHOUDINGEN
 SZ Wet
 * CdSzWet";"SVBDossierPersoon 
 
-";Peildatum voor berekening rekenregel;;;;
+";Peildatum voor berekening rekenregel
 251;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
@@ -1117,7 +1117,7 @@ BrutoUitkeringsbedr
 * CdUitkeringsperiode
 ";"SVBDossierPersoon 
 
-";Peildatum voor berekening rekenregel;;;;
+";Peildatum voor berekening rekenregel
 ;AQ;"PARTNER
 UITKERINGSVERHOUDINGEN
 * DatBUitkeringsverhouding
@@ -1137,7 +1137,7 @@ Bruto Uitkeringsbedr
 * WaardeBedr
 * CdUitkeringsperiode";"SVBDossierPersoon 
 
-BL: mogelijk ook in UWVDossierinkomsten of UWVDossierWerknemersverzekeringen";Peildatum voor berekening rekenregel;;;;
+BL: mogelijk ook in UWVDossierinkomsten of UWVDossierWerknemersverzekeringen";Peildatum voor berekening rekenregel
 253;AQ;"PARTNER
 INKOMSTENVERHOUDINGEN
 * DatBIkv
@@ -1155,140 +1155,140 @@ INKOMSTENOPGAVE
 * WaardeBedr
 * CDPeriodeEenheidGeldigheidBedr
 
-";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
-254;BQ;;;;;;;
-255;BQ;;;;;;;
-256;AQ;;;;;;;
+";UWVDossierInkomsten;Peildatum voor berekening rekenregel
+254;BQ;;;
+255;BQ;;;
+256;AQ;;;
 257;AQ;"PARTNER
 OVERIGE INKOMSTEN
 * CdSrtOverigeInkomsten
-* BedrOverigeInkomstencomponent";Bijstandsregelingen;;;;;
-258;AQ;;Bijstandsregelingen;;;;;
-259;AQ;Is niet vastgelegd in SuwiML berichten. Aan de burger vragen;;;;;;
+* BedrOverigeInkomstencomponent";Bijstandsregelingen;
+258;AQ;;Bijstandsregelingen;
+259;AQ;Is niet vastgelegd in SuwiML berichten. Aan de burger vragen;;
 260;BQ;"PARTNER
 AANSPRAAK OP INKOMEN
 * CdSrtAanspraakOpInkomen
 * DatBAanspraakOpInkomen
 * DatEAanspraakOpInkomen
-";;Peildatum voor berekening rekenregel;;;;
-261;BQ;;;;;;;
+";;Peildatum voor berekening rekenregel
+261;BQ;;;
 262;BQ;"PARTNER
 OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 263;BQ;"PARTNER
 OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
-264;BQ;;Bijstandsregelingen;;;;;
-265;BQ;;;;;;;
-266;BQ;;;;;;;
-267;BQ;;;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
+264;BQ;;Bijstandsregelingen;
+265;BQ;;;
+266;BQ;;;
+267;BQ;;;
 268;BQ;"PARTNER
 OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 269;BQ;"PARTNER
 OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 270;BQ;"PARTNER
 OVERIGE INKOMSTEN
 * BedrOverigeInkomstencomponent
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 271;BQ;"PARTNER
 OVERIGE INKOMSTEN
-* CdSrtOverigeInkomsten";Bijstandsregelingen;;;;;
+* CdSrtOverigeInkomsten";Bijstandsregelingen;
 288;BQ;"PARTNER
 OVERIGE INKOMSTEN
 *CdSrtOverigeInkomsten
-";Bijstandsregelingen;;;;;
+";Bijstandsregelingen;
 289;BQ;"PARTNER
 OVERIGE INKOMSTEN
 *CdSrtOverigeInkomsten
-* BedrTotaalOverigeInkomsten";;;;;;
-290;BQ;;;;;;;
-291;BQ;;;;;;;
-292;BQ;;;;;;;
+* BedrTotaalOverigeInkomsten";;
+290;BQ;;;
+291;BQ;;;
+292;BQ;;;
 293;AQ;"PARTNER
 RE-INTEGRATIE INZET
 * DatBReIntegratieInzet
-* DatEReIntegratieInzet";;;;;;
-294;AQ;;;;;;;
-295;END1;;;;;;;
+* DatEReIntegratieInzet";;
+294;AQ;;;
+295;END1;;;
 296;AQ;"PARTNER
 DEELNAME OPLEIDING GEREGISTREERD BIJ DUO
 * DatBDeelnameOpleiding
 * DatEDeelnameOpleiding
 
-";DUODossierPersoon;Peildatum voor berekening rekenregel;;;;
+";DUODossierPersoon;Peildatum voor berekening rekenregel
 297;AQ;"PARTNER
 STUDIEFINANCIERING
 * DatBToekenningsperiodeStufi
 * DatEToekenningsperiodeStufi
-";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel;;;;
-298;AQ;;;;;;;
-299;AQ;;;;;;;
-300;AQ;;;;;;;
-301;AQ;;;;;;;
+";DUODossierStudiefinanciering;Peildatum voor berekening rekenregel
+298;AQ;;;
+299;AQ;;;
+300;AQ;;;
+301;AQ;;;
 321;AQ;"PARTNER
 ONROERENDE ZAAK
 *Codetype onroerende zaak
  
-";KadasterDossier;;;;;
-322;BQ;;;;;;;
-323;BQ;;;;;;;
-324;AQ;;;;;;;
-325;AQ;;;;;;;
-326;BQ;;;;;;;
-327;BQ;;;;;;;
+";KadasterDossier;
+322;BQ;;;
+323;BQ;;;
+324;AQ;;;
+325;AQ;;;
+326;BQ;;;
+327;BQ;;;
 328;AQ;"PARTNER
 VOERTUIG
 *DatumAanvangVoertuigverplichtingen
 *DatumEindeVoertuigverplichtingen
-";RDWDossier;;;;;
-329;BQ;;;;;;;
-330;BQ;;;;;;;
-331;BQ;;;;;;;
-332;BQ;;;;;;;
-333;BQ;;;;;;;
-334;BQ;;;;;;;
-335;BQ;;;;;;;
-336;BQ;;;;;;;
-337;BQ;;;;;;;
-338;END1;;;;;;;
-339;AQ;;;;;;;
-341;AQ;;;;;;;
+";RDWDossier;
+329;BQ;;;
+330;BQ;;;
+331;BQ;;;
+332;BQ;;;
+333;BQ;;;
+334;BQ;;;
+335;BQ;;;
+336;BQ;;;
+337;BQ;;;
+338;END1;;;
+339;AQ;;;
+341;AQ;;;
 360;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/SignificantDeelVanDeAchternaam";BRPDossierPersoon;;;;;
+* Partner/SignificantDeelVanDeAchternaam";BRPDossierPersoon;
 361;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/Voorvoegsel";BRPDossierPersoon;;;;;
+* Partner/Voorvoegsel";BRPDossierPersoon;
 363;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/Voornamen";BRPDossierPersoon;;;;;
-362;AQ;;;;;;;
+* Partner/Voornamen";BRPDossierPersoon;
+362;AQ;;;
 364;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/Voorvoegsel";BRPDossierPersoon;;;;;
+* Partner/Voorvoegsel";BRPDossierPersoon;
 359;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/Burgerservicenr";BRPDossierPersoon;;;;;
+* Partner/Burgerservicenr";BRPDossierPersoon;
 365;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
-* Partner/Geboortedat";BRPDossierPersoon;;;;;
+* Partner/Geboortedat";BRPDossierPersoon;
 366;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Nationaliteit/CdNationaliteit";BRPDossierPersoon;;;;;
+* Nationaliteit/CdNationaliteit";BRPDossierPersoon;
 367;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
@@ -1297,7 +1297,7 @@ ClientSuwi
 Verblijfstitel
 * CdVerblijfstitel
 * DatBVerblijfstitel
-* DatEVerblijfstitel";BRPDossierPersoon;;;;;
+* DatEVerblijfstitel";BRPDossierPersoon;
 368;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
@@ -1305,102 +1305,102 @@ Verblijfstitel
 
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 369;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 370;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 371;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 372;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 373;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 374;AQ;"Huwelijk
 * DatHuwelijkssluiting
 * DatOntbindingHuwelijk
 * Partner/Burgerservicenr
 
 ClientSuwi
-* Domicilieadres";BRPDossierPersoon;;;;;
+* Domicilieadres";BRPDossierPersoon;
 225;AQ;"ONROERENDE ZAAK
 *Codetype onroerende zaak
  
-";KadasterDossier;;;;;
-226;BQ;;;;;;;
-227;BQ;;;;;;;
-228;AQ;;;;;;;
+";KadasterDossier;
+226;BQ;;;
+227;BQ;;;
+228;AQ;;;
 229;AQ;"VOERTUIG
 *DatumAanvangVoertuigverplichtingen
 *DatumEindeVoertuigverplichtingen
-";RDWDossier;;;;;
-230;BQ;;;;;;;
-305;BQ;;;;;;;
-306;AQ;;;;;;;
-307;BQ;;;;;;;
-308;BQ;;;;;;;
-309;BQ;;;;;;;
-310;BQ;;;;;;;
-311;BQ;;;;;;;
-312;BQ;;;;;;;
-313;BQ;;;;;;;
-314;BQ;;;;;;;
-315;BQ;;;;;;;
-316;END1;;;;;;;
-317;AQ;;;;;;;
-318;END1;;;;;;;
-319;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-;AQ;;;;;;;
-68;AQ;;;* Aangeleverde peildatum;;;;
-69;AQ;CdSrtBasisuitkeringsrecht;UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum;;;;
-71;AQ;CdSrtBasisuitkeringsrecht waarde 06 IVA;* Aangeleverde peildatum;* BSN;;;;
-72;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
+";RDWDossier;
+230;BQ;;;
+305;BQ;;;
+306;AQ;;;
+307;BQ;;;
+308;BQ;;;
+309;BQ;;;
+310;BQ;;;
+311;BQ;;;
+312;BQ;;;
+313;BQ;;;
+314;BQ;;;
+315;BQ;;;
+316;END1;;;
+317;AQ;;;
+318;END1;;;
+319;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+;AQ;;;
+68;AQ;;;* Aangeleverde peildatum
+69;AQ;CdSrtBasisuitkeringsrecht;UWVDossierWerknemersverzekeringen-v0200;* Aangeleverde peildatum
+71;AQ;CdSrtBasisuitkeringsrecht waarde 06 IVA;* Aangeleverde peildatum;* BSN
+72;BQ;Geen;Geen;* Aangeleverde peildatum
 73;AQ;"ClientSuwi/Uitkeringsverhouding/VrijstellingArbeidsplicht/CdVrijstellingArbeidsplichtBijst
 ClientSuwi/Uitkeringsverhouding/VrijstellingArbeidsplicht/DatBVrijstellingarbeidsplicht
-ClientSuwi/Uitkeringsverhouding/VrijstellingArbeidsplicht/CdRedenEVrijstArbeidsplichtBijst";Bijstandsregelingen-v0500;* Aangeleverde peildatum;;;;
-74;END1;;;* Aangeleverde peildatum;;;;
-304;END2;;;;;;;
-75;AQ;;;;;;;
-76;AQ;;UWVDossierInkomsten-v0700;;;;;
+ClientSuwi/Uitkeringsverhouding/VrijstellingArbeidsplicht/CdRedenEVrijstArbeidsplichtBijst";Bijstandsregelingen-v0500;* Aangeleverde peildatum
+74;END1;;;* Aangeleverde peildatum
+304;END2;;;
+75;AQ;;;
+76;AQ;;UWVDossierInkomsten-v0700;
 77;AQ;"ReIntegratievoorziening
 * DatBRv
 * DatERv
   Loonkostensubsidie
-     * PercLoonwaardeTovWML";GSDDossierReintegratie-v0200;;;;;
+     * PercLoonwaardeTovWML";GSDDossierReintegratie-v0200;
 78;AQ;"DOELGROEPENREGISTER
 * BSN
-* DatELdrRegistratieWbQa";;;;;;
-79;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
-80;BQ;Geen;Geen;* Aangeleverde peildatum;;;;
+* DatELdrRegistratieWbQa";;
+79;BQ;Geen;Geen;* Aangeleverde peildatum
+80;BQ;Geen;Geen;* Aangeleverde peildatum
 81;AQ;"INKOMSTENPERIODE 
 *CdSrtIkv
 
@@ -1410,966 +1410,966 @@ INKOMSTENVERHOUDINGEN
 
 ADMINISTRATIEVE EENHEID
 * NaamAdministratieveEenheid
-";UWVDossierInkomsten;Peildatum voor berekening rekenregel;;;;
-82;AQ;;;;;;;
-195;AQ;;;;;;;
-;AQ;;;;;;;
-272;END1;;;;;;;
-273;END2;;;;;;;
-343;AQ;;;;;;;
-345;END1;;;;;;;
-346;END2;;;;;;;
-;AQ;;;;;;;
-280;END1;;;;;;;
-281;END1;;;;;;;
-282;END1;;;;;;;
-283;END1;;;;;;;
-278;END2;;;;;;;
-279;END1;;;;;;;
-284;END1;;;;;;;
-285;END1;;;;;;;
-286;END1;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
+";UWVDossierInkomsten;Peildatum voor berekening rekenregel
+82;AQ;;;
+195;AQ;;;
+;AQ;;;
+272;END1;;;
+273;END2;;;
+343;AQ;;;
+345;END1;;;
+346;END2;;;
+;AQ;;;
+280;END1;;;
+281;END1;;;
+282;END1;;;
+283;END1;;;
+278;END2;;;
+279;END1;;;
+284;END1;;;
+285;END1;;;
+286;END1;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
