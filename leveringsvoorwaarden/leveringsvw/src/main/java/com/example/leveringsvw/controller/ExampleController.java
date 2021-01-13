@@ -49,7 +49,7 @@ public class ExampleController {
         dogdto.setId(dog.getId());
         dogdto.setName(dog.getName());
         dogsService.add(dogdto);
-        return "add_dog_result";
+        return "toevoegen_regel_resultaat";
     }
 
 

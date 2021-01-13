@@ -2,18 +2,18 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Showing the dog list</title>
+    <title>Overzicht leveringsvoorwaardenregels</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1>Result</h1>
+<h1>Overzicht leveringsvoorwaardenregels</h1>
 <div th:if="${not #lists.isEmpty(counts)}">
     <h2>Dog list</h2>
     <table class="table table-striped">
         <tr>
             <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
+            <th>Berichtnaam</th>
+            <th>Leveringsdoel</th>
 
         </tr>
         <tr th:each="count : ${counts}">
@@ -23,8 +23,7 @@
         </tr>
     </table>
 </div>
+<a href="/">Terug naar menu</a>
 </body>
-<a href="/toevoegen_regel">Voeg een regel toe</a>
-<a href="/delete_dog">Delete another dog</a>
-<a href="/list">List dogs</a>
+
 </html>

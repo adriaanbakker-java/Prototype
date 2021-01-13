@@ -8,7 +8,7 @@ public class Dog {
     @Id
     @GeneratedValue
     private long id;
-    private String name = "dog name here";
+    private String name = "berichtnaam invullen";
     private int age;
     public long getId() {
         return id;
