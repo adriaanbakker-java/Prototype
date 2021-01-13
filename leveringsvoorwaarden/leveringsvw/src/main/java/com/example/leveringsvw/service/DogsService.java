@@ -24,7 +24,7 @@ public class DogsService {
     }
 
     public List<Voorwaarde> getDogs() {
-        return (List<Voorwaarde>) repository.findAll(Sort.by(Sort.Direction.ASC, "name"));
+        return (List<Voorwaarde>) repository.findAll(Sort.by(Sort.Direction.ASC, "berichtnaam"));
     }
 
 
@@ -37,7 +37,7 @@ public class DogsService {
 
     private Voorwaarde toEntity(VoorwaardeDto dto) {
         Voorwaarde entity = new Voorwaarde();
-        entity.setName(dto.getBerichtnaam());
+        entity.setBerichtnaam(dto.getBerichtnaam());
         entity.setAge(dto.getAge());
         return entity;
     }

@@ -8,7 +8,7 @@ public class Voorwaarde {
     @Id
     @GeneratedValue
     private long id;
-    private String name = "berichtnaam invullen";
+    private String berichtnaam = "berichtnaam invullen";
     private int age;
     public long getId() {
         return id;
@@ -16,11 +16,11 @@ public class Voorwaarde {
     public void setId(long id) {
         this.id = id;
     }
-    public String getName() {
-        return name;
+    public String getBerichtnaam() {
+        return berichtnaam;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setBerichtnaam(String berichtnaam) {
+        this.berichtnaam = berichtnaam;
     }
     public int getAge() {
         return age;

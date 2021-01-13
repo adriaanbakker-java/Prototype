@@ -7,7 +7,7 @@
 <body>
 <h1>Leveringsvoorwaarde toevoegen</h1>
 <form action="#" th:action="@{/toevoegen_regel}" th:object="${voorwaarde}" method="post">
-    <p>Berichtnaam: <input type="text" th:field="*{name}" /></p>
+    <p>Berichtnaam: <input type="text" th:field="*{berichtnaam}" /></p>
     <p>Leveringsdoel: <input type="text" th:field="*{age}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>

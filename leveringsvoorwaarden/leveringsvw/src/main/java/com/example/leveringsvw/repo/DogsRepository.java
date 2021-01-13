@@ -11,8 +11,8 @@ import java.util.List;
 @Repository
 public interface DogsRepository extends CrudRepository<Voorwaarde, Long> {
 
-    @Query(value = "select id, name, age from voorwaarde where age > 10 order by name", nativeQuery = true)
+    @Query(value = "select id, berichtnaam, age from voorwaarde where age > 10 order by berichtnaam", nativeQuery = true)
     List<Voorwaarde> findOldDogs();
 
-    Object findAll(Sort name);
+    Object findAll(Sort berichtnaam);
 }

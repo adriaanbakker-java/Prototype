@@ -47,7 +47,7 @@ public class GUIController {
         VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
         voorwaardeDto.setAge(voorwaarde.getAge());
         voorwaardeDto.setId(voorwaarde.getId());
-        voorwaardeDto.setBerichtnaam(voorwaarde.getName());
+        voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
         dogsService.add(voorwaardeDto);
         return "toevoegen_regel_resultaat";
     }
