@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Showing added dog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p th:text="'dog id is: ' + ${dog.id}" />
+    <p th:text="'name is: ' + ${dog.name}" />
+    <p th:text="'age is: ' + ${dog.age}" />
+    <a href="/add_dog">Add another dog</a>
+    <a href="/delete_dog">Delete another dog</a>
+    <a href="/list">List dogs</a>
+</body>
+</html>
