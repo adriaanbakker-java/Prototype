@@ -35,37 +35,37 @@ public class GUIController {
         return "showmessage";
     }
 
-    @GetMapping("/toevoegen_regel")
-    public String addDog(Model model) {
+    @GetMapping("/toevoegen_voorwaarde")
+    public String toevoegenVoorwaarde(Model model) {
         model.addAttribute("voorwaarde", new Voorwaarde());
-        return "toevoegen_regel";
+        return "toevoegen_voorwaarde";
     }
 
 
-    @PostMapping("/toevoegen_regel")
-    public String addDogSubmit(@ModelAttribute Voorwaarde voorwaarde) {
+    @PostMapping("/toevoegen_voorwaarde")
+    public String toevoegenVoorwaardeSubmit(@ModelAttribute Voorwaarde voorwaarde) {
         VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
         voorwaardeDto.setAge(voorwaarde.getAge());
         voorwaardeDto.setId(voorwaarde.getId());
         voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
         dogsService.add(voorwaardeDto);
-        return "toevoegen_regel_resultaat";
+        return "toevoegen_voorwaarde_resultaat";
     }
 
 
-    @GetMapping("/delete_dog")
-    public String deleteDog(Model model) {
+    @GetMapping("/delete_voorwaarde")
+    public String deleteVoorwaarde(Model model) {
         model.addAttribute("idMessage", new IdMessage());
-        return "delete_dog";
+        return "delete_voorwaarde";
     }
 
-    @PostMapping("/delete_dog")
-    public String deleteSubmit(Model model, @ModelAttribute IdMessage idMessage) {
+    @PostMapping("/delete_voorwaarde")
+    public String deleteVoorwaardeSubmit(Model model, @ModelAttribute IdMessage idMessage) {
         Voorwaarde voorwaarde = new Voorwaarde();
 
         model.addAttribute("voorwaarde", voorwaarde);
         model.addAttribute("idMessage", idMessage);
-        return "delete_dog_confirm";
+        return "delete_voorwaarde_confirm";
     }
 
     @RequestMapping("/list")
