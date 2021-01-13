@@ -1,11 +1,10 @@
-package com.example.dbexample.controller;
+package com.example.leveringsvw.controller;
 
 
-import com.example.dbexample.model.DogDto;
-import com.example.dbexample.model.GetString;
-import com.example.dbexample.repo.Dog;
-import com.example.dbexample.service.DogsService;
-import com.example.dbexample.model.IdMessage;
+import com.example.leveringsvw.model.DogDto;
+import com.example.leveringsvw.repo.Dog;
+import com.example.leveringsvw.service.DogsService;
+import com.example.leveringsvw.model.IdMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,9 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class ExampleController {
@@ -39,14 +35,14 @@ public class ExampleController {
         return "showmessage";
     }
 
-    @GetMapping("/add_dog")
+    @GetMapping("/toevoegen_regel")
     public String addDog(Model model) {
         model.addAttribute("dog", new Dog());
-        return "add_dog";
+        return "toevoegen_regel";
     }
 
 
-    @PostMapping("/add_dog")
+    @PostMapping("/toevoegen_regel")
     public String addDogSubmit(@ModelAttribute Dog dog) {
         DogDto dogdto = new DogDto();
         dogdto.setAge(dog.getAge());

@@ -1,13 +1,13 @@
-package com.example.dbexample;
+package com.example.leveringsvw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DbExampleApplication {
+public class LeveringsvwPrototype {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DbExampleApplication.class, args);
+		SpringApplication.run(LeveringsvwPrototype.class, args);
 	}
 
 }

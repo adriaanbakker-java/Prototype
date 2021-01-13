@@ -1,4 +1,4 @@
-package com.example.dbexample.model;
+package com.example.leveringsvw.model;
 
 public class DogDto {
     private long id;

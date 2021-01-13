@@ -1,4 +1,4 @@
-package com.example.dbexample.repo;
+package com.example.leveringsvw.repo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

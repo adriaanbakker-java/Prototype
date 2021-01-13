@@ -1,17 +1,14 @@
-package com.example.dbexample.service;
+package com.example.leveringsvw.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.dbexample.model.DogDto;
-import com.example.dbexample.repo.Dog;
-import com.example.dbexample.repo.DogsRepository;
+import com.example.leveringsvw.model.DogDto;
+import com.example.leveringsvw.repo.Dog;
+import com.example.leveringsvw.repo.DogsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
-import java.util.Optional;
 
 @Component
 public class DogsService {

@@ -1,4 +1,4 @@
-package com.example.dbexample.repo;
+package com.example.leveringsvw.repo;
 
 
 import org.springframework.data.domain.Sort;

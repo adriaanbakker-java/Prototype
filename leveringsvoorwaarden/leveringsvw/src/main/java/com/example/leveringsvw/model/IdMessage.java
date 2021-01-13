@@ -1,4 +1,4 @@
-package com.example.dbexample.model;
+package com.example.leveringsvw.model;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.example.dbexample.service;
+package com.example.leveringsvw.service;
 
 public class DogNotFoundException extends RuntimeException {
     public DogNotFoundException(String message) {

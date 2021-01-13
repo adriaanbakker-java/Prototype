@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Toevoegen leveringsvoorwaarde</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Leveringsvoorwaarde toevoegen</h1>
+<form action="#" th:action="@{/toevoegen_regel}" th:object="${dog}" method="post">
+    <p>Berichtnaam: <input type="text" th:field="*{name}" /></p>
+    <p>Leveringsdoel: <input type="text" th:field="*{age}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

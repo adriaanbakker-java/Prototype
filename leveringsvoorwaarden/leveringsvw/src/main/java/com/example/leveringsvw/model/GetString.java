@@ -1,4 +1,4 @@
-package com.example.dbexample.model;
+package com.example.leveringsvw.model;
 
 import java.util.ArrayList;
 import java.util.List;
