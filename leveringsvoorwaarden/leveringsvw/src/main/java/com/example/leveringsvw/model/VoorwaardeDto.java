@@ -3,7 +3,7 @@ package com.example.leveringsvw.model;
 public class VoorwaardeDto {
     private long id;
     private String berichtnaam;
-    private int age;
+    private String leveringsdoel;
 
     public long getId() {
         return id;
@@ -21,11 +21,11 @@ public class VoorwaardeDto {
         this.berichtnaam = berichtnaam;
     }
 
-    public int getAge() {
-        return age;
+    public String getLeveringsdoel() {
+        return leveringsdoel;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setLeveringsdoel(String leveringsdoel) {
+        this.leveringsdoel = leveringsdoel;
     }
 }

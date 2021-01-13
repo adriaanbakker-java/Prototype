@@ -5,14 +5,15 @@ import java.util.Optional;
 
 import com.example.leveringsvw.model.VoorwaardeDto;
 import com.example.leveringsvw.repo.Voorwaarde;
-import com.example.leveringsvw.repo.DogsRepository;
+import com.example.leveringsvw.repo.VoorwaardenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DogsService {
-    @Autowired DogsRepository repository;
+public class VoorwaardenbeheerService {
+    @Autowired
+    VoorwaardenRepository repository;
 
     public void add(VoorwaardeDto dto) {
         System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
@@ -23,28 +24,28 @@ public class DogsService {
         repository.deleteById(id);
     }
 
-    public List<Voorwaarde> getDogs() {
+    public List<Voorwaarde> getLijstVoorwaarden() {
         return (List<Voorwaarde>) repository.findAll(Sort.by(Sort.Direction.ASC, "berichtnaam"));
     }
 
 
 
 
-    public Voorwaarde getDogById(long id) {
-        Optional<Voorwaarde> optionalDog = repository.findById(id);
-        return optionalDog.orElseThrow(() -> new DogNotFoundException("Kon voorwaarde met id niet vinden: " + id));
+    public Voorwaarde getVoorwaardeById(long id) {
+        Optional<Voorwaarde> optionalVoorwaarde = repository.findById(id);
+        return optionalVoorwaarde.orElseThrow(() -> new voorwaardeNietGevondenExceptie("Kon voorwaarde met id niet vinden: " + id));
     }
 
     private Voorwaarde toEntity(VoorwaardeDto dto) {
         Voorwaarde entity = new Voorwaarde();
         entity.setBerichtnaam(dto.getBerichtnaam());
-        entity.setAge(dto.getAge());
+        entity.setLeveringsdoel(dto.getLeveringsdoel());
         return entity;
     }
 
 
 
-    public Object getOldDogs() {
-        return (List<Voorwaarde>) repository.findOldDogs();
+    public Object getLijstVoorwaardenGesorteerd() {
+        return (List<Voorwaarde>) repository.getListVoorwaardenlijstGesorteerd();
     }
 }

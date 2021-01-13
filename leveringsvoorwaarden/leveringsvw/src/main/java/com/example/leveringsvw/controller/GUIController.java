@@ -3,7 +3,7 @@ package com.example.leveringsvw.controller;
 
 import com.example.leveringsvw.model.VoorwaardeDto;
 import com.example.leveringsvw.repo.Voorwaarde;
-import com.example.leveringsvw.service.DogsService;
+import com.example.leveringsvw.service.VoorwaardenbeheerService;
 import com.example.leveringsvw.model.IdMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class GUIController {
     @Autowired
-    private DogsService dogsService;
+    private VoorwaardenbeheerService voorwaardenbeheerService;
 
     @GetMapping("/")
     public String index(Model model) {
@@ -45,10 +45,10 @@ public class GUIController {
     @PostMapping("/toevoegen_voorwaarde")
     public String toevoegenVoorwaardeSubmit(@ModelAttribute Voorwaarde voorwaarde) {
         VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
-        voorwaardeDto.setAge(voorwaarde.getAge());
+        voorwaardeDto.setLeveringsdoel(voorwaarde.getLeveringsdoel());
         voorwaardeDto.setId(voorwaarde.getId());
         voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
-        dogsService.add(voorwaardeDto);
+        voorwaardenbeheerService.add(voorwaardeDto);
         return "toevoegen_voorwaarde_resultaat";
     }
 
@@ -70,13 +70,13 @@ public class GUIController {
 
     @RequestMapping("/list")
     public String countsList(Model model) {
-        model.addAttribute("counts", dogsService.getDogs());
+        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaarden());
         return "list";
     }
 
-    @RequestMapping("/olddogs")
-    public String countsOldList(Model model) {
-        model.addAttribute("counts", dogsService.getOldDogs());
+    @RequestMapping("/listsorted")
+    public String listSorted(Model model) {
+        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaardenGesorteerd());
         return "list";
     }
 

@@ -9,10 +9,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface DogsRepository extends CrudRepository<Voorwaarde, Long> {
+public interface VoorwaardenRepository extends CrudRepository<Voorwaarde, Long> {
 
-    @Query(value = "select id, berichtnaam, age from voorwaarde where age > 10 order by berichtnaam", nativeQuery = true)
-    List<Voorwaarde> findOldDogs();
+    @Query(value = "select id, berichtnaam, leveringsdoel from voorwaarde order by berichtnaam, leveringsdoel", nativeQuery = true)
+    List<Voorwaarde> getListVoorwaardenlijstGesorteerd();
 
     Object findAll(Sort berichtnaam);
 }

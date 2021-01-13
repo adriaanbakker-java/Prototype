@@ -9,7 +9,7 @@ public class Voorwaarde {
     @GeneratedValue
     private long id;
     private String berichtnaam = "berichtnaam invullen";
-    private int age;
+    private String leveringsdoel = "leveringsdoel invullen";
     public long getId() {
         return id;
     }
@@ -22,10 +22,10 @@ public class Voorwaarde {
     public void setBerichtnaam(String berichtnaam) {
         this.berichtnaam = berichtnaam;
     }
-    public int getAge() {
-        return age;
+    public String getLeveringsdoel() {
+        return leveringsdoel;
     }
-    public void setAge(int age) {
-        this.age = age;
+    public void setLeveringsdoel(String leveringsdoel) {
+        this.leveringsdoel = leveringsdoel;
     }
 }
