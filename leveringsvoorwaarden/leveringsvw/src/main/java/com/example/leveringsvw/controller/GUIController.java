@@ -1,8 +1,8 @@
 package com.example.leveringsvw.controller;
 
 
-import com.example.leveringsvw.model.DogDto;
-import com.example.leveringsvw.repo.Dog;
+import com.example.leveringsvw.model.VoorwaardeDto;
+import com.example.leveringsvw.repo.Voorwaarde;
 import com.example.leveringsvw.service.DogsService;
 import com.example.leveringsvw.model.IdMessage;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class ExampleController {
+public class GUIController {
     @Autowired
     private DogsService dogsService;
 
@@ -37,18 +37,18 @@ public class ExampleController {
 
     @GetMapping("/toevoegen_regel")
     public String addDog(Model model) {
-        model.addAttribute("dog", new Dog());
+        model.addAttribute("voorwaarde", new Voorwaarde());
         return "toevoegen_regel";
     }
 
 
     @PostMapping("/toevoegen_regel")
-    public String addDogSubmit(@ModelAttribute Dog dog) {
-        DogDto dogdto = new DogDto();
-        dogdto.setAge(dog.getAge());
-        dogdto.setId(dog.getId());
-        dogdto.setName(dog.getName());
-        dogsService.add(dogdto);
+    public String addDogSubmit(@ModelAttribute Voorwaarde voorwaarde) {
+        VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
+        voorwaardeDto.setAge(voorwaarde.getAge());
+        voorwaardeDto.setId(voorwaarde.getId());
+        voorwaardeDto.setBerichtnaam(voorwaarde.getName());
+        dogsService.add(voorwaardeDto);
         return "toevoegen_regel_resultaat";
     }
 
@@ -61,9 +61,9 @@ public class ExampleController {
 
     @PostMapping("/delete_dog")
     public String deleteSubmit(Model model, @ModelAttribute IdMessage idMessage) {
-        Dog dog = new Dog();
+        Voorwaarde voorwaarde = new Voorwaarde();
 
-        model.addAttribute("dog", dog);
+        model.addAttribute("voorwaarde", voorwaarde);
         model.addAttribute("idMessage", idMessage);
         return "delete_dog_confirm";
     }

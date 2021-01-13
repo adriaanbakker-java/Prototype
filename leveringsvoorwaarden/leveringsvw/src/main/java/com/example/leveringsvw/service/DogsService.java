@@ -3,8 +3,8 @@ package com.example.leveringsvw.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.example.leveringsvw.model.DogDto;
-import com.example.leveringsvw.repo.Dog;
+import com.example.leveringsvw.model.VoorwaardeDto;
+import com.example.leveringsvw.repo.Voorwaarde;
 import com.example.leveringsvw.repo.DogsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 public class DogsService {
     @Autowired DogsRepository repository;
 
-    public void add(DogDto dto) {
-        System.out.println("adding dog" + dto.getName());
+    public void add(VoorwaardeDto dto) {
+        System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
         repository.save(toEntity(dto));
     }
 
@@ -23,21 +23,21 @@ public class DogsService {
         repository.deleteById(id);
     }
 
-    public List<Dog> getDogs() {
-        return (List<Dog>) repository.findAll(Sort.by(Sort.Direction.ASC, "name"));
+    public List<Voorwaarde> getDogs() {
+        return (List<Voorwaarde>) repository.findAll(Sort.by(Sort.Direction.ASC, "name"));
     }
 
 
 
 
-    public Dog getDogById(long id) {
-        Optional<Dog> optionalDog = repository.findById(id);
-        return optionalDog.orElseThrow(() -> new DogNotFoundException("Couldn't find a Dog with id: " + id));
+    public Voorwaarde getDogById(long id) {
+        Optional<Voorwaarde> optionalDog = repository.findById(id);
+        return optionalDog.orElseThrow(() -> new DogNotFoundException("Kon voorwaarde met id niet vinden: " + id));
     }
 
-    private Dog toEntity(DogDto dto) {
-        Dog entity = new Dog();
-        entity.setName(dto.getName());
+    private Voorwaarde toEntity(VoorwaardeDto dto) {
+        Voorwaarde entity = new Voorwaarde();
+        entity.setName(dto.getBerichtnaam());
         entity.setAge(dto.getAge());
         return entity;
     }
@@ -45,6 +45,6 @@ public class DogsService {
 
 
     public Object getOldDogs() {
-        return (List<Dog>) repository.findOldDogs();
+        return (List<Voorwaarde>) repository.findOldDogs();
     }
 }
