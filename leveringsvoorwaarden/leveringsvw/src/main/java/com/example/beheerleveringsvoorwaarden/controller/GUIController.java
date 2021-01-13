@@ -1,10 +1,10 @@
-package com.example.leveringsvw.controller;
+package com.example.beheerleveringsvoorwaarden.controller;
 
 
-import com.example.leveringsvw.model.VoorwaardeDto;
-import com.example.leveringsvw.repo.Voorwaarde;
-import com.example.leveringsvw.service.VoorwaardenbeheerService;
-import com.example.leveringsvw.model.IdMessage;
+import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
+import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
+import com.example.beheerleveringsvoorwaarden.service.VoorwaardenbeheerService;
+import com.example.beheerleveringsvoorwaarden.model.IdMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -48,6 +48,7 @@ public class GUIController {
         voorwaardeDto.setLeveringsdoel(voorwaarde.getLeveringsdoel());
         voorwaardeDto.setId(voorwaarde.getId());
         voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
+        voorwaardeDto.setPadnaargegeven(voorwaarde.getPadnaargegeven());
         voorwaardenbeheerService.add(voorwaardeDto);
         return "toevoegen_voorwaarde_resultaat";
     }

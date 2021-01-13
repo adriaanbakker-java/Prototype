@@ -9,7 +9,10 @@
 <form action="#" th:action="@{/toevoegen_voorwaarde}" th:object="${voorwaarde}" method="post">
     <p>Berichtnaam: <input type="text" th:field="*{berichtnaam}" /></p>
     <p>Leveringsdoel: <input type="text" th:field="*{leveringsdoel}" /></p>
+    <p>Pad naar gegeven: <input type="text" th:field="*{padnaargegeven}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
+<p/>
+<a href="/">Terug naar menu</a>
 </body>
 </html>

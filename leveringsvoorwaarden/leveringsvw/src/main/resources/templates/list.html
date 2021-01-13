@@ -1,28 +1,36 @@
-
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Overzicht leveringsvoorwaardenregels</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
 <h1>Overzicht leveringsvoorwaardenregels</h1>
 <div th:if="${not #lists.isEmpty(counts)}">
     <h2>Leveringsvoorwaardenlijst</h2>
-    <table class="table table-striped">
+    <table class="table table-striped" style="width: 90%">
         <tr>
-            <th>Id</th>
-            <th>Berichtnaam</th>
-            <th>Leveringsdoel</th>
+            <th style="width: 5%">Id</th>
+            <th style="width: 25%">Berichtnaam</th>
+            <th style="width: 10%">Leveringsdoel</th>
+            <th>Pad naar gegeven</th>
 
         </tr>
         <tr th:each="count : ${counts}">
             <td th:text="${count.id}"></td>
             <td th:text="${count.berichtnaam}"></td>
             <td th:text="${count.leveringsdoel}"></td>
+            <td th:text="${count.padnaargegeven}"></td>
         </tr>
     </table>
 </div>
+<p/>
 <a href="/">Terug naar menu</a>
 </body>
 

@@ -1,11 +1,11 @@
-package com.example.leveringsvw.service;
+package com.example.beheerleveringsvoorwaarden.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.leveringsvw.model.VoorwaardeDto;
-import com.example.leveringsvw.repo.Voorwaarde;
-import com.example.leveringsvw.repo.VoorwaardenRepository;
+import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
+import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
+import com.example.beheerleveringsvoorwaarden.repo.VoorwaardenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,8 @@ public class VoorwaardenbeheerService {
 
     public void add(VoorwaardeDto dto) {
         System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
-        repository.save(toEntity(dto));
+        Voorwaarde vw = toEntity(dto);
+        repository.save(vw);
     }
 
     public void delete(long id) {
@@ -40,6 +41,7 @@ public class VoorwaardenbeheerService {
         Voorwaarde entity = new Voorwaarde();
         entity.setBerichtnaam(dto.getBerichtnaam());
         entity.setLeveringsdoel(dto.getLeveringsdoel());
+        entity.setPadnaargegeven(dto.getPadnaargegeven());
         return entity;
     }
 

@@ -1,4 +1,4 @@
-package com.example.leveringsvw.model;
+package com.example.beheerleveringsvoorwaarden.model;
 
 import org.springframework.stereotype.Component;
 

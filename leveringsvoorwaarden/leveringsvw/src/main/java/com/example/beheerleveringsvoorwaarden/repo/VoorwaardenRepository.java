@@ -1,4 +1,4 @@
-package com.example.leveringsvw.repo;
+package com.example.beheerleveringsvoorwaarden.repo;
 
 
 import org.springframework.data.domain.Sort;
@@ -11,7 +11,10 @@ import java.util.List;
 @Repository
 public interface VoorwaardenRepository extends CrudRepository<Voorwaarde, Long> {
 
-    @Query(value = "select id, berichtnaam, leveringsdoel from voorwaarde order by berichtnaam, leveringsdoel", nativeQuery = true)
+    @Query(value =
+            "select id, berichtnaam, leveringsdoel, padnaargegeven " +
+                    "from voorwaarde order by berichtnaam, leveringsdoel, padnaargegeven",
+            nativeQuery = true)
     List<Voorwaarde> getListVoorwaardenlijstGesorteerd();
 
     Object findAll(Sort berichtnaam);

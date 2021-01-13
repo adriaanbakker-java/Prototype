@@ -1,7 +1,4 @@
-package com.example.leveringsvw.model;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.beheerleveringsvoorwaarden.model;
 
 public class GetString {
     public GetString(String content) {
