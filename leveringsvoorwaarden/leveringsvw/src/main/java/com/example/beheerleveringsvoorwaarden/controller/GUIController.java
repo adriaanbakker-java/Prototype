@@ -18,6 +18,12 @@ public class GUIController {
     @Autowired
     private VoorwaardenbeheerService voorwaardenbeheerService;
 
+
+    @PostMapping("/check")
+    public void check() {
+        System.out.println("check voorwaarden");
+    }
+
     @GetMapping("/")
     public String index(Model model) {
         return "index";

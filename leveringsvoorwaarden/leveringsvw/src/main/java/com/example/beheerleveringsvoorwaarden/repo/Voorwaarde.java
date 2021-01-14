@@ -40,4 +40,6 @@ public class Voorwaarde {
     public void setLeveringsdoel(String leveringsdoel) {
         this.leveringsdoel = leveringsdoel;
     }
+
+
 }
