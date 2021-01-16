@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
+import com.example.beheerleveringsvoorwaarden.repo.Bericht;
+import com.example.beheerleveringsvoorwaarden.repo.BerichtenRepository;
 import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
 import com.example.beheerleveringsvoorwaarden.repo.VoorwaardenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,27 +15,31 @@ import org.springframework.stereotype.Component;
 @Component
 public class VoorwaardenbeheerService {
     @Autowired
-    VoorwaardenRepository repository;
+    VoorwaardenRepository voorwaardenRepository;
+
+    @Autowired
+    BerichtenRepository berichtenRepository;
+
 
     public void add(VoorwaardeDto dto) {
         System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
         Voorwaarde vw = toEntity(dto);
-        repository.save(vw);
+        voorwaardenRepository.save(vw);
     }
 
     public void delete(long id) {
-        repository.deleteById(id);
+        voorwaardenRepository.deleteById(id);
     }
 
     public List<Voorwaarde> getLijstVoorwaarden() {
-        return (List<Voorwaarde>) repository.findAll(Sort.by(Sort.Direction.ASC, "berichtnaam"));
+        return (List<Voorwaarde>) voorwaardenRepository.findAll(Sort.by(Sort.Direction.ASC, "berichtnaam"));
     }
 
 
 
 
     public Voorwaarde getVoorwaardeById(long id) {
-        Optional<Voorwaarde> optionalVoorwaarde = repository.findById(id);
+        Optional<Voorwaarde> optionalVoorwaarde = voorwaardenRepository.findById(id);
         return optionalVoorwaarde.orElseThrow(() -> new voorwaardeNietGevondenExceptie("Kon voorwaarde met id niet vinden: " + id));
     }
 
@@ -48,6 +54,11 @@ public class VoorwaardenbeheerService {
 
 
     public Object getLijstVoorwaardenGesorteerd() {
-        return (List<Voorwaarde>) repository.getListVoorwaardenlijstGesorteerd();
+        return (List<Voorwaarde>) voorwaardenRepository.getListVoorwaardenlijstGesorteerd();
+    }
+
+    public List<Bericht> getLijstBerichten() {
+        List<Bericht> result = (List<Bericht>)  berichtenRepository.getListBerichtenGesorteerd();
+        return result;
     }
 }

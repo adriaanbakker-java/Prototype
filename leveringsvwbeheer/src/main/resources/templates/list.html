@@ -12,6 +12,26 @@
 </head>
 <body>
 <h1>Overzicht leveringsvoorwaardenregels</h1>
+
+
+<h2>Filter op bericht:</h2>
+
+<div th:if="${not #lists.isEmpty(berichten)}">
+    <select th:name="selectberichtnaam">
+        <option th:each="bericht: ${berichten}"  th:value="${bericht.berichtnaam}" th:text="${bericht.berichtnaam}" />
+    </select>
+</div>
+
+<h2>Filter op leveringsdoel:</h2>
+
+<div th:if="${not #lists.isEmpty(berichten)}">
+    <select th:name="selectberichtnaam">
+        <option th:each="bericht: ${berichten}"  th:value="${bericht.berichtnaam}" th:text="${bericht.berichtnaam}" />
+    </select>
+</div>
+
+<p/>
+
 <div th:if="${not #lists.isEmpty(counts)}">
     <h2>Leveringsvoorwaardenlijst</h2>
     <table class="table table-striped" style="width: 90%">

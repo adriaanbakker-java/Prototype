@@ -2,6 +2,7 @@ package com.example.beheerleveringsvoorwaarden.controller;
 
 
 import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
+import com.example.beheerleveringsvoorwaarden.repo.Bericht;
 import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
 import com.example.beheerleveringsvoorwaarden.service.VoorwaardenbeheerService;
 import com.example.beheerleveringsvoorwaarden.model.IdMessage;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 public class GUIController {
@@ -44,6 +47,8 @@ public class GUIController {
     @GetMapping("/toevoegen_voorwaarde")
     public String toevoegenVoorwaarde(Model model) {
         model.addAttribute("voorwaarde", new Voorwaarde());
+        Object berichten = voorwaardenbeheerService.getLijstBerichten();
+        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
         return "toevoegen_voorwaarde";
     }
 
@@ -78,12 +83,15 @@ public class GUIController {
     @RequestMapping("/list")
     public String countsList(Model model) {
         model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaarden());
+        Object berichten = voorwaardenbeheerService.getLijstBerichten();
+        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
         return "list";
     }
 
     @RequestMapping("/listsorted")
     public String listSorted(Model model) {
         model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaardenGesorteerd());
+        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
         return "list";
     }
 
