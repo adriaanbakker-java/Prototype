@@ -4,10 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
-import com.example.beheerleveringsvoorwaarden.repo.Bericht;
-import com.example.beheerleveringsvoorwaarden.repo.BerichtenRepository;
-import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
-import com.example.beheerleveringsvoorwaarden.repo.VoorwaardenRepository;
+import com.example.beheerleveringsvoorwaarden.repo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
@@ -20,6 +17,8 @@ public class VoorwaardenbeheerService {
     @Autowired
     BerichtenRepository berichtenRepository;
 
+    @Autowired
+    LeveringsdoelRepository leveringsdoelRepository;
 
     public void add(VoorwaardeDto dto) {
         System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
@@ -59,6 +58,11 @@ public class VoorwaardenbeheerService {
 
     public List<Bericht> getLijstBerichten() {
         List<Bericht> result = (List<Bericht>)  berichtenRepository.getListBerichtenGesorteerd();
+        return result;
+    }
+
+    public List<Leveringsdoel> getLijstLeveringsdoelen() {
+        List<Leveringsdoel> result =  leveringsdoelRepository.getListLeveringsdoelGesorteerd();
         return result;
     }
 }

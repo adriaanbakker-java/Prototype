@@ -1,6 +1,7 @@
 package com.example.beheerleveringsvoorwaarden.controller;
 
 
+import com.example.beheerleveringsvoorwaarden.model.Filter;
 import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
 import com.example.beheerleveringsvoorwaarden.repo.Bericht;
 import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -81,19 +83,37 @@ public class GUIController {
     }
 
     @RequestMapping("/list")
-    public String countsList(Model model) {
-        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaarden());
-        Object berichten = voorwaardenbeheerService.getLijstBerichten();
+    public String countsList(Model model, @ModelAttribute Filter filter ) {
+
+        List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
+        List<Voorwaarde> voorwaarden = new ArrayList<>();
+        if (filter == null) {
+            voorwaarden = voorwaardenlijst;
+        } else if (filter.getBerichtnaam() == null) {
+            voorwaarden = voorwaardenlijst;
+        } else if (filter.getBerichtnaam().equals(" -- ")) {
+            voorwaarden = voorwaardenlijst;
+        } else {
+                for (Voorwaarde v: voorwaardenlijst) {
+                    if (v.getBerichtnaam().equals(filter.getBerichtnaam())) {
+                        voorwaarden.add(v);
+                    }
+                }
+        }
+
+        model.addAttribute("counts", voorwaarden);
         model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
+        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
+        model.addAttribute("berichtnaam", filter);
         return "list";
     }
 
-    @RequestMapping("/listsorted")
-    public String listSorted(Model model) {
-        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaardenGesorteerd());
-        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
-        return "list";
-    }
+//    @RequestMapping("/listsorted")
+//    public String listSorted(Model model) {
+//        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaardenGesorteerd());
+//        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
+//        return "list";
+//    }
 
 
 
