@@ -1,6 +1,7 @@
 package com.example.beheerleveringsvoorwaarden.service;
 
 import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
+import com.example.beheerleveringsvoorwaarden.repo.VoorwaardenRepository;
 import com.example.checkleveringsvoorwaarden.model.Answer;
 import com.example.checkleveringsvoorwaarden.model.Request;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +13,18 @@ import java.util.List;
 @Component
 public class VoorwaardencontroleService {
     @Autowired
-    private VoorwaardenbeheerService voorwaardenbeheerService;
-    
+    VoorwaardenRepository repository;
+
+    public Object getLijstVoorwaardenGesorteerd() {
+        return (List<Voorwaarde>) repository.getListVoorwaardenlijstGesorteerd();
+    }
+
     public Answer checkRequest(Request request) {
         Answer answer = new Answer();
         answer.setResult(true);
         answer.setFoutmelding("");
 
-        List<Voorwaarde> voorwaardeList = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
+        List<Voorwaarde> voorwaardeList = (List<Voorwaarde>) getLijstVoorwaardenGesorteerd();
         List<Voorwaarde> vwBijBericht = 
                 filterOpBericht(voorwaardeList, request.getBerichtnaam());
 
