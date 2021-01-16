@@ -91,7 +91,7 @@ public class GUIController {
             voorwaarden = voorwaardenlijst;
         } else if (filter.getBerichtnaam() == null) {
             voorwaarden = voorwaardenlijst;
-        } else if (filter.getBerichtnaam().equals(" -- ")) {
+        } else if (filter.getBerichtnaam().equals("")) {
             voorwaarden = voorwaardenlijst;
         } else {
                 for (Voorwaarde v: voorwaardenlijst) {
