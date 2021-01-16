@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Regel toegevoegd</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Regel toegevoegd</h1>
+    <p th:text="'id: ' + ${voorwaarde.id}" />
+    <p th:text="'berichtnaam: ' + ${voorwaarde.berichtnaam}" />
+    <p th:text="'leveringsdoel: ' + ${voorwaarde.leveringsdoel}" />
+    <p th:text="'pad naar gegeven: ' + ${voorwaarde.padnaargegeven}" />
+    <p/>
+    <a href="/">terug naar menu</a>
+
+</body>
+</html>
