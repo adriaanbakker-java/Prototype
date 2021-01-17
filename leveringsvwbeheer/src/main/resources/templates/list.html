@@ -13,33 +13,29 @@
 <body>
 <h1>Overzicht leveringsvoorwaardenregels</h1>
 
-
-<h2>Filter op bericht:</h2>
-
-
 <form action="#" th:action="@{/list}" th:object="${filter}" method="post">
+    <h2>Filter op bericht:</h2>
     <div th:if="${not #lists.isEmpty(berichten)}">
         <select th:name="berichtnaam">
             <option value=""> -- </option>
             <option th:each="bericht: ${berichten}"  th:value="${bericht.berichtnaam}" th:text="${bericht.berichtnaam}" />
         </select>
+
+    </div>
+    <h2>Filter op leveringsdoel:</h2>
+    <div th:if="${not #lists.isEmpty(leveringsdoelen)}">
+        <select th:name="leveringsdoel">
+            <option value=""> -- </option>
+            <option th:each="leveringsdoel: ${leveringsdoelen}"
+                    th:value="${leveringsdoel.leveringsdoel}"
+                    th:text="${leveringsdoel.leveringsdoel}" />
+        </select>
+    </div>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 
-
-
-<h2>Filter op leveringsdoel:</h2>
-
-<div th:if="${not #lists.isEmpty(leveringsdoelen)}">
-    <select th:name="selectleveringsdoel">
-        <option value=""> -- </option>
-        <option th:each="leveringsdoel: ${leveringsdoelen}"
-                th:value="${leveringsdoel.leveringsdoel}"
-                th:text="${leveringsdoel.leveringsdoel}" />
-    </select>
-</div>
-
 <p th:text="'gefilterd op bericht:' + ${filter.berichtnaam}"/>
+<p th:text="'gefilterd op leveringsdoel:' + ${filter.leveringsdoel}"/>
 
 <div th:if="${not #lists.isEmpty(counts)}">
     <h2>Leveringsvoorwaardenlijst</h2>

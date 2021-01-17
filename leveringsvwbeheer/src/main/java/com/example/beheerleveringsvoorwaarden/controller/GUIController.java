@@ -85,7 +85,7 @@ public class GUIController {
     @RequestMapping("/list")
     public String countsList(Model model, @ModelAttribute Filter filter ) {
 
-        List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
+        /*List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
         List<Voorwaarde> voorwaarden = new ArrayList<>();
         if (filter == null) {
             voorwaarden = voorwaardenlijst;
@@ -99,8 +99,16 @@ public class GUIController {
                         voorwaarden.add(v);
                     }
                 }
+        }*/
+        String berichtnaam = "";
+        String leveringsdoel = "";
+        if (filter.getBerichtnaam() != null) {
+            berichtnaam = filter.getBerichtnaam();
         }
-
+        if (filter.getLeveringsdoel() != null) {
+            leveringsdoel = filter.getLeveringsdoel();
+        }
+        List<Voorwaarde> voorwaarden =  voorwaardenbeheerService.getLijstVoorwaardenGesorteerdGefilterd(berichtnaam, leveringsdoel);
         model.addAttribute("counts", voorwaarden);
         model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
         model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());

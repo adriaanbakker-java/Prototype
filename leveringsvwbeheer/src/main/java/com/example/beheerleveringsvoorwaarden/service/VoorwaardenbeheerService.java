@@ -50,7 +50,9 @@ public class VoorwaardenbeheerService {
         return entity;
     }
 
-
+    public List<Voorwaarde> getLijstVoorwaardenGesorteerdGefilterd(String berichtnaam, String leveringsdoel) {
+        return  voorwaardenRepository.getListVoorwaardenlijstGesorteerdGefilterd(berichtnaam, leveringsdoel);
+    }
 
     public Object getLijstVoorwaardenGesorteerd() {
         return (List<Voorwaarde>) voorwaardenRepository.getListVoorwaardenlijstGesorteerd();

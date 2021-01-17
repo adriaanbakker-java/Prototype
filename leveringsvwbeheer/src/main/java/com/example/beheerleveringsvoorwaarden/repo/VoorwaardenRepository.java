@@ -18,4 +18,13 @@ public interface VoorwaardenRepository extends CrudRepository<Voorwaarde, Long> 
     List<Voorwaarde> getListVoorwaardenlijstGesorteerd();
 
     Object findAll(Sort berichtnaam);
+
+    @Query(value =
+            "select id, berichtnaam, leveringsdoel, padnaargegeven" +
+                    " from voorwaarde "+
+                    " where ((berichtnaam = ?1 ) or (?1 = ''))"  +
+                    " and   ((leveringsdoel = ?2) or (?2 = ''))"  +
+                    " order by berichtnaam, leveringsdoel, padnaargegeven",
+            nativeQuery = true)
+    List<Voorwaarde> getListVoorwaardenlijstGesorteerdGefilterd(String berichtnaam, String leveringsdoel);
 }
