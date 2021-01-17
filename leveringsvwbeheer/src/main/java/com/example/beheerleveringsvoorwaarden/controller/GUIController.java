@@ -49,8 +49,8 @@ public class GUIController {
     @GetMapping("/toevoegen_voorwaarde")
     public String toevoegenVoorwaarde(Model model) {
         model.addAttribute("voorwaarde", new Voorwaarde());
-        Object berichten = voorwaardenbeheerService.getLijstBerichten();
         model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
+        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
         return "toevoegen_voorwaarde";
     }
 
