@@ -3,6 +3,9 @@ package com.example.beheerleveringsvoorwaarden.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.example.beheerleveringsvoorwaarden.model.Bericht;
+import com.example.beheerleveringsvoorwaarden.model.Leveringsdoel;
+import com.example.beheerleveringsvoorwaarden.model.Voorwaarde;
 import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
 import com.example.beheerleveringsvoorwaarden.repo.*;
 import org.springframework.beans.factory.annotation.Autowired;

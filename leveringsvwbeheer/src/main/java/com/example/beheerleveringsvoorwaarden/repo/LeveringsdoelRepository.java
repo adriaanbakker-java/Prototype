@@ -1,5 +1,6 @@
 package com.example.beheerleveringsvoorwaarden.repo;
 
+import com.example.beheerleveringsvoorwaarden.model.Leveringsdoel;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

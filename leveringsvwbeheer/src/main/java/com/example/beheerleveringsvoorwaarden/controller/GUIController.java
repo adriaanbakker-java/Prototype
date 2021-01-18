@@ -1,12 +1,9 @@
 package com.example.beheerleveringsvoorwaarden.controller;
 
 
-import com.example.beheerleveringsvoorwaarden.model.Filter;
-import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
-import com.example.beheerleveringsvoorwaarden.repo.Bericht;
-import com.example.beheerleveringsvoorwaarden.repo.Voorwaarde;
+import com.example.beheerleveringsvoorwaarden.model.*;
+import com.example.beheerleveringsvoorwaarden.repo.*;
 import com.example.beheerleveringsvoorwaarden.service.VoorwaardenbeheerService;
-import com.example.beheerleveringsvoorwaarden.model.IdMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -23,10 +19,24 @@ public class GUIController {
     @Autowired
     private VoorwaardenbeheerService voorwaardenbeheerService;
 
+    @Autowired
+    BookRepository bookRepository;
 
-    @PostMapping("/check")
-    public void check() {
-        System.out.println("check voorwaarden");
+    @Autowired
+    PageRepository pageRepository;
+
+
+    @GetMapping("/initbookdb")
+    public String initBookDB(Model model) {
+        System.out.println("init the book db");
+        Book book = new Book("Java world", "John Doe", "1234567");
+        bookRepository.save(book);
+        Page page = new Page(1, "Introduction contents", "Introduction", book);
+        pageRepository.save(page);
+        pageRepository.save(new Page(65, "Java 8 contents", "Java 8", book));
+        pageRepository.save(new Page(95, "Concurrency contents", "Concurrency", book));
+
+        return "index";
     }
 
     @GetMapping("/")
@@ -85,21 +95,21 @@ public class GUIController {
     @RequestMapping("/list")
     public String countsList(Model model, @ModelAttribute Filter filter, @ModelAttribute IdMessage idMessage ) {
 
-        /*List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
-        List<Voorwaarde> voorwaarden = new ArrayList<>();
-        if (filter == null) {
-            voorwaarden = voorwaardenlijst;
-        } else if (filter.getBerichtnaam() == null) {
-            voorwaarden = voorwaardenlijst;
-        } else if (filter.getBerichtnaam().equals("")) {
-            voorwaarden = voorwaardenlijst;
-        } else {
-                for (Voorwaarde v: voorwaardenlijst) {
-                    if (v.getBerichtnaam().equals(filter.getBerichtnaam())) {
-                        voorwaarden.add(v);
-                    }
-                }
-        }*/
+        List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
+//        List<Voorwaarde> voorwaarden = new ArrayList<>();
+//        if (filter == null) {
+//            voorwaarden = voorwaardenlijst;
+//        } else if (filter.getBerichtnaam() == null) {
+//            voorwaarden = voorwaardenlijst;
+//        } else if (filter.getBerichtnaam().equals("")) {
+//            voorwaarden = voorwaardenlijst;
+//        } else {
+//                for (Voorwaarde v: voorwaardenlijst) {
+//                    if (v.getBerichtnaam().equals(filter.getBerichtnaam())) {
+//                        voorwaarden.add(v);
+//                    }
+//                }
+//        }
         String berichtnaam = "";
         String leveringsdoel = "";
         if (filter.getBerichtnaam() != null) {
@@ -115,14 +125,6 @@ public class GUIController {
         model.addAttribute("berichtnaam", filter);
         return "list";
     }
-
-//    @RequestMapping("/listsorted")
-//    public String listSorted(Model model) {
-//        model.addAttribute("counts", voorwaardenbeheerService.getLijstVoorwaardenGesorteerd());
-//        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
-//        return "list";
-//    }
-
 
 
 }
