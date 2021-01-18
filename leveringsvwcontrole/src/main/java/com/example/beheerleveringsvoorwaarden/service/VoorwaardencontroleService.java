@@ -28,8 +28,6 @@ public class VoorwaardencontroleService {
         List<Voorwaarde> vwBijBericht = 
                 filterOpBericht(voorwaardeList, request.getBerichtnaam());
 
-        List<Voorwaarde> vwBijDoel =
-                filterOpDoel(voorwaardeList, request.getLeveringsdoel());
 
         if (vwBijBericht.isEmpty()) {
             answer.setResult(false);
@@ -37,13 +35,16 @@ public class VoorwaardencontroleService {
             return answer;
         }
 
+        List<Voorwaarde> vwBijDoel =
+                filterOpDoel(voorwaardeList, request.getLeveringsdoel());
+
         if (vwBijDoel.isEmpty()) {
             answer.setResult(false);
             answer.setFoutmelding("Geen leveringsvoorwaarden bij leveringsdoel " + request.getLeveringsdoel());
             return answer;
         }
         List<Voorwaarde> vwBijBerichtEnDoel =
-                filterOpDoel(voorwaardeList, request.getLeveringsdoel());
+                filterOpDoel(vwBijBericht, request.getLeveringsdoel());
 
         if (vwBijBerichtEnDoel.isEmpty()) {
             answer.setResult(false);

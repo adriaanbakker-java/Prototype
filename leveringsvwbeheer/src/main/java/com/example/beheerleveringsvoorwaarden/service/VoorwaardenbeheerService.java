@@ -67,4 +67,8 @@ public class VoorwaardenbeheerService {
         List<Leveringsdoel> result =  leveringsdoelRepository.getListLeveringsdoelGesorteerd();
         return result;
     }
+
+    public void deleteVoorwaarde(long id) {
+        voorwaardenRepository.deleteById(id);
+    }
 }

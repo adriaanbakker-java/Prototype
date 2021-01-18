@@ -76,14 +76,14 @@ public class GUIController {
     @PostMapping("/delete_voorwaarde")
     public String deleteVoorwaardeSubmit(Model model, @ModelAttribute IdMessage idMessage) {
         Voorwaarde voorwaarde = new Voorwaarde();
-
-        model.addAttribute("voorwaarde", voorwaarde);
         model.addAttribute("idMessage", idMessage);
+        long idVoorwaarde = Integer.parseInt(idMessage.getContent());
+        voorwaardenbeheerService.deleteVoorwaarde(idVoorwaarde);
         return "delete_voorwaarde_confirm";
     }
 
     @RequestMapping("/list")
-    public String countsList(Model model, @ModelAttribute Filter filter ) {
+    public String countsList(Model model, @ModelAttribute Filter filter, @ModelAttribute IdMessage idMessage ) {
 
         /*List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
         List<Voorwaarde> voorwaarden = new ArrayList<>();
