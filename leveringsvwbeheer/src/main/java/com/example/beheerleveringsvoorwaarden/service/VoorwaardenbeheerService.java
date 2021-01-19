@@ -3,10 +3,7 @@ package com.example.beheerleveringsvoorwaarden.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.example.beheerleveringsvoorwaarden.model.Bericht;
-import com.example.beheerleveringsvoorwaarden.model.Leveringsdoel;
-import com.example.beheerleveringsvoorwaarden.model.Voorwaarde;
-import com.example.beheerleveringsvoorwaarden.model.VoorwaardeDto;
+import com.example.beheerleveringsvoorwaarden.model.*;
 import com.example.beheerleveringsvoorwaarden.repo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -16,6 +13,9 @@ import org.springframework.stereotype.Component;
 public class VoorwaardenbeheerService {
     @Autowired
     VoorwaardenRepository voorwaardenRepository;
+
+    @Autowired
+    LeveringsvoorwaardenRepository leveringsvoorwaardenRepository;
 
     @Autowired
     BerichtenRepository berichtenRepository;
@@ -53,13 +53,10 @@ public class VoorwaardenbeheerService {
         return entity;
     }
 
-    public List<Voorwaarde> getLijstVoorwaardenGesorteerdGefilterd(String berichtnaam, String leveringsdoel) {
-        return  voorwaardenRepository.getListVoorwaardenlijstGesorteerdGefilterd(berichtnaam, leveringsdoel);
+    public List<Voorwaarde> getLijstVoorwaarden(String berichtnaam, String leveringsdoel) {
+        return  voorwaardenRepository.getVoorwaarden(berichtnaam, leveringsdoel);
     }
 
-    public Object getLijstVoorwaardenGesorteerd() {
-        return (List<Voorwaarde>) voorwaardenRepository.getListVoorwaardenlijstGesorteerd();
-    }
 
     public List<Bericht> getLijstBerichten() {
         List<Bericht> result = (List<Bericht>)  berichtenRepository.getListBerichtenGesorteerd();
@@ -73,5 +70,11 @@ public class VoorwaardenbeheerService {
 
     public void deleteVoorwaarde(long id) {
         voorwaardenRepository.deleteById(id);
+    }
+
+
+
+    public List<Voorwaarde> getLijstLeveringsvoorwaarden(String berichtnaam, String leveringsdoel) {
+        return leveringsvoorwaardenRepository.getLeveringsvoorwaarden(berichtnaam, leveringsdoel);
     }
 }

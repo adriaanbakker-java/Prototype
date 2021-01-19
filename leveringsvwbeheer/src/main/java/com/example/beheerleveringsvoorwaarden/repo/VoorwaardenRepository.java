@@ -12,11 +12,7 @@ import java.util.List;
 @Repository
 public interface VoorwaardenRepository extends CrudRepository<Voorwaarde, Long> {
 
-    @Query(value =
-            "select id, berichtnaam, leveringsdoel, padnaargegeven " +
-                    "from voorwaarde order by berichtnaam, leveringsdoel, padnaargegeven",
-            nativeQuery = true)
-    List<Voorwaarde> getListVoorwaardenlijstGesorteerd();
+
 
     Object findAll(Sort berichtnaam);
 
@@ -27,5 +23,7 @@ public interface VoorwaardenRepository extends CrudRepository<Voorwaarde, Long> 
                     " and   ((leveringsdoel = ?2) or (?2 = ''))"  +
                     " order by berichtnaam, leveringsdoel, padnaargegeven",
             nativeQuery = true)
-    List<Voorwaarde> getListVoorwaardenlijstGesorteerdGefilterd(String berichtnaam, String leveringsdoel);
+    List<Voorwaarde> getVoorwaarden(String berichtnaam, String leveringsdoel);
+
+
 }

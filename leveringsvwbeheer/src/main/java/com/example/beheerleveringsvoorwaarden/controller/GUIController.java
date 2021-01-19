@@ -94,22 +94,6 @@ public class GUIController {
 
     @RequestMapping("/list")
     public String countsList(Model model, @ModelAttribute Filter filter, @ModelAttribute IdMessage idMessage ) {
-
-        List<Voorwaarde> voorwaardenlijst = (List<Voorwaarde>) voorwaardenbeheerService.getLijstVoorwaardenGesorteerd();
-//        List<Voorwaarde> voorwaarden = new ArrayList<>();
-//        if (filter == null) {
-//            voorwaarden = voorwaardenlijst;
-//        } else if (filter.getBerichtnaam() == null) {
-//            voorwaarden = voorwaardenlijst;
-//        } else if (filter.getBerichtnaam().equals("")) {
-//            voorwaarden = voorwaardenlijst;
-//        } else {
-//                for (Voorwaarde v: voorwaardenlijst) {
-//                    if (v.getBerichtnaam().equals(filter.getBerichtnaam())) {
-//                        voorwaarden.add(v);
-//                    }
-//                }
-//        }
         String berichtnaam = "";
         String leveringsdoel = "";
         if (filter.getBerichtnaam() != null) {
@@ -118,7 +102,7 @@ public class GUIController {
         if (filter.getLeveringsdoel() != null) {
             leveringsdoel = filter.getLeveringsdoel();
         }
-        List<Voorwaarde> voorwaarden =  voorwaardenbeheerService.getLijstVoorwaardenGesorteerdGefilterd(berichtnaam, leveringsdoel);
+        List<Voorwaarde> voorwaarden =  voorwaardenbeheerService.getLijstLeveringsvoorwaarden(berichtnaam, leveringsdoel);
         model.addAttribute("counts", voorwaarden);
         model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
         model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
@@ -126,5 +110,22 @@ public class GUIController {
         return "list";
     }
 
+//    @RequestMapping("/listvoorwaarden")
+//    public String listVoorwaarden(Model model, @ModelAttribute Filter filter, @ModelAttribute IdMessage idMessage ) {
+//        String berichtnaam = "";
+//        String leveringsdoel = "";
+//        if (filter.getBerichtnaam() != null) {
+//            berichtnaam = filter.getBerichtnaam();
+//        }
+//        if (filter.getLeveringsdoel() != null) {
+//            leveringsdoel = filter.getLeveringsdoel();
+//        }
+//        List<Voorwaarde> voorwaarden =  voorwaardenbeheerService.getLijstLeveringsvoorwaarden(berichtnaam, leveringsdoel);
+//        model.addAttribute("counts", voorwaarden);
+//        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
+//        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
+//        model.addAttribute("berichtnaam", filter);
+//        return "list";
+//    }
 
 }
