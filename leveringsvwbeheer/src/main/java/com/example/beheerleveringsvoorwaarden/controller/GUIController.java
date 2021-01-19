@@ -20,6 +20,9 @@ public class GUIController {
     private VoorwaardenbeheerService voorwaardenbeheerService;
 
     @Autowired
+    private LeveringsvoorwaardenRepository leveringsvoorwaardenRepository;
+
+    @Autowired
     BookRepository bookRepository;
 
     @Autowired
@@ -44,7 +47,6 @@ public class GUIController {
         return "index";
     }
 
-
     @GetMapping("/getmessage")
     public String greetingForm(Model model) {
         model.addAttribute("idMessage", new IdMessage());
@@ -64,7 +66,6 @@ public class GUIController {
         return "toevoegen_voorwaarde";
     }
 
-
     @PostMapping("/toevoegen_voorwaarde")
     public String toevoegenVoorwaardeSubmit(@ModelAttribute Voorwaarde voorwaarde) {
         VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
@@ -72,7 +73,7 @@ public class GUIController {
         voorwaardeDto.setId(voorwaarde.getId());
         voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
         voorwaardeDto.setPadnaargegeven(voorwaarde.getPadnaargegeven());
-        voorwaardenbeheerService.add(voorwaardeDto);
+        voorwaardenbeheerService.addVoorwaarde(voorwaardeDto);
         return "toevoegen_voorwaarde_resultaat";
     }
 
@@ -88,7 +89,7 @@ public class GUIController {
         Voorwaarde voorwaarde = new Voorwaarde();
         model.addAttribute("idMessage", idMessage);
         long idVoorwaarde = Integer.parseInt(idMessage.getContent());
-        voorwaardenbeheerService.deleteVoorwaarde(idVoorwaarde);
+        voorwaardenbeheerService.deleteLeveringsvoorwaarde(idVoorwaarde);
         return "delete_voorwaarde_confirm";
     }
 
@@ -109,23 +110,5 @@ public class GUIController {
         model.addAttribute("berichtnaam", filter);
         return "list";
     }
-
-//    @RequestMapping("/listvoorwaarden")
-//    public String listVoorwaarden(Model model, @ModelAttribute Filter filter, @ModelAttribute IdMessage idMessage ) {
-//        String berichtnaam = "";
-//        String leveringsdoel = "";
-//        if (filter.getBerichtnaam() != null) {
-//            berichtnaam = filter.getBerichtnaam();
-//        }
-//        if (filter.getLeveringsdoel() != null) {
-//            leveringsdoel = filter.getLeveringsdoel();
-//        }
-//        List<Voorwaarde> voorwaarden =  voorwaardenbeheerService.getLijstLeveringsvoorwaarden(berichtnaam, leveringsdoel);
-//        model.addAttribute("counts", voorwaarden);
-//        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
-//        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
-//        model.addAttribute("berichtnaam", filter);
-//        return "list";
-//    }
 
 }

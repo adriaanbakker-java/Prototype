@@ -12,22 +12,22 @@ import org.springframework.stereotype.Component;
 @Component
 public class VoorwaardenbeheerService {
     @Autowired
-    VoorwaardenRepository voorwaardenRepository;
+    VoorwaardenRepository voorwaardenRepository; // nodig tbv ophalen lijst
 
     @Autowired
-    LeveringsvoorwaardenRepository leveringsvoorwaardenRepository;
+    LeveringsvoorwaardenRepository leveringsvoorwaardenRepository;  // nodig tbv delete
 
     @Autowired
     BerichtenRepository berichtenRepository;
 
     @Autowired
+    BerichtgegevenRepository berichtgegevenRepository;
+
+    @Autowired
     LeveringsdoelRepository leveringsdoelRepository;
 
-    public void add(VoorwaardeDto dto) {
-        System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
-        Voorwaarde vw = toEntity(dto);
-        voorwaardenRepository.save(vw);
-    }
+
+
 
     public void delete(long id) {
         voorwaardenRepository.deleteById(id);
@@ -45,13 +45,7 @@ public class VoorwaardenbeheerService {
         return optionalVoorwaarde.orElseThrow(() -> new voorwaardeNietGevondenExceptie("Kon voorwaarde met id niet vinden: " + id));
     }
 
-    private Voorwaarde toEntity(VoorwaardeDto dto) {
-        Voorwaarde entity = new Voorwaarde();
-        entity.setBerichtnaam(dto.getBerichtnaam());
-        entity.setLeveringsdoel(dto.getLeveringsdoel());
-        entity.setPadnaargegeven(dto.getPadnaargegeven());
-        return entity;
-    }
+
 
     public List<Voorwaarde> getLijstVoorwaarden(String berichtnaam, String leveringsdoel) {
         return  voorwaardenRepository.getVoorwaarden(berichtnaam, leveringsdoel);
@@ -68,13 +62,32 @@ public class VoorwaardenbeheerService {
         return result;
     }
 
-    public void deleteVoorwaarde(long id) {
-        voorwaardenRepository.deleteById(id);
+    public void deleteLeveringsvoorwaarde(long id) {
+        leveringsvoorwaardenRepository.deleteById(id);
     }
-
-
 
     public List<Voorwaarde> getLijstLeveringsvoorwaarden(String berichtnaam, String leveringsdoel) {
-        return leveringsvoorwaardenRepository.getLeveringsvoorwaarden(berichtnaam, leveringsdoel);
+        return voorwaardenRepository.getLeveringsvoorwaarden(berichtnaam, leveringsdoel);
     }
+
+
+    private Voorwaarde toVoorwaarde(VoorwaardeDto dto) {
+        Voorwaarde entity = new Voorwaarde();
+        entity.setBerichtnaam(dto.getBerichtnaam());
+        entity.setLeveringsdoel(dto.getLeveringsdoel());
+        entity.setPadnaargegeven(dto.getPadnaargegeven());
+        return entity;
+    }
+
+    public void addVoorwaarde(VoorwaardeDto dto) {
+        System.out.println("toevoegen van voorwaarde:" + dto.getBerichtnaam());
+        Voorwaarde vw = toVoorwaarde(dto);
+        voorwaardenRepository.save(vw);
+    }
+
+
+    public void addLeveringsvoorwaarde(Voorwaarde voorwaarde) throws Exception {
+
+    }
+
 }

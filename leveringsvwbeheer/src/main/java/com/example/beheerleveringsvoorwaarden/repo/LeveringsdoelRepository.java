@@ -17,4 +17,6 @@ public interface LeveringsdoelRepository extends CrudRepository<Leveringsdoel, L
     List<Leveringsdoel> getListLeveringsdoelGesorteerd();
 
     Object findAll(Sort leveringsdoel);
+
+    Leveringsdoel findByLeveringsdoel(String leveringsdoel);
 }
