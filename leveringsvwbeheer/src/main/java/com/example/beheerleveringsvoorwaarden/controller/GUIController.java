@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class GUIController {
@@ -21,6 +22,12 @@ public class GUIController {
 
     @Autowired
     private LeveringsvoorwaardenRepository leveringsvoorwaardenRepository;
+
+    @Autowired
+    private BerichtgegevenRepository berichtgegevenRepository;
+
+    @Autowired
+    private BerichtenRepository berichtenRepository;
 
     @Autowired
     BookRepository bookRepository;
@@ -58,25 +65,53 @@ public class GUIController {
         return "showmessage";
     }
 
-    @GetMapping("/toevoegen_voorwaarde")
-    public String toevoegenVoorwaarde(Model model) {
-        model.addAttribute("voorwaarde", new Voorwaarde());
+//    @GetMapping("/toevoegen_voorwaarde")
+//    public String toevoegenVoorwaarde(Model model) {
+//        model.addAttribute("voorwaarde", new Voorwaarde());
+//        model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
+//        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
+//        return "toevoegen_voorwaarde";
+//    }
+//
+//    @PostMapping("/toevoegen_voorwaarde")
+//    public String toevoegenVoorwaardeSubmit(@ModelAttribute Voorwaarde voorwaarde) {
+//        VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
+//        voorwaardeDto.setLeveringsdoel(voorwaarde.getLeveringsdoel());
+//        voorwaardeDto.setId(voorwaarde.getId());
+//        voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
+//        voorwaardeDto.setPadnaargegeven(voorwaarde.getPadnaargegeven());
+//        voorwaardenbeheerService.addVoorwaarde(voorwaardeDto);
+//        return "toevoegen_voorwaarde_resultaat";
+//    }
+
+    @GetMapping("/toevoegen_leveringsvoorwaarde")
+    public String toevoegenLeveringsVoorwaarde(Model model) {
+
         model.addAttribute( "berichten", voorwaardenbeheerService.getLijstBerichten());
-        model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
-        return "toevoegen_voorwaarde";
+        return "toevoegen_leveringsvoorwaarde";
     }
 
-    @PostMapping("/toevoegen_voorwaarde")
-    public String toevoegenVoorwaardeSubmit(@ModelAttribute Voorwaarde voorwaarde) {
-        VoorwaardeDto voorwaardeDto = new VoorwaardeDto();
-        voorwaardeDto.setLeveringsdoel(voorwaarde.getLeveringsdoel());
-        voorwaardeDto.setId(voorwaarde.getId());
-        voorwaardeDto.setBerichtnaam(voorwaarde.getBerichtnaam());
-        voorwaardeDto.setPadnaargegeven(voorwaarde.getPadnaargegeven());
-        voorwaardenbeheerService.addVoorwaarde(voorwaardeDto);
-        return "toevoegen_voorwaarde_resultaat";
+    @PostMapping("/toevoegen_leveringsvoorwaarde")
+    public String toevoegenLeveringsVoorwaardePost(Model model, @ModelAttribute Getstring getstring) {
+        System.out.println(getstring.getContent());
+        Long berichtId = Long.parseLong(getstring.getContent());
+        Optional<Bericht> optionalBericht = berichtenRepository.findById(berichtId);
+        optionalBericht.ifPresent(bericht -> {
+            model.addAttribute("bericht", bericht);
+            List<Berichtgegeven> berichtgegevens = berichtgegevenRepository.findByBerichtId(berichtId);
+            model.addAttribute("berichtgegevens", berichtgegevens);
+            model.addAttribute( "leveringsdoelen", voorwaardenbeheerService.getLijstLeveringsdoelen());
+            model.addAttribute("berichten", berichtenRepository.getListBerichtenGesorteerd());
+        });
+        return "toevoegen_leveringsvoorwaarde_bericht";
     }
 
+    @PostMapping("/toevoegen_leveringsvoorwaarde_submit")
+    public String toevoegenLeveringsVoorwaardeSubmit(Model model, @ModelAttribute  LeveringsvoorwaardeDto dto)
+    throws Exception {
+        voorwaardenbeheerService.addLeveringsvoorwaarde(dto);
+        return "index";
+    }
 
     @GetMapping("/delete_voorwaarde")
     public String deleteVoorwaarde(Model model) {

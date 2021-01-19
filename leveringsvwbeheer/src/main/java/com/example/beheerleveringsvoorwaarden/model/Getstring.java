@@ -1,7 +1,7 @@
 package com.example.beheerleveringsvoorwaarden.model;
 
-public class GetString {
-    public GetString(String content) {
+public class Getstring {
+    public Getstring(String content) {
         this.content = content;
     }
 

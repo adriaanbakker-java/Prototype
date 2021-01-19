@@ -13,7 +13,10 @@ import java.util.List;
 @Repository
 public interface BerichtgegevenRepository extends CrudRepository<Berichtgegeven, Long> {
 
-
+    @Query(value =
+            "select * from berichtgegeven where bericht_id = ?1",
+            nativeQuery = true)
+     List<Berichtgegeven> findByBerichtId(Long berichtId);
 
     @Query(value =
             "select berichtgegeven.id, berichtgegeven.bericht_id, berichtgegeven.padnaargegeven" +

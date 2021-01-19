@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Toevoegen leveringsvoorwaarde</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Leveringsvoorwaarde toevoegen</h1>
+<form action="#" th:action="@{/toevoegen_leveringsvoorwaarde}" th:object="${getstring}" method="post">
+
+    <h2>Berichtnaam:</h2>
+
+    <div th:if="${not #lists.isEmpty(berichten)}">
+        <select th:name="content">
+            <option th:each="bericht: ${berichten}"  th:value="${bericht.id}"
+                    th:text="${bericht.berichtnaam}" />
+        </select>
+    </div>
+
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+<p/>
+<a href="/">Terug naar menu</a>
+</body>
+</html>

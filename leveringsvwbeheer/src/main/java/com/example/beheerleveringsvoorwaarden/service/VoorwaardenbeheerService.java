@@ -48,7 +48,7 @@ public class VoorwaardenbeheerService {
 
 
     public List<Voorwaarde> getLijstVoorwaarden(String berichtnaam, String leveringsdoel) {
-        return  voorwaardenRepository.getVoorwaarden(berichtnaam, leveringsdoel);
+        return  voorwaardenRepository.getLeveringsvoorwaarden(berichtnaam, leveringsdoel);
     }
 
 
@@ -86,8 +86,21 @@ public class VoorwaardenbeheerService {
     }
 
 
-    public void addLeveringsvoorwaarde(Voorwaarde voorwaarde) throws Exception {
 
+
+    public void addLeveringsvoorwaarde(LeveringsvoorwaardeDto dto) throws Exception {
+        Leveringsvoorwaarde lvw = new Leveringsvoorwaarde();
+        Optional<Berichtgegeven> berichtgegeven = berichtgegevenRepository.findById(dto.getBerichtgegevenid());
+        if (!berichtgegeven.isPresent()) {
+            throw new Exception("addLeveringsvoorwaarde: berichtgegeven niet gevonden");
+        }
+        lvw.setBerichtgegeven(berichtgegeven.get());
+
+        Optional<Leveringsdoel> leveringsdoel = leveringsdoelRepository.findById(dto.getLeveringsdoelid());
+        if (!leveringsdoel.isPresent()) {
+            throw new Exception("addLeveringsvoorwaarde: leveringsdoel niet gevonden");
+        }
+        lvw.setLeveringsdoel(leveringsdoel.get());
+        leveringsvoorwaardenRepository.save(lvw);
     }
-
 }
