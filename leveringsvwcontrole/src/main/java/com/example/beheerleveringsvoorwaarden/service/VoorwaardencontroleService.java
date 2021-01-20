@@ -19,49 +19,45 @@ public class VoorwaardencontroleService {
         return (List<Voorwaarde>) repository.getListVoorwaardenlijstGesorteerd();
     }
 
+    public List<Voorwaarde> getLijstVoorwaarden(String berichtnaam, String leveringsdoel) {
+        return  repository.getLeveringsvoorwaarden(berichtnaam, leveringsdoel);
+    }
+
+
     public Answer checkRequest(Request request) {
         Answer answer = new Answer();
         answer.setResult(true);
         answer.setFoutmelding("");
 
-        List<Voorwaarde> voorwaardeList = (List<Voorwaarde>) getLijstVoorwaardenGesorteerd();
-        List<Voorwaarde> vwBijBericht = 
-                filterOpBericht(voorwaardeList, request.getBerichtnaam());
+        List<Voorwaarde> voorwaardeList =  getLijstVoorwaarden(request.getBerichtnaam(), request.getLeveringsdoel());
 
-
-        if (vwBijBericht.isEmpty()) {
+        if (voorwaardeList.isEmpty()) {
             answer.setResult(false);
-            answer.setFoutmelding("Geen leveringsvoorwaarden bij bericht " + request.getBerichtnaam());
-            return answer;
-        }
+            voorwaardeList = getLijstVoorwaarden(request.getBerichtnaam(), "");
+            if (voorwaardeList.isEmpty())  {
+                answer.setFoutmelding("Bericht niet bekend in de leveringsvoorwaarden repository:" + request.getBerichtnaam());
+                return answer;
+            }
+            voorwaardeList = getLijstVoorwaarden("", request.getLeveringsdoel());
 
-        List<Voorwaarde> vwBijDoel =
-                filterOpDoel(voorwaardeList, request.getLeveringsdoel());
-
-        if (vwBijDoel.isEmpty()) {
-            answer.setResult(false);
-            answer.setFoutmelding("Geen leveringsvoorwaarden bij leveringsdoel " + request.getLeveringsdoel());
-            return answer;
-        }
-        List<Voorwaarde> vwBijBerichtEnDoel =
-                filterOpDoel(vwBijBericht, request.getLeveringsdoel());
-
-        if (vwBijBerichtEnDoel.isEmpty()) {
-            answer.setResult(false);
-            answer.setFoutmelding("Geen leveringsvoorwaarden bij bericht " + request.getBerichtnaam() +
-                    " en leveringsdoel " + request.getLeveringsdoel());
+            if (voorwaardeList.isEmpty())  {
+                answer.setFoutmelding("Leveringsdoel niet bekend in de leveringsvoorwaarden repository:" + request.getLeveringsdoel());
+                return answer;
+            }
+            answer.setFoutmelding("Geen leveringsvoorwaarden gevonden bij bericht " + request.getBerichtnaam() +
+                    " en leveringsdoel " + request.getLeveringsdoel() );
             return answer;
         }
 
         ArrayList<String> geldigepaden = new ArrayList<>();
-        for (Voorwaarde vw: vwBijBerichtEnDoel) {
+        for (Voorwaarde vw: voorwaardeList) {
             geldigepaden.add(vw.getPadnaargegeven());
         }
 
         for (String pad: request.getBerichtelementen()) {
             if (!(geldigepaden.contains(pad))) {
                 answer.setResult(false);
-                answer.setFoutmelding("Berichtelement " + pad + " niet toegestaan bij bericht " +
+                answer.setFoutmelding("Pad naar berichtelement " + pad + " niet toegestaan bij bericht " +
                         request.getBerichtnaam() + " en leveringsdoel " + request.getLeveringsdoel() );
                 return answer;
             }
