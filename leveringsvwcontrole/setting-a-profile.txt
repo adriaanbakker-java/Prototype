@@ -1,2 +1,0 @@
-Either using -Dspring.profile.active=prod in VM arguments java command
-Or in application.properties, spring.profiles.active=prod
