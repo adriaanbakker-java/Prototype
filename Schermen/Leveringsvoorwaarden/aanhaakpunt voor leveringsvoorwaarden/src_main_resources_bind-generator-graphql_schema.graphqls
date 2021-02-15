@@ -1,0 +1,4492 @@
+schema {
+  query: Query
+}
+
+"QName BRPDossierPersoonBewonersvraagv0200"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponse {
+  "QName ClientSuwi"
+  clientSuwi: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwi {
+  "QName AangifteAdreshoudingBrp"
+  aangifteAdreshoudingBrp: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiAangifteAdreshoudingBrp
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName CdBrpGegevensGeheim"
+  cdBrpGegevensGeheim: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName InschrijvingsgegevensBrp"
+  inschrijvingsgegevensBrp: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrp
+  "QName OnderzoekGegPersoon"
+  onderzoekGegPersoon: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOnderzoekGegPersoon
+  "QName OnderzoekGegVerblijfplaats"
+  onderzoekGegVerblijfplaats: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOnderzoekGegVerblijfplaats
+  "QName OverigeInwonende"
+  overigeInwonende: [BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonende]
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName AangifteAdreshoudingBrp"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiAangifteAdreshoudingBrp {
+  "QName DatBAdreshoudingBrp"
+  datBAdreshoudingBrp: String
+}
+
+"QName InschrijvingsgegevensBrp"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrp {
+  "QName CdRedenOpschortingBijhoudingPl"
+  cdRedenOpschortingBijhoudingPl: String
+  "QName DatOpschortingBijhoudingPl"
+  datOpschortingBijhoudingPl: String
+}
+
+"QName OnderzoekGegPersoon"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOnderzoekGegPersoon {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnderzoekGegVerblijfplaats"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOnderzoekGegVerblijfplaats {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OverigeInwonende"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonende {
+  "QName AangifteAdreshoudingBrp"
+  aangifteAdreshoudingBrp: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeAangifteAdreshoudingBrp
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName CdBrpGegevensGeheim"
+  cdBrpGegevensGeheim: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName InschrijvingsgegevensBrp"
+  inschrijvingsgegevensBrp: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeInschrijvingsgegevensBrp
+  "QName OnderzoekGegPersoon"
+  onderzoekGegPersoon: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeOnderzoekGegPersoon
+  "QName OnderzoekGegVerblijfplaats"
+  onderzoekGegVerblijfplaats: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeOnderzoekGegVerblijfplaats
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName AangifteAdreshoudingBrp"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeAangifteAdreshoudingBrp {
+  "QName DatBAdreshoudingBrp"
+  datBAdreshoudingBrp: String
+}
+
+"QName InschrijvingsgegevensBrp"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeInschrijvingsgegevensBrp {
+  "QName CdRedenOpschortingBijhoudingPl"
+  cdRedenOpschortingBijhoudingPl: String
+  "QName DatOpschortingBijhoudingPl"
+  datOpschortingBijhoudingPl: String
+}
+
+"QName OnderzoekGegPersoon"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeOnderzoekGegPersoon {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnderzoekGegVerblijfplaats"
+type BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponseClientSuwiOverigeInwonendeOnderzoekGegVerblijfplaats {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName BRPDossierPersoonGSDv0200"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponse {
+  "QName ClientSuwi"
+  clientSuwi: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwi]
+}
+
+"QName ClientSuwi"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwi {
+  "QName ANr"
+  aNr: String
+  "QName AanduidingNaamgebruik"
+  aanduidingNaamgebruik: String
+  "QName AangifteAdreshoudingBrp"
+  aangifteAdreshoudingBrp: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiAangifteAdreshoudingBrp
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName CdBrpGegevensGeheim"
+  cdBrpGegevensGeheim: String
+  "QName CdGeboortegemeente"
+  cdGeboortegemeente: String
+  "QName ClientSuwiHistorisch"
+  clientSuwiHistorisch: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorisch]
+  "QName Correspondentieadres"
+  correspondentieadres: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiCorrespondentieadres
+  "QName DomicilieAdres"
+  domicilieAdres: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiDomicilieAdres
+  "QName FeitelijkAdresBuitenland"
+  feitelijkAdresBuitenland: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiFeitelijkAdresBuitenland
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geboorteland"
+  geboorteland: String
+  "QName Geboorteplaats"
+  geboorteplaats: String
+  "QName GeldigheidGegevensPersoon"
+  geldigheidGegevensPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGeldigheidGegevensPersoon
+  "QName Geslacht"
+  geslacht: String
+  "QName Gezagsverhouding"
+  gezagsverhouding: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGezagsverhouding
+  "QName Huwelijk"
+  huwelijk: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijk]
+  "QName HuwelijkHistorisch"
+  huwelijkHistorisch: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorisch]
+  "QName Immigratie"
+  immigratie: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiImmigratie
+  "QName InschrijvingsgegevensBrp"
+  inschrijvingsgegevensBrp: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrp
+  "QName Kind"
+  kind: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKind]
+  "QName Nationaliteit"
+  nationaliteit: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteit]
+  "QName NationaliteitHistorisch"
+  nationaliteitHistorisch: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorisch]
+  "QName OnderzoekGegPersoon"
+  onderzoekGegPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOnderzoekGegPersoon
+  "QName OnderzoekGegVerblijfplaats"
+  onderzoekGegVerblijfplaats: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOnderzoekGegVerblijfplaats
+  "QName Ouder1"
+  ouder1: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1
+  "QName Ouder2"
+  ouder2: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2
+  "QName Overlijden"
+  overlijden: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOverlijden
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Titulatuur"
+  titulatuur: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiTitulatuur
+  "QName VerblijfplaatsHistorisch"
+  verblijfplaatsHistorisch: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorisch]
+  "QName Verblijfstitel"
+  verblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitel
+  "QName VerblijfstitelHistorisch"
+  verblijfstitelHistorisch: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorisch]
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName AangifteAdreshoudingBrp"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiAangifteAdreshoudingBrp {
+  "QName CdGemeenteVanInschrijving"
+  cdGemeenteVanInschrijving: String
+  "QName DatBAdreshoudingBrp"
+  datBAdreshoudingBrp: String
+  "QName DatVanInschrijvingBijGemeente"
+  datVanInschrijvingBijGemeente: String
+}
+
+"QName ClientSuwiHistorisch"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorisch {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName GeldigheidGegevensPersoon"
+  geldigheidGegevensPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischGeldigheidGegevensPersoon
+  "QName OnderzoekGegPersoon"
+  onderzoekGegPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischOnderzoekGegPersoon
+  "QName OnjuistGegPersoon"
+  onjuistGegPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischOnjuistGegPersoon
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName GeldigheidGegevensPersoon"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischGeldigheidGegevensPersoon {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName OnderzoekGegPersoon"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischOnderzoekGegPersoon {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnjuistGegPersoon"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiClientSuwiHistorischOnjuistGegPersoon {
+  "QName CdOnjuistStrijdigMetOpenbareOrde"
+  cdOnjuistStrijdigMetOpenbareOrde: String
+}
+
+"QName Correspondentieadres"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiCorrespondentieadres {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName IdentificatiecdNraanduiding"
+  identificatiecdNraanduiding: String
+  "QName IdentificatiecdVerblijfplaats"
+  identificatiecdVerblijfplaats: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName NaamOpenbareRuimte"
+  naamOpenbareRuimte: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName DomicilieAdres"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiDomicilieAdres {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName IdentificatiecdNraanduiding"
+  identificatiecdNraanduiding: String
+  "QName IdentificatiecdVerblijfplaats"
+  identificatiecdVerblijfplaats: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName NaamOpenbareRuimte"
+  naamOpenbareRuimte: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName FeitelijkAdresBuitenland"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiFeitelijkAdresBuitenland {
+  "QName Adresregel1Buitenland"
+  adresregel1Buitenland: String
+  "QName Adresregel2Buitenland"
+  adresregel2Buitenland: String
+  "QName Adresregel3Buitenland"
+  adresregel3Buitenland: String
+  "QName DatBAdresBuitenland"
+  datBAdresBuitenland: String
+  "QName LandAdresBuitenland"
+  landAdresBuitenland: String
+}
+
+"QName GeldigheidGegevensPersoon"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGeldigheidGegevensPersoon {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName Gezagsverhouding"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGezagsverhouding {
+  "QName CdGezagMinderjarige"
+  cdGezagMinderjarige: String
+  "QName IndCuratelestelling"
+  indCuratelestelling: String
+  "QName OnderzoekGegGezag"
+  onderzoekGegGezag: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGezagsverhoudingOnderzoekGegGezag
+}
+
+"QName OnderzoekGegGezag"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiGezagsverhoudingOnderzoekGegGezag {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Huwelijk"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijk {
+  "QName CdGemeenteHuwelijkssluiting"
+  cdGemeenteHuwelijkssluiting: String
+  "QName CdGemeenteOntbindingHuwelijk"
+  cdGemeenteOntbindingHuwelijk: String
+  "QName CdRedenOntbindingHuwelijk"
+  cdRedenOntbindingHuwelijk: String
+  "QName DatHuwelijkssluiting"
+  datHuwelijkssluiting: String
+  "QName DatOntbindingHuwelijk"
+  datOntbindingHuwelijk: String
+  "QName LandHuwelijkssluiting"
+  landHuwelijkssluiting: String
+  "QName LandOntbindingHuwelijk"
+  landOntbindingHuwelijk: String
+  "QName OnderzoekGegHuwelijk"
+  onderzoekGegHuwelijk: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkOnderzoekGegHuwelijk
+  "QName Partner"
+  partner: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkPartner
+  "QName PlaatsHuwelijkssluiting"
+  plaatsHuwelijkssluiting: String
+  "QName PlaatsOntbindingHuwelijk"
+  plaatsOntbindingHuwelijk: String
+}
+
+"QName HuwelijkHistorisch"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorisch {
+  "QName DatHuwelijkssluiting"
+  datHuwelijkssluiting: String
+  "QName OnderzoekGegHuwelijk"
+  onderzoekGegHuwelijk: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischOnderzoekGegHuwelijk
+  "QName OnjuistGegHuwelijk"
+  onjuistGegHuwelijk: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischOnjuistGegHuwelijk
+  "QName Partner"
+  partner: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischPartner
+}
+
+"QName OnderzoekGegHuwelijk"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischOnderzoekGegHuwelijk {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnjuistGegHuwelijk"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischOnjuistGegHuwelijk {
+  "QName CdOnjuistStrijdigMetOpenbareOrde"
+  cdOnjuistStrijdigMetOpenbareOrde: String
+}
+
+"QName Partner"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkHistorischPartner {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+}
+
+"QName OnderzoekGegHuwelijk"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkOnderzoekGegHuwelijk {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Partner"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkPartner {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName CdGeboortegemeente"
+  cdGeboortegemeente: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geboorteland"
+  geboorteland: String
+  "QName Geboorteplaats"
+  geboorteplaats: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Titulatuur"
+  titulatuur: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkPartnerTitulatuur
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName Titulatuur"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiHuwelijkPartnerTitulatuur {
+  "QName CdAdellijkeTitelPredikaat"
+  cdAdellijkeTitelPredikaat: String!
+}
+
+"QName Immigratie"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiImmigratie {
+  "QName DatVestigingNederland"
+  datVestigingNederland: String
+  "QName LandVanwaarIngeschreven"
+  landVanwaarIngeschreven: String
+}
+
+"QName InschrijvingsgegevensBrp"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrp {
+  "QName CdGemeenteWaarPkZichBevindt"
+  cdGemeenteWaarPkZichBevindt: String
+  "QName CdPkVolledigGeconverteerd"
+  cdPkVolledigGeconverteerd: String
+  "QName CdRedenOpschortingBijhoudingPl"
+  cdRedenOpschortingBijhoudingPl: String
+  "QName DatOpschortingBijhoudingPl"
+  datOpschortingBijhoudingPl: String
+  "QName RniDeelnemer"
+  rniDeelnemer: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrpRniDeelnemer
+  "QName VerificatieRni"
+  verificatieRni: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrpVerificatieRni
+}
+
+"QName RniDeelnemer"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrpRniDeelnemer {
+  "QName CdRniDeelnemer"
+  cdRniDeelnemer: String
+  "QName OmsVerdragRniDeelnemer"
+  omsVerdragRniDeelnemer: String
+}
+
+"QName VerificatieRni"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiInschrijvingsgegevensBrpVerificatieRni {
+  "QName DatVerificatieRni"
+  datVerificatieRni: String
+  "QName OmsVerificatieRni"
+  omsVerificatieRni: String
+}
+
+"QName Kind"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKind {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName GeldigheidGegevensKind"
+  geldigheidGegevensKind: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindGeldigheidGegevensKind
+  "QName OnderzoekGegKind"
+  onderzoekGegKind: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindOnderzoekGegKind
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Titulatuur"
+  titulatuur: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindTitulatuur
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName GeldigheidGegevensKind"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindGeldigheidGegevensKind {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName OnderzoekGegKind"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindOnderzoekGegKind {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Titulatuur"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiKindTitulatuur {
+  "QName CdAdellijkeTitelPredikaat"
+  cdAdellijkeTitelPredikaat: String!
+}
+
+"QName Nationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteit {
+  "QName CdBijzonderNederlanderschap"
+  cdBijzonderNederlanderschap: String
+  "QName CdNationaliteit"
+  cdNationaliteit: String
+  "QName GeldigheidGegevensNationaliteit"
+  geldigheidGegevensNationaliteit: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitGeldigheidGegevensNationaliteit
+  "QName OnderzoekGegNationaliteit"
+  onderzoekGegNationaliteit: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitOnderzoekGegNationaliteit
+}
+
+"QName GeldigheidGegevensNationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitGeldigheidGegevensNationaliteit {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName NationaliteitHistorisch"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorisch {
+  "QName CdBijzonderNederlanderschap"
+  cdBijzonderNederlanderschap: String
+  "QName CdNationaliteit"
+  cdNationaliteit: String
+  "QName GeldigheidGegevensNationaliteit"
+  geldigheidGegevensNationaliteit: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischGeldigheidGegevensNationaliteit
+  "QName OnderzoekGegNationaliteit"
+  onderzoekGegNationaliteit: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischOnderzoekGegNationaliteit
+  "QName OnjuistGegNationaliteit"
+  onjuistGegNationaliteit: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischOnjuistGegNationaliteit
+}
+
+"QName GeldigheidGegevensNationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischGeldigheidGegevensNationaliteit {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName OnderzoekGegNationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischOnderzoekGegNationaliteit {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnjuistGegNationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitHistorischOnjuistGegNationaliteit {
+  "QName CdOnjuistStrijdigMetOpenbareOrde"
+  cdOnjuistStrijdigMetOpenbareOrde: String
+}
+
+"QName OnderzoekGegNationaliteit"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiNationaliteitOnderzoekGegNationaliteit {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnderzoekGegPersoon"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOnderzoekGegPersoon {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnderzoekGegVerblijfplaats"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOnderzoekGegVerblijfplaats {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Ouder1"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1 {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName DatBFamilierechtelijkeBetrekking"
+  datBFamilierechtelijkeBetrekking: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName OnderzoekGegOuder1"
+  onderzoekGegOuder1: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1OnderzoekGegOuder1
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Titulatuur"
+  titulatuur: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1Titulatuur
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName OnderzoekGegOuder1"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1OnderzoekGegOuder1 {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Titulatuur"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder1Titulatuur {
+  "QName CdAdellijkeTitelPredikaat"
+  cdAdellijkeTitelPredikaat: String!
+}
+
+"QName Ouder2"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2 {
+  "QName ANr"
+  aNr: String
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName DatBFamilierechtelijkeBetrekking"
+  datBFamilierechtelijkeBetrekking: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName OnderzoekGegOuder2"
+  onderzoekGegOuder2: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2OnderzoekGegOuder2
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Titulatuur"
+  titulatuur: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2Titulatuur
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName OnderzoekGegOuder2"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2OnderzoekGegOuder2 {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Titulatuur"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOuder2Titulatuur {
+  "QName CdAdellijkeTitelPredikaat"
+  cdAdellijkeTitelPredikaat: String!
+}
+
+"QName Overlijden"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOverlijden {
+  "QName CdGemeenteOverlijden"
+  cdGemeenteOverlijden: String
+  "QName DatOverlijden"
+  datOverlijden: String
+  "QName LandOverlijden"
+  landOverlijden: String
+  "QName OnderzoekGegOverlijden"
+  onderzoekGegOverlijden: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOverlijdenOnderzoekGegOverlijden
+  "QName PlaatsOverlijden"
+  plaatsOverlijden: String
+}
+
+"QName OnderzoekGegOverlijden"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiOverlijdenOnderzoekGegOverlijden {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Titulatuur"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiTitulatuur {
+  "QName CdAdellijkeTitelPredikaat"
+  cdAdellijkeTitelPredikaat: String!
+}
+
+"QName VerblijfplaatsHistorisch"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorisch {
+  "QName AangifteAdreshoudingBrp"
+  aangifteAdreshoudingBrp: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischAangifteAdreshoudingBrp
+  "QName Correspondentieadres"
+  correspondentieadres: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischCorrespondentieadres
+  "QName DomicilieAdres"
+  domicilieAdres: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischDomicilieAdres
+  "QName FeitelijkAdresBuitenland"
+  feitelijkAdresBuitenland: [BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischFeitelijkAdresBuitenland]
+  "QName Immigratie"
+  immigratie: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischImmigratie
+  "QName OnderzoekGegVerblijfplaats"
+  onderzoekGegVerblijfplaats: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischOnderzoekGegVerblijfplaats
+  "QName OnjuistGegVerblijfplaats"
+  onjuistGegVerblijfplaats: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischOnjuistGegVerblijfplaats
+}
+
+"QName AangifteAdreshoudingBrp"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischAangifteAdreshoudingBrp {
+  "QName CdGemeenteVanInschrijving"
+  cdGemeenteVanInschrijving: String
+  "QName DatBAdreshoudingBrp"
+  datBAdreshoudingBrp: String
+  "QName DatVanInschrijvingBijGemeente"
+  datVanInschrijvingBijGemeente: String
+}
+
+"QName Correspondentieadres"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischCorrespondentieadres {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName IdentificatiecdNraanduiding"
+  identificatiecdNraanduiding: String
+  "QName IdentificatiecdVerblijfplaats"
+  identificatiecdVerblijfplaats: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName NaamOpenbareRuimte"
+  naamOpenbareRuimte: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName DomicilieAdres"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischDomicilieAdres {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName IdentificatiecdNraanduiding"
+  identificatiecdNraanduiding: String
+  "QName IdentificatiecdVerblijfplaats"
+  identificatiecdVerblijfplaats: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName NaamOpenbareRuimte"
+  naamOpenbareRuimte: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName FeitelijkAdresBuitenland"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischFeitelijkAdresBuitenland {
+  "QName DatBAdresBuitenland"
+  datBAdresBuitenland: String
+  "QName LandAdresBuitenland"
+  landAdresBuitenland: String
+}
+
+"QName Immigratie"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischImmigratie {
+  "QName DatVestigingNederland"
+  datVestigingNederland: String
+  "QName LandVanwaarIngeschreven"
+  landVanwaarIngeschreven: String
+}
+
+"QName OnderzoekGegVerblijfplaats"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischOnderzoekGegVerblijfplaats {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnjuistGegVerblijfplaats"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfplaatsHistorischOnjuistGegVerblijfplaats {
+  "QName CdOnjuistStrijdigMetOpenbareOrde"
+  cdOnjuistStrijdigMetOpenbareOrde: String
+}
+
+"QName Verblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitel {
+  "QName CdVerblijfstitel"
+  cdVerblijfstitel: String
+  "QName DatBVerblijfstitel"
+  datBVerblijfstitel: String
+  "QName DatEVerblijfstitel"
+  datEVerblijfstitel: String
+  "QName GeldigheidGegevensVerblijfstitel"
+  geldigheidGegevensVerblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelGeldigheidGegevensVerblijfstitel
+  "QName OnderzoekGegVerblijfstitel"
+  onderzoekGegVerblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelOnderzoekGegVerblijfstitel
+}
+
+"QName GeldigheidGegevensVerblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelGeldigheidGegevensVerblijfstitel {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName VerblijfstitelHistorisch"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorisch {
+  "QName CdVerblijfstitel"
+  cdVerblijfstitel: String
+  "QName DatBVerblijfstitel"
+  datBVerblijfstitel: String
+  "QName DatEVerblijfstitel"
+  datEVerblijfstitel: String
+  "QName GeldigheidGegevensVerblijfstitel"
+  geldigheidGegevensVerblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischGeldigheidGegevensVerblijfstitel
+  "QName OnderzoekGegVerblijfstitel"
+  onderzoekGegVerblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischOnderzoekGegVerblijfstitel
+  "QName OnjuistGegVerblijfstitel"
+  onjuistGegVerblijfstitel: BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischOnjuistGegVerblijfstitel
+}
+
+"QName GeldigheidGegevensVerblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischGeldigheidGegevensVerblijfstitel {
+  "QName DatGeldigheidGegevens"
+  datGeldigheidGegevens: String!
+}
+
+"QName OnderzoekGegVerblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischOnderzoekGegVerblijfstitel {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName OnjuistGegVerblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelHistorischOnjuistGegVerblijfstitel {
+  "QName CdOnjuistStrijdigMetOpenbareOrde"
+  cdOnjuistStrijdigMetOpenbareOrde: String
+}
+
+"QName OnderzoekGegVerblijfstitel"
+type BRPDossierPersoonGSDv0200AanvraagPersoonResponseClientSuwiVerblijfstitelOnderzoekGegVerblijfstitel {
+  "QName AanduidingOnderzoek"
+  aanduidingOnderzoek: String
+  "QName DatBOnderzoek"
+  datBOnderzoek: String
+  "QName DatEOnderzoek"
+  datEOnderzoek: String
+}
+
+"QName Bijstandsregelingenv0500"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwi {
+  "QName AanvraagUitkering"
+  aanvraagUitkering: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkering]
+  "QName Bron"
+  bron: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiBron
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName CdLeefvorm"
+  cdLeefvorm: String
+  "QName DomicilieAdres"
+  domicilieAdres: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiDomicilieAdres
+  "QName DossierGsd"
+  dossierGsd: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiDossierGsd
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName Huisvesting"
+  huisvesting: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiHuisvesting
+  "QName SchendingInlichtingenplicht"
+  schendingInlichtingenplicht: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSchendingInlichtingenplicht
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName SpecifiekeGegevensBijzBijstand"
+  specifiekeGegevensBijzBijstand: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstand]
+  "QName Uitkeringsverhouding"
+  uitkeringsverhouding: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhouding]
+  "QName Voorletters"
+  voorletters: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+  "QName Vordering"
+  vordering: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVordering]
+}
+
+"QName AanvraagUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkering {
+  "QName BeslissingOpAanvraagUitkering"
+  beslissingOpAanvraagUitkering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering
+  "QName Bron"
+  bron: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringBron!
+  "QName DatAanvraagUitkering"
+  datAanvraagUitkering: String
+  "QName PartnerAanvraagUitkering"
+  partnerAanvraagUitkering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringPartnerAanvraagUitkering
+  "QName SzWet"
+  szWet: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringSzWet!
+}
+
+"QName BeslissingOpAanvraagUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering {
+  "QName CdBeslissingOpAanvraagUitkering"
+  cdBeslissingOpAanvraagUitkering: String!
+  "QName DatDagtekeningBeslisOpAanvrUitk"
+  datDagtekeningBeslisOpAanvrUitk: String
+}
+
+"QName Bron"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName PartnerAanvraagUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringPartnerAanvraagUitkering {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName SzWet"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiAanvraagUitkeringSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Bron"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName DomicilieAdres"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiDomicilieAdres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName DossierGsd"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiDossierGsd {
+  "QName DatOpnameGegevensInIbSysteem"
+  datOpnameGegevensInIbSysteem: String
+  "QName Dossiercd"
+  dossiercd: String
+}
+
+"QName Huisvesting"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiHuisvesting {
+  "QName CdRelatieBewonerHuisvesting"
+  cdRelatieBewonerHuisvesting: Long!
+}
+
+"QName SchendingInlichtingenplicht"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSchendingInlichtingenplicht {
+  "QName DatWaarschSchendInlichtingplicht"
+  datWaarschSchendInlichtingplicht: String!
+}
+
+"QName SpecifiekeGegevensBijzBijstand"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstand {
+  "QName Bron"
+  bron: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandBron!
+  "QName CdClusterBijzBijstand"
+  cdClusterBijzBijstand: String
+  "QName DatBetaalbaarBijzBijstand"
+  datBetaalbaarBijzBijstand: String
+  "QName OmsSrtKostenBijzBijstand"
+  omsSrtKostenBijzBijstand: String
+  "QName PartnerBijzBijstand"
+  partnerBijzBijstand: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandPartnerBijzBijstand
+  "QName SzWet"
+  szWet: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandSzWet!
+}
+
+"QName Bron"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName PartnerBijzBijstand"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandPartnerBijzBijstand {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName SzWet"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiSpecifiekeGegevensBijzBijstandSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Uitkeringsverhouding"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhouding {
+  "QName Bron"
+  bron: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingBron!
+  "QName DatBUitkeringsverhouding"
+  datBUitkeringsverhouding: String!
+  "QName DatEUitkeringsverhouding"
+  datEUitkeringsverhouding: String
+  "QName InkomstenInvloedOpBijstandUitk"
+  inkomstenInvloedOpBijstandUitk: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingInkomstenInvloedOpBijstandUitk]
+  "QName PartnerUitkeringsverhouding"
+  partnerUitkeringsverhouding: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingPartnerUitkeringsverhouding
+  "QName SpecifiekeGegevensBijstandUitk"
+  specifiekeGegevensBijstandUitk: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensBijstandUitk
+  "QName SzWet"
+  szWet: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingSzWet!
+  "QName Uitkeringsperiode"
+  uitkeringsperiode: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode]!
+  "QName VrijstellingArbeidsplicht"
+  vrijstellingArbeidsplicht: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingVrijstellingArbeidsplicht
+}
+
+"QName Bron"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName InkomstenInvloedOpBijstandUitk"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingInkomstenInvloedOpBijstandUitk {
+  "QName CdSrtOverigeInkomsten"
+  cdSrtOverigeInkomsten: Long
+}
+
+"QName PartnerUitkeringsverhouding"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingPartnerUitkeringsverhouding {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName SpecifiekeGegevensBijstandUitk"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensBijstandUitk {
+  "QName AantKostendelers"
+  aantKostendelers: Long
+  "QName CdAanleidingEindeBijstandUitk"
+  cdAanleidingEindeBijstandUitk: String
+  "QName CdClassificatieBbz"
+  cdClassificatieBbz: String
+}
+
+"QName SzWet"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Uitkeringsperiode"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode {
+  "QName DatBUitkeringsperiode"
+  datBUitkeringsperiode: String!
+  "QName DatEUitkeringsperiode"
+  datEUitkeringsperiode: String
+  "QName InkomstenBijstandUitkering"
+  inkomstenBijstandUitkering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkering
+  "QName MaatregelMbtUitkering"
+  maatregelMbtUitkering: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkering]
+  "QName Normbedrag"
+  normbedrag: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeNormbedrag]
+}
+
+"QName InkomstenBijstandUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkering {
+  "QName BedrBetaalbaarGesteldeUitkering"
+  bedrBetaalbaarGesteldeUitkering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkeringBedrBetaalbaarGesteldeUitkering
+  "QName BedrTotaalInkomstenUitkering"
+  bedrTotaalInkomstenUitkering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkeringBedrTotaalInkomstenUitkering
+}
+
+"QName BedrBetaalbaarGesteldeUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkeringBedrBetaalbaarGesteldeUitkering {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrTotaalInkomstenUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeInkomstenBijstandUitkeringBedrTotaalInkomstenUitkering {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName MaatregelMbtUitkering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkering {
+  "QName DatBMaatregelMbtUitkering"
+  datBMaatregelMbtUitkering: String!
+  "QName DatEMaatregelMbtUitkering"
+  datEMaatregelMbtUitkering: String
+  "QName RedenMaatregelMbtBijstandUitk"
+  redenMaatregelMbtBijstandUitk: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitk
+}
+
+"QName RedenMaatregelMbtBijstandUitk"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitk {
+  "QName CdRedenMaatregelMbtBijstandUitk"
+  cdRedenMaatregelMbtBijstandUitk: String
+  "QName GevolgenMaatregelMbtBijstandUitk"
+  gevolgenMaatregelMbtBijstandUitk: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitkGevolgenMaatregelMbtBijstandUitk
+}
+
+"QName GevolgenMaatregelMbtBijstandUitk"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitkGevolgenMaatregelMbtBijstandUitk {
+  "QName BedrVerminderingUitkMbtMaatregel"
+  bedrVerminderingUitkMbtMaatregel: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitkGevolgenMaatregelMbtBijstandUitkBedrVerminderingUitkMbtMaatregel!
+}
+
+"QName BedrVerminderingUitkMbtMaatregel"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeMaatregelMbtUitkeringRedenMaatregelMbtBijstandUitkGevolgenMaatregelMbtBijstandUitkBedrVerminderingUitkMbtMaatregel {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName Normbedrag"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeNormbedrag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdSrtNormbedrag"
+  cdSrtNormbedrag: String!
+  "QName WaardeBedr"
+  waardeBedr: Long!
+}
+
+"QName VrijstellingArbeidsplicht"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiUitkeringsverhoudingVrijstellingArbeidsplicht {
+  "QName CdRedenEVrijstArbeidsplichtBijst"
+  cdRedenEVrijstArbeidsplichtBijst: String
+  "QName CdVrijstellingArbeidsplichtBijst"
+  cdVrijstellingArbeidsplichtBijst: String!
+  "QName DatEVrijstellingArbeidsplicht"
+  datEVrijstellingArbeidsplicht: String
+}
+
+"QName Vordering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVordering {
+  "QName BedrAanvangVordering"
+  bedrAanvangVordering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBedrAanvangVordering
+  "QName BedrSaldoVordering"
+  bedrSaldoVordering: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBedrSaldoVordering
+  "QName Bron"
+  bron: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBron!
+  "QName CdRedenVordering"
+  cdRedenVordering: String
+  "QName CdStatusVordering"
+  cdStatusVordering: String
+  "QName DatBesluitVordering"
+  datBesluitVordering: String
+  "QName DatOnherroepelijkVordering"
+  datOnherroepelijkVordering: String
+  "QName Fraude"
+  fraude: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingFraude
+  "QName IdentificatienrVordering"
+  identificatienrVordering: String
+  "QName PartnerVordering"
+  partnerVordering: [Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingPartnerVordering]
+  "QName SzWet"
+  szWet: Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingSzWet!
+}
+
+"QName BedrAanvangVordering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBedrAanvangVordering {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrSaldoVordering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBedrSaldoVordering {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName Bron"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName Fraude"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingFraude {
+  "QName CdHoogteBestuurlijkeBoete"
+  cdHoogteBestuurlijkeBoete: String
+  "QName CdRecidivetermijn"
+  cdRecidivetermijn: String
+  "QName CdSrtSanctie"
+  cdSrtSanctie: String
+  "QName IndRecidive"
+  indRecidive: String
+  "QName IndRobuusteIncassoToegepast"
+  indRobuusteIncassoToegepast: String
+  "QName ParketnrJustitie"
+  parketnrJustitie: String
+}
+
+"QName PartnerVordering"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingPartnerVordering {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+}
+
+"QName SzWet"
+type Bijstandsregelingenv0500BijstandsregelingenInfoResponseClientSuwiVorderingSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName DUODossierPersoonv0600"
+type DUODossierPersoonv0600DUOPersoonsInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwi {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName IndStartkwalificatieDuo"
+  indStartkwalificatieDuo: String
+  "QName Onderwijsovereenkomst"
+  onderwijsovereenkomst: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomst]
+  "QName ResultaatOpleidingGeregistrDuo"
+  resultaatOpleidingGeregistrDuo: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuo]
+}
+
+"QName Onderwijsovereenkomst"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomst {
+  "QName Brin"
+  brin: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstBrin]!
+  "QName DatInschrijvingOpleiding"
+  datInschrijvingOpleiding: String!
+  "QName DatUitschrijvingOpleiding"
+  datUitschrijvingOpleiding: String
+  "QName DeelnameOpleidingGeregistrDuo"
+  deelnameOpleidingGeregistrDuo: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuo]
+}
+
+"QName Brin"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstBrin {
+  "QName BrinNr"
+  brinNr: String!
+}
+
+"QName DeelnameOpleidingGeregistrDuo"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuo {
+  "QName AanduidingLeerjaar"
+  aanduidingLeerjaar: String
+  "QName Beroepspraktijkovereenkomst"
+  beroepspraktijkovereenkomst: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoBeroepspraktijkovereenkomst]
+  "QName CdInschrijvingsvorm"
+  cdInschrijvingsvorm: String
+  "QName CdLeerwegMbo"
+  cdLeerwegMbo: String
+  "QName CdOnderwijsvorm"
+  cdOnderwijsvorm: String
+  "QName DatBDeelnameOpleiding"
+  datBDeelnameOpleiding: String!
+  "QName DatEDeelnameOpleiding"
+  datEDeelnameOpleiding: String
+  "QName InhoudDeelnameOpleidingDuo"
+  inhoudDeelnameOpleidingDuo: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudDeelnameOpleidingDuo!
+  "QName InhoudVak"
+  inhoudVak: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudVak]
+}
+
+"QName Beroepspraktijkovereenkomst"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoBeroepspraktijkovereenkomst {
+  "QName AantUrenBeroepspraktijkvorming"
+  aantUrenBeroepspraktijkvorming: Long
+  "QName DatAfslBeroepspraktijkovereenk"
+  datAfslBeroepspraktijkovereenk: String!
+  "QName DatBBeroepspraktijkvorming"
+  datBBeroepspraktijkvorming: String!
+  "QName DatEBeroepspraktijkvormWerkelijk"
+  datEBeroepspraktijkvormWerkelijk: String
+}
+
+"QName InhoudDeelnameOpleidingDuo"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudDeelnameOpleidingDuo {
+  "QName CdNiveauOpleidingDuo"
+  cdNiveauOpleidingDuo: String
+  "QName CdOpleidingDuo"
+  cdOpleidingDuo: String
+  "QName CdOpleidingstelselDuo"
+  cdOpleidingstelselDuo: String!
+  "QName NaamOpleidingDuo"
+  naamOpleidingDuo: String
+  "QName NaamOpleidingDuoInternationaal"
+  naamOpleidingDuoInternationaal: String
+  "QName NaamOpleidingKortDuo"
+  naamOpleidingKortDuo: String
+  "QName OmsStudiegebied"
+  omsStudiegebied: String
+  "QName OmsStudieinhoud"
+  omsStudieinhoud: String
+  "QName OmsStudieuitstroom"
+  omsStudieuitstroom: String
+  "QName Studielast"
+  studielast: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudDeelnameOpleidingDuoStudielast
+}
+
+"QName Studielast"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudDeelnameOpleidingDuoStudielast {
+  "QName StudielastEenheid"
+  studielastEenheid: String!
+  "QName StudielastZwaarte"
+  studielastZwaarte: Long!
+}
+
+"QName InhoudVak"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiOnderwijsovereenkomstDeelnameOpleidingGeregistrDuoInhoudVak {
+  "QName CdNiveauOpleidingDuo"
+  cdNiveauOpleidingDuo: String
+  "QName OmsVak"
+  omsVak: String!
+}
+
+"QName ResultaatOpleidingGeregistrDuo"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuo {
+  "QName Brin"
+  brin: [DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoBrin]
+  "QName CdFaseOpleidingDuo"
+  cdFaseOpleidingDuo: String
+  "QName CdSrtWaardedocument"
+  cdSrtWaardedocument: String
+  "QName InhoudResultaatOpleidingDuo"
+  inhoudResultaatOpleidingDuo: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoInhoudResultaatOpleidingDuo!
+  "QName ResultaatExamen"
+  resultaatExamen: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoResultaatExamen!
+}
+
+"QName Brin"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoBrin {
+  "QName BrinNr"
+  brinNr: String!
+}
+
+"QName InhoudResultaatOpleidingDuo"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoInhoudResultaatOpleidingDuo {
+  "QName CdNiveauOpleidingDuo"
+  cdNiveauOpleidingDuo: String
+  "QName CdOpleidingDuo"
+  cdOpleidingDuo: String
+  "QName CdOpleidingstelselDuo"
+  cdOpleidingstelselDuo: String!
+  "QName NaamOpleidingDuo"
+  naamOpleidingDuo: String
+  "QName NaamOpleidingDuoInternationaal"
+  naamOpleidingDuoInternationaal: String
+  "QName NaamOpleidingKortDuo"
+  naamOpleidingKortDuo: String
+  "QName OmsStudiegebied"
+  omsStudiegebied: String
+  "QName OmsStudieinhoud"
+  omsStudieinhoud: String
+  "QName OmsStudieuitstroom"
+  omsStudieuitstroom: String
+  "QName Studielast"
+  studielast: DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoInhoudResultaatOpleidingDuoStudielast
+}
+
+"QName Studielast"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoInhoudResultaatOpleidingDuoStudielast {
+  "QName StudielastEenheid"
+  studielastEenheid: String!
+  "QName StudielastZwaarte"
+  studielastZwaarte: Long!
+}
+
+"QName ResultaatExamen"
+type DUODossierPersoonv0600DUOPersoonsInfoResponseClientSuwiResultaatOpleidingGeregistrDuoResultaatExamen {
+  "QName CdResultaatExamen"
+  cdResultaatExamen: String!
+  "QName DatResultaatExamen"
+  datResultaatExamen: String
+  "QName JaarAfgelegdExamen"
+  jaarAfgelegdExamen: Long!
+}
+
+"QName DUODossierStudiefinancieringv0300"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwi {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Studiefinanciering"
+  studiefinanciering: [DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinanciering]!
+}
+
+"QName Studiefinanciering"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinanciering {
+  "QName BedrAanvullendeBeursStufi"
+  bedrAanvullendeBeursStufi: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrAanvullendeBeursStufi
+  "QName BedrAanvullendeToelageWtosVo18"
+  bedrAanvullendeToelageWtosVo18: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrAanvullendeToelageWtosVo18
+  "QName BedrBasisbeursStufi"
+  bedrBasisbeursStufi: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrBasisbeursStufi
+  "QName BedrBasistoelageWtosVo18"
+  bedrBasistoelageWtosVo18: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrBasistoelageWtosVo18
+  "QName CdStatusEenOudertoeslagStufi"
+  cdStatusEenOudertoeslagStufi: String
+  "QName CdStatusPartnertoeslagStufi"
+  cdStatusPartnertoeslagStufi: String
+  "QName CdToekenningBasisbeursStufi"
+  cdToekenningBasisbeursStufi: String
+  "QName DatBToekenningsperiodeStufi"
+  datBToekenningsperiodeStufi: String!
+  "QName DatEToekenningsperiodeStufi"
+  datEToekenningsperiodeStufi: String
+  "QName IndAanvullendeBeursStufi"
+  indAanvullendeBeursStufi: String
+  "QName IndToekenningWtosVo18"
+  indToekenningWtosVo18: String
+}
+
+"QName BedrAanvullendeBeursStufi"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrAanvullendeBeursStufi {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrAanvullendeToelageWtosVo18"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrAanvullendeToelageWtosVo18 {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrBasisbeursStufi"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrBasisbeursStufi {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrBasistoelageWtosVo18"
+type DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponseClientSuwiStudiefinancieringBedrBasistoelageWtosVo18 {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName GSDDossierReintegratiev0200"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwi {
+  "QName AtlRelatie"
+  atlRelatie: [GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatie]
+  "QName Bron"
+  bron: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiBron
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName AtlRelatie"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatie {
+  "QName Arbeidsvermogen"
+  arbeidsvermogen: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieArbeidsvermogen
+  "QName Bron"
+  bron: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieBron!
+  "QName DoelReintegratievoorziening"
+  doelReintegratievoorziening: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieDoelReintegratievoorziening
+  "QName ReIntegratievoorziening"
+  reIntegratievoorziening: [GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorziening]
+}
+
+"QName Arbeidsvermogen"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieArbeidsvermogen {
+  "QName CdArbeidsvermogen"
+  cdArbeidsvermogen: String!
+}
+
+"QName Bron"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"QName DoelReintegratievoorziening"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieDoelReintegratievoorziening {
+  "QName CdDoelRv"
+  cdDoelRv: String!
+}
+
+"QName ReIntegratievoorziening"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorziening {
+  "QName CdTypeRvGsd"
+  cdTypeRvGsd: String
+  "QName DatBRv"
+  datBRv: String!
+  "QName DatERv"
+  datERv: String
+  "QName Loonkostensubsidie"
+  loonkostensubsidie: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorzieningLoonkostensubsidie
+  "QName OmsRv"
+  omsRv: String
+  "QName RegistratienrRvGsd"
+  registratienrRvGsd: String
+}
+
+"QName Loonkostensubsidie"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorzieningLoonkostensubsidie {
+  "QName PercLoonwaardeTovWml"
+  percLoonwaardeTovWml: GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorzieningLoonkostensubsidiePercLoonwaardeTovWml!
+}
+
+"QName PercLoonwaardeTovWml"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiAtlRelatieReIntegratievoorzieningLoonkostensubsidiePercLoonwaardeTovWml {
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName Percentage"
+  percentage: String
+}
+
+"QName Bron"
+type GSDDossierReintegratiev0200GSDReintegratieInfoResponseClientSuwiBron {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long!
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String!
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+}
+
+"GraphQL query response"
+type InfoResponse {
+  BRPDossierPersoonBewonersvraagv0200AanvraagPersoon: BRPDossierPersoonBewonersvraagv0200AanvraagPersoonResponse!
+  BRPDossierPersoonGSDv0200AanvraagPersoon: BRPDossierPersoonGSDv0200AanvraagPersoonResponse!
+  Bijstandsregelingenv0500BijstandsregelingenInfo: Bijstandsregelingenv0500BijstandsregelingenInfoResponse!
+  DUODossierPersoonv0600DUOPersoonsInfo: DUODossierPersoonv0600DUOPersoonsInfoResponse!
+  DUODossierStudiefinancieringv0300DUOStudiefinancieringInfo: DUODossierStudiefinancieringv0300DUOStudiefinancieringInfoResponse!
+  GSDDossierReintegratiev0200GSDReintegratieInfo: GSDDossierReintegratiev0200GSDReintegratieInfoResponse!
+  KadasterDossierGSDv0300PersoonsInfo: KadasterDossierGSDv0300PersoonsInfoResponse!
+  RDWDossierGSDv0200VoertuigbezitInfoPersoon: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponse!
+  SVBDossierPersoonGSDv0200SVBPersoonsInfo: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponse!
+  UWVDossierInkomstenv0700UWVPersoonsIkvInfo(periodeGegevensvraagIko: UWVDossierInkomstenv0700UWVPersoonsIkvInfoPeriodeGegevensvraagIko): UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponse!
+  UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfo: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponse!
+}
+
+"QName KadasterDossierGSDv0300"
+type KadasterDossierGSDv0300PersoonsInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwi {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Correspondentieadres"
+  correspondentieadres: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadres
+  "QName DatFiatteringKadaster"
+  datFiatteringKadaster: String
+  "QName DatToestandKadaster"
+  datToestandKadaster: String
+  "QName DomicilieAdres"
+  domicilieAdres: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdres
+  "QName Eigendom"
+  eigendom: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendom!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName Correspondentieadres"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadres {
+  "QName GeneriekAdresBuitenland"
+  generiekAdresBuitenland: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresGeneriekAdresBuitenland
+  "QName Postbusadres"
+  postbusadres: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresPostbusadres
+  "QName StraatadresBag"
+  straatadresBag: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresStraatadresBag
+}
+
+"QName GeneriekAdresBuitenland"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresGeneriekAdresBuitenland {
+  "QName Adresregel1Buitenland"
+  adresregel1Buitenland: String
+  "QName Adresregel2Buitenland"
+  adresregel2Buitenland: String
+  "QName Adresregel3Buitenland"
+  adresregel3Buitenland: String
+  "QName Landsnaam"
+  landsnaam: String
+}
+
+"QName Postbusadres"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName StraatadresBag"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiCorrespondentieadresStraatadresBag {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName DomicilieAdres"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdres {
+  "QName GeneriekAdresBuitenland"
+  generiekAdresBuitenland: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdresGeneriekAdresBuitenland
+  "QName StraatadresBag"
+  straatadresBag: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdresStraatadresBag
+}
+
+"QName GeneriekAdresBuitenland"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdresGeneriekAdresBuitenland {
+  "QName Adresregel1Buitenland"
+  adresregel1Buitenland: String
+  "QName Adresregel2Buitenland"
+  adresregel2Buitenland: String
+  "QName Adresregel3Buitenland"
+  adresregel3Buitenland: String
+  "QName Landsnaam"
+  landsnaam: String
+}
+
+"QName StraatadresBag"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiDomicilieAdresStraatadresBag {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName Eigendom"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendom {
+  "QName IndEigendomOZVerleden"
+  indEigendomOZVerleden: String
+  "QName OnroerendeZaak"
+  onroerendeZaak: [KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaak]
+}
+
+"QName OnroerendeZaak"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaak {
+  "QName BedrKoopsom"
+  bedrKoopsom: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakBedrKoopsom
+  "QName CdTypeOnroerendeZaak"
+  cdTypeOnroerendeZaak: String
+  "QName DatFiatteringKadaster"
+  datFiatteringKadaster: String
+  "QName DatOntstaan"
+  datOntstaan: String
+  "QName DatToestandKadaster"
+  datToestandKadaster: String
+  "QName IndMeerGerechtigden"
+  indMeerGerechtigden: String!
+  "QName JaarAankoop"
+  jaarAankoop: Long
+  "QName KadastraleAanduiding"
+  kadastraleAanduiding: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakKadastraleAanduiding!
+  "QName LocatieOZ"
+  locatieOZ: [KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakLocatieOZ]
+  "QName OmsKadastraalObject"
+  omsKadastraalObject: String
+  "QName PubliekrechtelijkeBeperking"
+  publiekrechtelijkeBeperking: [KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperking]
+  "QName WijzeVerkrijgingEigendom"
+  wijzeVerkrijgingEigendom: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakWijzeVerkrijgingEigendom
+  "QName ZakelijkRecht"
+  zakelijkRecht: [KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakZakelijkRecht]
+}
+
+"QName BedrKoopsom"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakBedrKoopsom {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName KadastraleAanduiding"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakKadastraleAanduiding {
+  "QName CdKadastraleGemeente"
+  cdKadastraleGemeente: String!
+  "QName KadastraalPerceelnr"
+  kadastraalPerceelnr: Long!
+  "QName KadastraleGemeentenaam"
+  kadastraleGemeentenaam: String
+  "QName KadastraleSectie"
+  kadastraleSectie: String!
+  "QName VolgnrKadastraalAppartementsrecht"
+  volgnrKadastraalAppartementsrecht: Long
+}
+
+"QName LocatieOZ"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakLocatieOZ {
+  "QName StraatadresBag"
+  straatadresBag: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakLocatieOZStraatadresBag!
+}
+
+"QName StraatadresBag"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakLocatieOZStraatadresBag {
+  "QName AanduidingBijHuisnr"
+  aanduidingBijHuisnr: String
+  "QName Gemeentedeel"
+  gemeentedeel: String
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisletter"
+  huisletter: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName PubliekrechtelijkeBeperking"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperking {
+  "QName AantekeningKadastraalObject"
+  aantekeningKadastraalObject: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingAantekeningKadastraalObject
+  "QName BetrokkenPersoonBestuursorgaan"
+  betrokkenPersoonBestuursorgaan: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaan
+}
+
+"QName AantekeningKadastraalObject"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingAantekeningKadastraalObject {
+  "QName DatEAantekeningKadastraalObject"
+  datEAantekeningKadastraalObject: String
+  "QName OmsAantekeningKadastraalObject"
+  omsAantekeningKadastraalObject: String
+}
+
+"QName BetrokkenPersoonBestuursorgaan"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaan {
+  "QName NatuurlijkPersoon"
+  natuurlijkPersoon: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaanNatuurlijkPersoon
+  "QName Rechtspersoon"
+  rechtspersoon: KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaanRechtspersoon
+}
+
+"QName NatuurlijkPersoon"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaanNatuurlijkPersoon {
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName Rechtspersoon"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakPubliekrechtelijkeBeperkingBetrokkenPersoonBestuursorgaanRechtspersoon {
+  "QName FiNr"
+  fiNr: String
+  "QName NaamRechtspersoon"
+  naamRechtspersoon: String
+  "QName OmsRechtsvorm"
+  omsRechtsvorm: String
+  "QName OmsStatutaireZetel"
+  omsStatutaireZetel: String
+}
+
+"QName WijzeVerkrijgingEigendom"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakWijzeVerkrijgingEigendom {
+  "QName CdWijzeVerkrijgingEigendom"
+  cdWijzeVerkrijgingEigendom: String
+  "QName DatToestandKadaster"
+  datToestandKadaster: String
+  "QName DatVerkrijgingEigendom"
+  datVerkrijgingEigendom: String
+}
+
+"QName ZakelijkRecht"
+type KadasterDossierGSDv0300PersoonsInfoResponseClientSuwiEigendomOnroerendeZaakZakelijkRecht {
+  "QName DatEZakelijkRecht"
+  datEZakelijkRecht: String
+  "QName OmsZakelijkRecht"
+  omsZakelijkRecht: String
+}
+
+type Query {
+  info(burgerservicenr: String!): InfoResponse!
+}
+
+"QName RDWDossierGSDv0200"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponse {
+  "QName ClientSuwi"
+  clientSuwi: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwi]
+  "QName OndernemingInst"
+  ondernemingInst: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInst]
+}
+
+"QName ClientSuwi"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwi {
+  "QName Aansprakelijke"
+  aansprakelijke: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijke]
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName RdwAdres"
+  rdwAdres: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdres]
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName Aansprakelijke"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijke {
+  "QName DatEAansprakelijkheid"
+  datEAansprakelijkheid: String
+  "QName DatRegistratieAansprakelijkheid"
+  datRegistratieAansprakelijkheid: String!
+  "QName Voertuig"
+  voertuig: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijkeVoertuig
+}
+
+"QName Voertuig"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijkeVoertuig {
+  "QName KentekenVoertuig"
+  kentekenVoertuig: String!
+  "QName StatusVoertuig"
+  statusVoertuig: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijkeVoertuigStatusVoertuig]
+}
+
+"QName StatusVoertuig"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiAansprakelijkeVoertuigStatusVoertuig {
+  "QName CdStatusVoertuig"
+  cdStatusVoertuig: String
+  "QName DatBStatusVoertuig"
+  datBStatusVoertuig: String
+  "QName DatEStatusVoertuig"
+  datEStatusVoertuig: String
+}
+
+"QName RdwAdres"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdres {
+  "QName FeitelijkAdres"
+  feitelijkAdres: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdresFeitelijkAdres
+}
+
+"QName FeitelijkAdres"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdresFeitelijkAdres {
+  "QName Straatadres"
+  straatadres: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdresFeitelijkAdresStraatadres
+}
+
+"QName Straatadres"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseClientSuwiRdwAdresFeitelijkAdresStraatadres {
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName OndernemingInst"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInst {
+  "QName Aansprakelijke"
+  aansprakelijke: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijke]
+  "QName Rechtspersoon"
+  rechtspersoon: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstRechtspersoon!
+  "QName VestigingOndernemingInst"
+  vestigingOndernemingInst: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInst
+}
+
+"QName Aansprakelijke"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijke {
+  "QName DatEAansprakelijkheid"
+  datEAansprakelijkheid: String
+  "QName DatRegistratieAansprakelijkheid"
+  datRegistratieAansprakelijkheid: String!
+  "QName Voertuig"
+  voertuig: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijkeVoertuig
+}
+
+"QName Voertuig"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijkeVoertuig {
+  "QName KentekenVoertuig"
+  kentekenVoertuig: String!
+  "QName StatusVoertuig"
+  statusVoertuig: [RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijkeVoertuigStatusVoertuig]
+}
+
+"QName StatusVoertuig"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstAansprakelijkeVoertuigStatusVoertuig {
+  "QName CdStatusVoertuig"
+  cdStatusVoertuig: String
+  "QName DatBStatusVoertuig"
+  datBStatusVoertuig: String
+  "QName DatEStatusVoertuig"
+  datEStatusVoertuig: String
+}
+
+"QName Rechtspersoon"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstRechtspersoon {
+  "QName NaamRechtspersoon"
+  naamRechtspersoon: String!
+}
+
+"QName VestigingOndernemingInst"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInst {
+  "QName BezoekadresVestiging"
+  bezoekadresVestiging: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstBezoekadresVestiging
+  "QName CorrespondentieadresVestiging"
+  correspondentieadresVestiging: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstCorrespondentieadresVestiging
+}
+
+"QName BezoekadresVestiging"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstBezoekadresVestiging {
+  "QName Straatadres"
+  straatadres: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstBezoekadresVestigingStraatadres
+}
+
+"QName Straatadres"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstBezoekadresVestigingStraatadres {
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName CorrespondentieadresVestiging"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstCorrespondentieadresVestiging {
+  "QName Straatadres"
+  straatadres: RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstCorrespondentieadresVestigingStraatadres
+}
+
+"QName Straatadres"
+type RDWDossierGSDv0200VoertuigbezitInfoPersoonResponseOndernemingInstVestigingOndernemingInstCorrespondentieadresVestigingStraatadres {
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName SVBDossierPersoonGSDv0200"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwi {
+  "QName AanvraagUitkering"
+  aanvraagUitkering: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkering]
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName Kind"
+  kind: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiKind]
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Uitkeringsverhouding"
+  uitkeringsverhouding: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhouding]
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName AanvraagUitkering"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkering {
+  "QName BeslissingOpAanvraagUitkering"
+  beslissingOpAanvraagUitkering: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering
+  "QName DatAanvraagUitkering"
+  datAanvraagUitkering: String!
+  "QName SzWet"
+  szWet: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkeringSzWet!
+}
+
+"QName BeslissingOpAanvraagUitkering"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering {
+  "QName CdBeslissingOpAanvraagUitkering"
+  cdBeslissingOpAanvraagUitkering: String
+}
+
+"QName SzWet"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiAanvraagUitkeringSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Kind"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiKind {
+  "QName Burgerservicenr"
+  burgerservicenr: String
+  "QName Geboortedat"
+  geboortedat: String!
+  "QName Geslacht"
+  geslacht: String
+  "QName IndKinderbijslag"
+  indKinderbijslag: String
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName SpecifiekeGegevensKinderbijslag"
+  specifiekeGegevensKinderbijslag: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiKindSpecifiekeGegevensKinderbijslag
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName SpecifiekeGegevensKinderbijslag"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiKindSpecifiekeGegevensKinderbijslag {
+  "QName CdLandVerblijfKind"
+  cdLandVerblijfKind: String
+  "QName CdWoonsituatieKind"
+  cdWoonsituatieKind: String
+}
+
+"QName Uitkeringsverhouding"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhouding {
+  "QName DatBUitkeringsverhouding"
+  datBUitkeringsverhouding: String!
+  "QName DatEUitkeringsverhouding"
+  datEUitkeringsverhouding: String
+  "QName SpecifiekeGegevensRemigratiewet"
+  specifiekeGegevensRemigratiewet: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensRemigratiewet]
+  "QName SzWet"
+  szWet: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingSzWet!
+  "QName Uitkeringsperiode"
+  uitkeringsperiode: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode]!
+}
+
+"QName SpecifiekeGegevensRemigratiewet"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensRemigratiewet {
+  "QName CdSrtRemigratievoorziening"
+  cdSrtRemigratievoorziening: String
+}
+
+"QName SzWet"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Uitkeringsperiode"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode {
+  "QName BrutoUitkeringsbedr"
+  brutoUitkeringsbedr: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeBrutoUitkeringsbedr]
+  "QName DatBUitkeringsperiode"
+  datBUitkeringsperiode: String!
+  "QName DatEUitkeringsperiode"
+  datEUitkeringsperiode: String
+  "QName NettoUitkeringsbedr"
+  nettoUitkeringsbedr: [SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeNettoUitkeringsbedr]
+  "QName SpecifiekeGegevensAow"
+  specifiekeGegevensAow: SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeSpecifiekeGegevensAow
+}
+
+"QName BrutoUitkeringsbedr"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeBrutoUitkeringsbedr {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdUitkeringsperiode"
+  cdUitkeringsperiode: String
+  "QName DatBBrutoUitkeringsbedr"
+  datBBrutoUitkeringsbedr: String
+  "QName DatEBrutoUitkeringsbedr"
+  datEBrutoUitkeringsbedr: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName NettoUitkeringsbedr"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeNettoUitkeringsbedr {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdUitkeringsperiode"
+  cdUitkeringsperiode: String
+  "QName DatBNettoUitkeringsbedr"
+  datBNettoUitkeringsbedr: String
+  "QName DatENettoUitkeringsbedr"
+  datENettoUitkeringsbedr: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName SpecifiekeGegevensAow"
+type SVBDossierPersoonGSDv0200SVBPersoonsInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeSpecifiekeGegevensAow {
+  "QName IndPartnertoeslagAow"
+  indPartnertoeslagAow: String
+  "QName PercToegekendeAow"
+  percToegekendeAow: String
+}
+
+"QName UWVDossierInkomstenv0700"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwi
+  "QName PeriodeGegevensleveringIko"
+  periodeGegevensleveringIko: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponsePeriodeGegevensleveringIko
+}
+
+"QName ClientSuwi"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwi {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Inkomstenverhouding"
+  inkomstenverhouding: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhouding]
+}
+
+"QName Inkomstenverhouding"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhouding {
+  "QName AanduidingIkvWerkgever"
+  aanduidingIkvWerkgever: String
+  "QName AdministratieveEenheid"
+  administratieveEenheid: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheid
+  "QName CdRedenEArbeidsovereenkomst"
+  cdRedenEArbeidsovereenkomst: String
+  "QName CdRedenEIkvFlexwerker"
+  cdRedenEIkvFlexwerker: String
+  "QName DatBIkv"
+  datBIkv: String
+  "QName DatEIkv"
+  datEIkv: String
+  "QName Inkomstenopgave"
+  inkomstenopgave: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgave]!
+  "QName Inkomstenperiode"
+  inkomstenperiode: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenperiode]!
+  "QName Personeelsnr"
+  personeelsnr: String
+  "QName PersoonLoonaangifte"
+  persoonLoonaangifte: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifte
+  "QName SectorRisicogroepIkv"
+  sectorRisicogroepIkv: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingSectorRisicogroepIkv]
+  "QName VolgnrIkv"
+  volgnrIkv: Long
+}
+
+"QName AdministratieveEenheid"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheid {
+  "QName Afdrachtplicht"
+  afdrachtplicht: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidAfdrachtplicht]
+  "QName CorrespondentieadresAeh"
+  correspondentieadresAeh: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAeh]
+  "QName DatBAdministratieveEenheid"
+  datBAdministratieveEenheid: String
+  "QName DatEAdministratieveEenheid"
+  datEAdministratieveEenheid: String
+  "QName Eigenrisicodrager"
+  eigenrisicodrager: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidEigenrisicodrager]
+  "QName FaillissementSurseance"
+  faillissementSurseance: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFaillissementSurseance]
+  "QName FeitelijkAdresAeh"
+  feitelijkAdresAeh: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAeh]
+  "QName Gemoedsbezwaardheid"
+  gemoedsbezwaardheid: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidGemoedsbezwaardheid]
+  "QName Loonheffingennr"
+  loonheffingennr: String!
+  "QName NaamAdministratieveEenheid"
+  naamAdministratieveEenheid: String
+  "QName PersoonAdministratieveEenheid"
+  persoonAdministratieveEenheid: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheid
+  "QName PremiepercentageIndividueel"
+  premiepercentageIndividueel: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueel]
+  "QName RechtspersoonAdministratieveEenh"
+  rechtspersoonAdministratieveEenh: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidRechtspersoonAdministratieveEenh
+  "QName SectorRisicogroepAeh"
+  sectorRisicogroepAeh: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidSectorRisicogroepAeh]
+  "QName VoortzettingsrelatieOpvolger"
+  voortzettingsrelatieOpvolger: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieOpvolger]
+  "QName VoortzettingsrelatieVoorganger"
+  voortzettingsrelatieVoorganger: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieVoorganger]
+}
+
+"QName Afdrachtplicht"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidAfdrachtplicht {
+  "QName DatBAfdrachtplicht"
+  datBAfdrachtplicht: String
+  "QName DatEAfdrachtplicht"
+  datEAfdrachtplicht: String
+}
+
+"QName CorrespondentieadresAeh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAeh {
+  "QName DatBAdres"
+  datBAdres: String
+  "QName DatEAdres"
+  datEAdres: String
+  "QName Postbusadres"
+  postbusadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehPostbusadres
+  "QName PostbusadresBuitenland"
+  postbusadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehPostbusadresBuitenland
+  "QName Straatadres"
+  straatadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehStraatadres
+  "QName StraatadresBuitenland"
+  straatadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehStraatadresBuitenland
+}
+
+"QName Postbusadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName PostbusadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehPostbusadresBuitenland {
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostbusnrBuitenland"
+  postbusnrBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Straatadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName StraatadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidCorrespondentieadresAehStraatadresBuitenland {
+  "QName HuisnrBuitenland"
+  huisnrBuitenland: String
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName StraatnaamBuitenland"
+  straatnaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Eigenrisicodrager"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidEigenrisicodrager {
+  "QName DatBEigenrisicodrager"
+  datBEigenrisicodrager: String!
+  "QName DatEEigenrisicodrager"
+  datEEigenrisicodrager: String
+  "QName SzWet"
+  szWet: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidEigenrisicodragerSzWet!
+}
+
+"QName SzWet"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidEigenrisicodragerSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName FaillissementSurseance"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFaillissementSurseance {
+  "QName CdFaillissementSurseance"
+  cdFaillissementSurseance: String!
+  "QName CdRedenEFaillissementSurseance"
+  cdRedenEFaillissementSurseance: String
+  "QName DatBFaillissementSurseance"
+  datBFaillissementSurseance: String!
+  "QName DatEFaillissementSurseance"
+  datEFaillissementSurseance: String
+}
+
+"QName FeitelijkAdresAeh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAeh {
+  "QName DatBAdres"
+  datBAdres: String
+  "QName DatEAdres"
+  datEAdres: String
+  "QName Postbusadres"
+  postbusadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehPostbusadres
+  "QName PostbusadresBuitenland"
+  postbusadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehPostbusadresBuitenland
+  "QName Straatadres"
+  straatadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehStraatadres
+  "QName StraatadresBuitenland"
+  straatadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehStraatadresBuitenland
+}
+
+"QName Postbusadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName PostbusadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehPostbusadresBuitenland {
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostbusnrBuitenland"
+  postbusnrBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Straatadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName StraatadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidFeitelijkAdresAehStraatadresBuitenland {
+  "QName HuisnrBuitenland"
+  huisnrBuitenland: String
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName StraatnaamBuitenland"
+  straatnaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Gemoedsbezwaardheid"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidGemoedsbezwaardheid {
+  "QName DatBGemoedsbezwaardheid"
+  datBGemoedsbezwaardheid: String!
+  "QName DatEGemoedsbezwaardheid"
+  datEGemoedsbezwaardheid: String
+  "QName SzWet"
+  szWet: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidGemoedsbezwaardheidSzWet!
+}
+
+"QName SzWet"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidGemoedsbezwaardheidSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName PersoonAdministratieveEenheid"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheid {
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName CorrespondentieadresPersoonAeh"
+  correspondentieadresPersoonAeh: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAeh]
+  "QName FeitelijkAdresPersoonAeh"
+  feitelijkAdresPersoonAeh: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAeh]
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voornamen"
+  voornamen: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName CorrespondentieadresPersoonAeh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAeh {
+  "QName DatBAdres"
+  datBAdres: String
+  "QName DatEAdres"
+  datEAdres: String
+  "QName Postbusadres"
+  postbusadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehPostbusadres
+  "QName PostbusadresBuitenland"
+  postbusadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehPostbusadresBuitenland
+  "QName Straatadres"
+  straatadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehStraatadres
+  "QName StraatadresBuitenland"
+  straatadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehStraatadresBuitenland
+}
+
+"QName Postbusadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName PostbusadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehPostbusadresBuitenland {
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostbusnrBuitenland"
+  postbusnrBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Straatadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName StraatadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidCorrespondentieadresPersoonAehStraatadresBuitenland {
+  "QName HuisnrBuitenland"
+  huisnrBuitenland: String
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName StraatnaamBuitenland"
+  straatnaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName FeitelijkAdresPersoonAeh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAeh {
+  "QName DatBAdres"
+  datBAdres: String
+  "QName DatEAdres"
+  datEAdres: String
+  "QName Postbusadres"
+  postbusadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehPostbusadres
+  "QName PostbusadresBuitenland"
+  postbusadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehPostbusadresBuitenland
+  "QName Straatadres"
+  straatadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehStraatadres
+  "QName StraatadresBuitenland"
+  straatadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehStraatadresBuitenland
+}
+
+"QName Postbusadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName PostbusadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehPostbusadresBuitenland {
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostbusnrBuitenland"
+  postbusnrBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Straatadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName StraatadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPersoonAdministratieveEenheidFeitelijkAdresPersoonAehStraatadresBuitenland {
+  "QName HuisnrBuitenland"
+  huisnrBuitenland: String
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName StraatnaamBuitenland"
+  straatnaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName PremiepercentageIndividueel"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueel {
+  "QName DatBPremiepercentageIndividueel"
+  datBPremiepercentageIndividueel: String!
+  "QName DatEPremiepercentageIndividueel"
+  datEPremiepercentageIndividueel: String
+  "QName PremiepercentageIndividueel"
+  premiepercentageIndividueel: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueelPremiepercentageIndividueel!
+  "QName SzWet"
+  szWet: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueelSzWet!
+}
+
+"QName PremiepercentageIndividueel"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueelPremiepercentageIndividueel {
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName Percentage"
+  percentage: String
+}
+
+"QName SzWet"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidPremiepercentageIndividueelSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName RechtspersoonAdministratieveEenh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidRechtspersoonAdministratieveEenh {
+  "QName CdRechtsvorm"
+  cdRechtsvorm: String
+  "QName FiNr"
+  fiNr: String!
+  "QName NaamRechtspersoon"
+  naamRechtspersoon: String
+}
+
+"QName SectorRisicogroepAeh"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidSectorRisicogroepAeh {
+  "QName CdSectorRisicogroep"
+  cdSectorRisicogroep: String
+  "QName DatBSectorRisicogroep"
+  datBSectorRisicogroep: String
+  "QName DatESectorRisicogroep"
+  datESectorRisicogroep: String
+  "QName SectorBeroepsEnBedrijfsleven"
+  sectorBeroepsEnBedrijfsleven: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidSectorRisicogroepAehSectorBeroepsEnBedrijfsleven
+}
+
+"QName SectorBeroepsEnBedrijfsleven"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidSectorRisicogroepAehSectorBeroepsEnBedrijfsleven {
+  "QName CdSector"
+  cdSector: String!
+}
+
+"QName VoortzettingsrelatieOpvolger"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieOpvolger {
+  "QName DatVoortzettingsrelatie"
+  datVoortzettingsrelatie: String
+  "QName Loonheffingennr"
+  loonheffingennr: String!
+  "QName PercLoonsomOvergegaanInOpvolger"
+  percLoonsomOvergegaanInOpvolger: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieOpvolgerPercLoonsomOvergegaanInOpvolger!
+}
+
+"QName PercLoonsomOvergegaanInOpvolger"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieOpvolgerPercLoonsomOvergegaanInOpvolger {
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName Percentage"
+  percentage: String
+}
+
+"QName VoortzettingsrelatieVoorganger"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieVoorganger {
+  "QName DatVoortzettingsrelatie"
+  datVoortzettingsrelatie: String
+  "QName Loonheffingennr"
+  loonheffingennr: String!
+  "QName PercLoonsomOvergegaanInOpvolger"
+  percLoonsomOvergegaanInOpvolger: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieVoorgangerPercLoonsomOvergegaanInOpvolger!
+}
+
+"QName PercLoonsomOvergegaanInOpvolger"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingAdministratieveEenheidVoortzettingsrelatieVoorgangerPercLoonsomOvergegaanInOpvolger {
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName Percentage"
+  percentage: String
+}
+
+"QName Inkomstenopgave"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgave {
+  "QName AantContracturenPerWeek"
+  aantContracturenPerWeek: Float
+  "QName AantSvDagenIko"
+  aantSvDagenIko: Long
+  "QName AantVerloondeUrenIko"
+  aantVerloondeUrenIko: Long
+  "QName BedrAanwasCumPremieloonAwfHerzien"
+  bedrAanwasCumPremieloonAwfHerzien: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfHerzien
+  "QName BedrAanwasCumPremieloonAwfHoog"
+  bedrAanwasCumPremieloonAwfHoog: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfHoog
+  "QName BedrAanwasCumPremieloonAwfLaag"
+  bedrAanwasCumPremieloonAwfLaag: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfLaag
+  "QName BedrBrutoloonSv"
+  bedrBrutoloonSv: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrBrutoloonSv
+  "QName BedrContractloon"
+  bedrContractloon: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrContractloon
+  "QName BedrExtraPrdSalaris"
+  bedrExtraPrdSalaris: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrExtraPrdSalaris
+  "QName BedrGedifferentieerdePremieWhk"
+  bedrGedifferentieerdePremieWhk: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGedifferentieerdePremieWhk
+  "QName BedrGenotenZeedagenaftrek"
+  bedrGenotenZeedagenaftrek: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGenotenZeedagenaftrek
+  "QName BedrGespaardLevensloopregeling"
+  bedrGespaardLevensloopregeling: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGespaardLevensloopregeling
+  "QName BedrInUitkBegrBetAlimentatie"
+  bedrInUitkBegrBetAlimentatie: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrInUitkBegrBetAlimentatie
+  "QName BedrIngehoudenBijdrageZvw"
+  bedrIngehoudenBijdrageZvw: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrIngehoudenBijdrageZvw
+  "QName BedrIngehoudenLbPremieVolksverz"
+  bedrIngehoudenLbPremieVolksverz: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrIngehoudenLbPremieVolksverz
+  "QName BedrLevensloopverlkortToegepast"
+  bedrLevensloopverlkortToegepast: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLevensloopverlkortToegepast
+  "QName BedrLoonBelastTabBijzBeloningen"
+  bedrLoonBelastTabBijzBeloningen: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonBelastTabBijzBeloningen
+  "QName BedrLoonInGeld"
+  bedrLoonInGeld: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonInGeld
+  "QName BedrLoonLbPremieVolksverz"
+  bedrLoonLbPremieVolksverz: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonLbPremieVolksverz
+  "QName BedrLoonUitOverwerk"
+  bedrLoonUitOverwerk: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonUitOverwerk
+  "QName BedrNietInGeldUitgekeerdLoon"
+  bedrNietInGeldUitgekeerdLoon: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrNietInGeldUitgekeerdLoon
+  "QName BedrOpgbRechtExtraPrdSalaris"
+  bedrOpgbRechtExtraPrdSalaris: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrOpgbRechtExtraPrdSalaris
+  "QName BedrOpgbRechtVakantietoeslag"
+  bedrOpgbRechtVakantietoeslag: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrOpgbRechtVakantietoeslag
+  "QName BedrPemieWaoIvaWga"
+  bedrPemieWaoIvaWga: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPemieWaoIvaWga
+  "QName BedrPremieAwfHerzien"
+  bedrPremieAwfHerzien: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfHerzien
+  "QName BedrPremieAwfHoog"
+  bedrPremieAwfHoog: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfHoog
+  "QName BedrPremieAwfLaag"
+  bedrPremieAwfLaag: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfLaag
+  "QName BedrPremieSectorfonds"
+  bedrPremieSectorfonds: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieSectorfonds
+  "QName BedrPremieUfo"
+  bedrPremieUfo: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieUfo
+  "QName BedrPremieWaoWga"
+  bedrPremieWaoWga: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieWaoWga
+  "QName BedrPremieWwAwf"
+  bedrPremieWwAwf: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieWwAwf
+  "QName BedrPremieloonUfo"
+  bedrPremieloonUfo: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonUfo
+  "QName BedrPremieloonWaoIvaWga"
+  bedrPremieloonWaoIvaWga: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWaoIvaWga
+  "QName BedrPremieloonWaoWga"
+  bedrPremieloonWaoWga: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWaoWga
+  "QName BedrPremieloonWwAwf"
+  bedrPremieloonWwAwf: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWwAwf
+  "QName BedrPrivegebruikAuto"
+  bedrPrivegebruikAuto: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPrivegebruikAuto
+  "QName BedrRechtstreeksBetAlimentatie"
+  bedrRechtstreeksBetAlimentatie: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrRechtstreeksBetAlimentatie
+  "QName BedrRenteKostenvoordeelPersoneelslening"
+  bedrRenteKostenvoordeelPersoneelslening: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrRenteKostenvoordeelPersoneelslening
+  "QName BedrVakantietoeslag"
+  bedrVakantietoeslag: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVakantietoeslag
+  "QName BedrVergoedingReiskostenOnbelast"
+  bedrVergoedingReiskostenOnbelast: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVergoedingReiskostenOnbelast
+  "QName BedrVergoedingZvw"
+  bedrVergoedingZvw: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVergoedingZvw
+  "QName BedrVerrekendeArbeidskorting"
+  bedrVerrekendeArbeidskorting: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVerrekendeArbeidskorting
+  "QName BedrVerstrekteAanvOpUitkWnverz"
+  bedrVerstrekteAanvOpUitkWnverz: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVerstrekteAanvOpUitkWnverz
+  "QName BedrWerkgeversheffingZvw"
+  bedrWerkgeversheffingZvw: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWerkgeversheffingZvw
+  "QName BedrWgbijdrageKinderopvang"
+  bedrWgbijdrageKinderopvang: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWgbijdrageKinderopvang
+  "QName BedrWnbijdragePrivegebruikAuto"
+  bedrWnbijdragePrivegebruikAuto: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWnbijdragePrivegebruikAuto
+  "QName DatBIko"
+  datBIko: String!
+  "QName DatEIko"
+  datEIko: String
+  "QName SectorRisicogroepIko"
+  sectorRisicogroepIko: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIko]
+}
+
+"QName BedrAanwasCumPremieloonAwfHerzien"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfHerzien {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrAanwasCumPremieloonAwfHoog"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfHoog {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrAanwasCumPremieloonAwfLaag"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrAanwasCumPremieloonAwfLaag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrBrutoloonSv"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrBrutoloonSv {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrContractloon"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrContractloon {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrExtraPrdSalaris"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrExtraPrdSalaris {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrGedifferentieerdePremieWhk"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGedifferentieerdePremieWhk {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrGenotenZeedagenaftrek"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGenotenZeedagenaftrek {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrGespaardLevensloopregeling"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrGespaardLevensloopregeling {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrInUitkBegrBetAlimentatie"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrInUitkBegrBetAlimentatie {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrIngehoudenBijdrageZvw"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrIngehoudenBijdrageZvw {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrIngehoudenLbPremieVolksverz"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrIngehoudenLbPremieVolksverz {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrLevensloopverlkortToegepast"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLevensloopverlkortToegepast {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrLoonBelastTabBijzBeloningen"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonBelastTabBijzBeloningen {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrLoonInGeld"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonInGeld {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrLoonLbPremieVolksverz"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonLbPremieVolksverz {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrLoonUitOverwerk"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrLoonUitOverwerk {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrNietInGeldUitgekeerdLoon"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrNietInGeldUitgekeerdLoon {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrOpgbRechtExtraPrdSalaris"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrOpgbRechtExtraPrdSalaris {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrOpgbRechtVakantietoeslag"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrOpgbRechtVakantietoeslag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPemieWaoIvaWga"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPemieWaoIvaWga {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieAwfHerzien"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfHerzien {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieAwfHoog"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfHoog {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieAwfLaag"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieAwfLaag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieSectorfonds"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieSectorfonds {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieUfo"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieUfo {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieWaoWga"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieWaoWga {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieWwAwf"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieWwAwf {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieloonUfo"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonUfo {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieloonWaoIvaWga"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWaoIvaWga {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieloonWaoWga"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWaoWga {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieloonWwAwf"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPremieloonWwAwf {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPrivegebruikAuto"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrPrivegebruikAuto {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrRechtstreeksBetAlimentatie"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrRechtstreeksBetAlimentatie {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrRenteKostenvoordeelPersoneelslening"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrRenteKostenvoordeelPersoneelslening {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrVakantietoeslag"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVakantietoeslag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrVergoedingReiskostenOnbelast"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVergoedingReiskostenOnbelast {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrVergoedingZvw"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVergoedingZvw {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrVerrekendeArbeidskorting"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVerrekendeArbeidskorting {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrVerstrekteAanvOpUitkWnverz"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrVerstrekteAanvOpUitkWnverz {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrWerkgeversheffingZvw"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWerkgeversheffingZvw {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrWgbijdrageKinderopvang"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWgbijdrageKinderopvang {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrWnbijdragePrivegebruikAuto"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveBedrWnbijdragePrivegebruikAuto {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName SectorRisicogroepIko"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIko {
+  "QName BedrPremieSectorfonds"
+  bedrPremieSectorfonds: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoBedrPremieSectorfonds
+  "QName BedrPremieloonSectorfonds"
+  bedrPremieloonSectorfonds: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoBedrPremieloonSectorfonds
+  "QName CdSectorRisicogroep"
+  cdSectorRisicogroep: String
+  "QName SectorBeroepsEnBedrijfsleven"
+  sectorBeroepsEnBedrijfsleven: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoSectorBeroepsEnBedrijfsleven
+}
+
+"QName BedrPremieSectorfonds"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoBedrPremieSectorfonds {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName BedrPremieloonSectorfonds"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoBedrPremieloonSectorfonds {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdPeriodeEenheidGeldigheidBedr"
+  cdPeriodeEenheidGeldigheidBedr: String
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName SectorBeroepsEnBedrijfsleven"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenopgaveSectorRisicogroepIkoSectorBeroepsEnBedrijfsleven {
+  "QName CdSector"
+  cdSector: String!
+}
+
+"QName Inkomstenperiode"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingInkomstenperiode {
+  "QName CdAardIkv"
+  cdAardIkv: String
+  "QName CdCao"
+  cdCao: String
+  "QName CdCaoInlener"
+  cdCaoInlener: String
+  "QName CdFaseIndelingWfz"
+  cdFaseIndelingWfz: String
+  "QName CdIncidInkomstenvermindering"
+  cdIncidInkomstenvermindering: String
+  "QName CdInvloedVerzekeringsplicht"
+  cdInvloedVerzekeringsplicht: String
+  "QName CdLoonbelastingtabelBd"
+  cdLoonbelastingtabelBd: String
+  "QName CdPremiekorting"
+  cdPremiekorting: String
+  "QName CdRedenGeenBijtellingAuto"
+  cdRedenGeenBijtellingAuto: String
+  "QName CdSrtIkv"
+  cdSrtIkv: String
+  "QName CdTypeArbeidscontract"
+  cdTypeArbeidscontract: String
+  "QName CdVerzekeringssituatieZvw"
+  cdVerzekeringssituatieZvw: String
+  "QName DatBIkp"
+  datBIkp: String!
+  "QName DatEIkp"
+  datEIkp: String
+  "QName IndAanvraagLkvAghWn"
+  indAanvraagLkvAghWn: String
+  "QName IndAanvraagLkvHerplaatsenAghWn"
+  indAanvraagLkvHerplaatsenAghWn: String
+  "QName IndAanvraagLkvOudereWn"
+  indAanvraagLkvOudereWn: String
+  "QName IndAanvrgLkvDlgrpBanenafsprkSchlblm"
+  indAanvrgLkvDlgrpBanenafsprkSchlblm: String
+  "QName IndAanvullingOpUitkering"
+  indAanvullingOpUitkering: String
+  "QName IndArbeidsovereenkomstOnbepaaldeTijd"
+  indArbeidsovereenkomstOnbepaaldeTijd: String
+  "QName IndJaarurennorm"
+  indJaarurennorm: String
+  "QName IndLoonInclusiefWajongUitkering"
+  indLoonInclusiefWajongUitkering: String
+  "QName IndLoonIsMedeAowAioAlleenstaande"
+  indLoonIsMedeAowAioAlleenstaande: String
+  "QName IndLoonheffingskortingToegepast"
+  indLoonheffingskortingToegepast: String
+  "QName IndOproepovereenkomst"
+  indOproepovereenkomst: String
+  "QName IndPersoneelsleningNietInLoon"
+  indPersoneelsleningNietInLoon: String
+  "QName IndPremiekortingAghWn"
+  indPremiekortingAghWn: String
+  "QName IndPremiekortingDlgrpBanenafsprkSchlblm"
+  indPremiekortingDlgrpBanenafsprkSchlblm: String
+  "QName IndPremiekortingHerplaatsenAghWn"
+  indPremiekortingHerplaatsenAghWn: String
+  "QName IndPremiekortingInDienstNemenAghWn"
+  indPremiekortingInDienstNemenAghWn: String
+  "QName IndPremiekortingJongereWn"
+  indPremiekortingJongereWn: String
+  "QName IndPremiekortingOudereWerknemer"
+  indPremiekortingOudereWerknemer: String
+  "QName IndPremiekortingOudereWn"
+  indPremiekortingOudereWn: String
+  "QName IndPremievrijstellingMargArbeid"
+  indPremievrijstellingMargArbeid: String
+  "QName IndRegelmatigArbeidspatroon"
+  indRegelmatigArbeidspatroon: String
+  "QName IndSchriftelijkeArbeidsovereenkomst"
+  indSchriftelijkeArbeidsovereenkomst: String
+  "QName IndTijdelijkeHeffingskorting"
+  indTijdelijkeHeffingskorting: String
+  "QName IndVakantiebonnenToegepast"
+  indVakantiebonnenToegepast: String
+  "QName IndVervoerVanwegeDeIhp"
+  indVervoerVanwegeDeIhp: String
+  "QName IndVerzekerdWaoWia"
+  indVerzekerdWaoWia: String
+  "QName IndVerzekerdWw"
+  indVerzekerdWw: String
+  "QName IndVerzekerdZw"
+  indVerzekerdZw: String
+  "QName IndWachtgeldOudeRegeling"
+  indWachtgeldOudeRegeling: String
+}
+
+"QName PersoonLoonaangifte"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifte {
+  "QName FeitelijkAdresLoonaangifte"
+  feitelijkAdresLoonaangifte: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifte]
+  "QName Geboortedat"
+  geboortedat: String
+  "QName Geslacht"
+  geslacht: String
+  "QName Nationaliteit"
+  nationaliteit: [UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteNationaliteit]
+  "QName SignificantDeelVanDeAchternaam"
+  significantDeelVanDeAchternaam: String
+  "QName Voorletters"
+  voorletters: String
+  "QName Voorvoegsel"
+  voorvoegsel: String
+}
+
+"QName FeitelijkAdresLoonaangifte"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifte {
+  "QName DatBAdres"
+  datBAdres: String
+  "QName DatEAdres"
+  datEAdres: String
+  "QName Straatadres"
+  straatadres: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifteStraatadres
+  "QName StraatadresBuitenland"
+  straatadresBuitenland: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifteStraatadresBuitenland
+}
+
+"QName Straatadres"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifteStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName StraatadresBuitenland"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteFeitelijkAdresLoonaangifteStraatadresBuitenland {
+  "QName HuisnrBuitenland"
+  huisnrBuitenland: String
+  "QName LandencdIso"
+  landencdIso: String
+  "QName Landsnaam"
+  landsnaam: String
+  "QName LocatieomsBuitenland"
+  locatieomsBuitenland: String
+  "QName PostcdBuitenland"
+  postcdBuitenland: String
+  "QName RegionaamBuitenland"
+  regionaamBuitenland: String
+  "QName StraatnaamBuitenland"
+  straatnaamBuitenland: String
+  "QName WoonplaatsnaamBuitenland"
+  woonplaatsnaamBuitenland: String
+}
+
+"QName Nationaliteit"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingPersoonLoonaangifteNationaliteit {
+  "QName CdNationaliteit"
+  cdNationaliteit: String!
+  "QName DatBNationaliteit"
+  datBNationaliteit: String
+  "QName DatENationaliteit"
+  datENationaliteit: String
+}
+
+"QName SectorRisicogroepIkv"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingSectorRisicogroepIkv {
+  "QName CdSectorRisicogroep"
+  cdSectorRisicogroep: String
+  "QName DatBSectorRisicogroep"
+  datBSectorRisicogroep: String
+  "QName DatESectorRisicogroep"
+  datESectorRisicogroep: String
+  "QName SectorBeroepsEnBedrijfsleven"
+  sectorBeroepsEnBedrijfsleven: UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingSectorRisicogroepIkvSectorBeroepsEnBedrijfsleven
+}
+
+"QName SectorBeroepsEnBedrijfsleven"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponseClientSuwiInkomstenverhoudingSectorRisicogroepIkvSectorBeroepsEnBedrijfsleven {
+  "QName CdSector"
+  cdSector: String!
+}
+
+"QName PeriodeGegevensleveringIko"
+type UWVDossierInkomstenv0700UWVPersoonsIkvInfoResponsePeriodeGegevensleveringIko {
+  "QName DatBPeriode"
+  datBPeriode: String
+  "QName DatEPeriode"
+  datEPeriode: String
+}
+
+"QName UWVDossierWerknemersverzekeringenv0200"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponse {
+  "QName ClientSuwi"
+  clientSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwi
+}
+
+"QName ClientSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwi {
+  "QName AanvraagUitkering"
+  aanvraagUitkering: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkering]
+  "QName ArbeidsgeschiktheidClient"
+  arbeidsgeschiktheidClient: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiArbeidsgeschiktheidClient]
+  "QName Burgerservicenr"
+  burgerservicenr: String!
+  "QName Uitkeringsverhouding"
+  uitkeringsverhouding: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhouding]
+  "QName WerkloosheidClient"
+  werkloosheidClient: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiWerkloosheidClient]
+}
+
+"QName AanvraagUitkering"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkering {
+  "QName AanvraagWw"
+  aanvraagWw: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringAanvraagWw
+  "QName BeslissingOpAanvraagUitkering"
+  beslissingOpAanvraagUitkering: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering]
+  "QName ContactpersoonAfd"
+  contactpersoonAfd: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfd
+  "QName DatAanvraagUitkering"
+  datAanvraagUitkering: String
+  "QName DatBPeriodeAanvraagUitkering"
+  datBPeriodeAanvraagUitkering: String
+  "QName DatEPeriodeAanvraagUitkering"
+  datEPeriodeAanvraagUitkering: String
+  "QName IndOverigeUitkeringen"
+  indOverigeUitkeringen: String
+  "QName OmsRedenTeLateAanvraagUitkering"
+  omsRedenTeLateAanvraagUitkering: String
+  "QName SzWet"
+  szWet: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringSzWet!
+  "QName ToelPeriodeAanvraagUitkering"
+  toelPeriodeAanvraagUitkering: String
+}
+
+"QName AanvraagWw"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringAanvraagWw {
+  "QName CdPrepensioen"
+  cdPrepensioen: String
+  "QName CdRedenAanvraagWw"
+  cdRedenAanvraagWw: String
+  "QName DatAanvraagUitkering"
+  datAanvraagUitkering: String
+  "QName DatBPeriodeAanvraagUitkering"
+  datBPeriodeAanvraagUitkering: String
+  "QName DatEPeriodeAanvraagUitkering"
+  datEPeriodeAanvraagUitkering: String
+  "QName DatVermoedAanvangPrepensioen"
+  datVermoedAanvangPrepensioen: String
+  "QName DatVermoedEersteWerkloosheidsdag"
+  datVermoedEersteWerkloosheidsdag: String
+  "QName IndAanvullingAppGewenst"
+  indAanvullingAppGewenst: String
+  "QName IndAanvullingAvtGewenst"
+  indAanvullingAvtGewenst: String
+  "QName IndAanvullingAvwGewenst"
+  indAanvullingAvwGewenst: String
+  "QName IndAanvullingSuwas2Gewenst"
+  indAanvullingSuwas2Gewenst: String
+  "QName IndBezwaarWerkgeversverklaring"
+  indBezwaarWerkgeversverklaring: String
+  "QName IndHogerLoonBijAndereWerkgever"
+  indHogerLoonBijAndereWerkgever: String
+  "QName IndOverigeUitkeringen"
+  indOverigeUitkeringen: String
+  "QName IndVoorschotGewenst"
+  indVoorschotGewenst: String
+  "QName IndWerkgeversverklaringOntvangen"
+  indWerkgeversverklaringOntvangen: String
+  "QName OmsRedenTeLateAanvraagUitkering"
+  omsRedenTeLateAanvraagUitkering: String
+  "QName ToelBezwaarWerkgeversverklaring"
+  toelBezwaarWerkgeversverklaring: String
+  "QName ToelPeriodeAanvraagUitkering"
+  toelPeriodeAanvraagUitkering: String
+}
+
+"QName BeslissingOpAanvraagUitkering"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkering {
+  "QName Bezwaarschrift"
+  bezwaarschrift: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschrift
+  "QName CdBeslissingOpAanvraagUitkering"
+  cdBeslissingOpAanvraagUitkering: String!
+  "QName DatDagtekeningBeslisOpAanvrUitk"
+  datDagtekeningBeslisOpAanvrUitk: String
+}
+
+"QName Bezwaarschrift"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschrift {
+  "QName BeslissingOpBezwaarschrift"
+  beslissingOpBezwaarschrift: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschrift
+  "QName DatDagtekeningBezwaarschrift"
+  datDagtekeningBezwaarschrift: String
+  "QName RedenMaatregelMbtUitkeringUwv"
+  redenMaatregelMbtUitkeringUwv: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftRedenMaatregelMbtUitkeringUwv]
+}
+
+"QName BeslissingOpBezwaarschrift"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschrift {
+  "QName Beroepschrift"
+  beroepschrift: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschriftBeroepschrift
+  "QName CdBeslissingOpBezwaarschrift"
+  cdBeslissingOpBezwaarschrift: String!
+  "QName DatDagtekeningBeslisOpBezwaarsch"
+  datDagtekeningBeslisOpBezwaarsch: String
+}
+
+"QName Beroepschrift"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschriftBeroepschrift {
+  "QName BeslissingOpBeroepschrift"
+  beslissingOpBeroepschrift: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschriftBeroepschriftBeslissingOpBeroepschrift
+  "QName DatDagtekeningBeroepschrift"
+  datDagtekeningBeroepschrift: String
+}
+
+"QName BeslissingOpBeroepschrift"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftBeslissingOpBezwaarschriftBeroepschriftBeslissingOpBeroepschrift {
+  "QName CdBeslissingOpBeroepschrift"
+  cdBeslissingOpBeroepschrift: String!
+  "QName DatDagtekeningBeslisOpBeroepsch"
+  datDagtekeningBeslisOpBeroepsch: String
+}
+
+"QName RedenMaatregelMbtUitkeringUwv"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringBeslissingOpAanvraagUitkeringBezwaarschriftRedenMaatregelMbtUitkeringUwv {
+  "QName CdRedenMaatregelMbtUitkeringUwv"
+  cdRedenMaatregelMbtUitkeringUwv: Long
+  "QName DatBMaatregelMbtUitkering"
+  datBMaatregelMbtUitkering: String
+  "QName DatEMaatregelMbtUitkering"
+  datEMaatregelMbtUitkering: String
+}
+
+"QName ContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfd {
+  "QName Bezoekadres"
+  bezoekadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdBezoekadres
+  "QName Correspondentieadres"
+  correspondentieadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadres
+  "QName EMailAdresContactpersoonAfd"
+  eMailAdresContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdEMailAdresContactpersoonAfd]
+  "QName FaxnrContactpersoonAfd"
+  faxnrContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdFaxnrContactpersoonAfd]
+  "QName NaamContactpersoonAfd"
+  naamContactpersoonAfd: String
+  "QName TelefoonnrContactpersoonAfd"
+  telefoonnrContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdTelefoonnrContactpersoonAfd]
+  "QName VestigingSuwi"
+  vestigingSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwi!
+}
+
+"QName Bezoekadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdBezoekadres {
+  "QName Straatadres"
+  straatadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdBezoekadresStraatadres!
+}
+
+"QName Straatadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdBezoekadresStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName Correspondentieadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadres {
+  "QName Antwoordnradres"
+  antwoordnradres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresAntwoordnradres
+  "QName Postbusadres"
+  postbusadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresPostbusadres
+  "QName Straatadres"
+  straatadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresStraatadres
+}
+
+"QName Antwoordnradres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresAntwoordnradres {
+  "QName Antwoordnr"
+  antwoordnr: Long
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName Postbusadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName Straatadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdCorrespondentieadresStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName EMailAdresContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdEMailAdresContactpersoonAfd {
+  "QName EMailAdres"
+  eMailAdres: String
+  "QName IndSuwiEMailAdres"
+  indSuwiEMailAdres: String
+}
+
+"QName FaxnrContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdFaxnrContactpersoonAfd {
+  "QName Abonneenr"
+  abonneenr: String
+  "QName Netnr"
+  netnr: String
+}
+
+"QName TelefoonnrContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdTelefoonnrContactpersoonAfd {
+  "QName Abonneenr"
+  abonneenr: String
+  "QName Netnr"
+  netnr: String
+}
+
+"QName VestigingSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwi {
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+  "QName NaamVestigingSuwi"
+  naamVestigingSuwi: String
+  "QName PartijSuwi"
+  partijSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwiPartijSuwi!
+}
+
+"QName PartijSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwiPartijSuwi {
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String
+  "QName KolomSuwi"
+  kolomSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwiPartijSuwiKolomSuwi!
+  "QName NaamPartijSuwi"
+  naamPartijSuwi: String
+}
+
+"QName KolomSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringContactpersoonAfdVestigingSuwiPartijSuwiKolomSuwi {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long
+  "QName NaamKolomSuwi"
+  naamKolomSuwi: String
+  "QName NaamKolomSuwiVerkort"
+  naamKolomSuwiVerkort: String
+}
+
+"QName SzWet"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiAanvraagUitkeringSzWet {
+  "QName CdSzWet"
+  cdSzWet: String
+}
+
+"QName ArbeidsgeschiktheidClient"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiArbeidsgeschiktheidClient {
+  "QName CdAoklasseGeschat"
+  cdAoklasseGeschat: String
+  "QName CdArbeidsongeschiktheidsklasse"
+  cdArbeidsongeschiktheidsklasse: String
+  "QName CdCategorieMedischeBeperkingen"
+  cdCategorieMedischeBeperkingen: String
+  "QName DatBAoKlasse"
+  datBAoKlasse: String
+  "QName DatEersteAoDag"
+  datEersteAoDag: String
+}
+
+"QName Uitkeringsverhouding"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhouding {
+  "QName AantWerkurenPerWeekGrondslagUitk"
+  aantWerkurenPerWeekGrondslagUitk: String
+  "QName ContactpersoonAfd"
+  contactpersoonAfd: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfd
+  "QName DatBUitkeringsverhouding"
+  datBUitkeringsverhouding: String
+  "QName DatEMaximaleUitkeringsduur"
+  datEMaximaleUitkeringsduur: String
+  "QName DatEUitkeringsverhouding"
+  datEUitkeringsverhouding: String
+  "QName OmsRedenEindeUitkeringsverh"
+  omsRedenEindeUitkeringsverh: String
+  "QName SectorBeroepsEnBedrijfsleven"
+  sectorBeroepsEnBedrijfsleven: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfsleven]
+  "QName SpecifiekeGegevensWwUitkering"
+  specifiekeGegevensWwUitkering: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensWwUitkering
+  "QName SzWet"
+  szWet: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSzWet!
+  "QName Uitkeringsperiode"
+  uitkeringsperiode: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode]
+}
+
+"QName ContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfd {
+  "QName Bezoekadres"
+  bezoekadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdBezoekadres
+  "QName Correspondentieadres"
+  correspondentieadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadres
+  "QName EMailAdresContactpersoonAfd"
+  eMailAdresContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdEMailAdresContactpersoonAfd]
+  "QName FaxnrContactpersoonAfd"
+  faxnrContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdFaxnrContactpersoonAfd]
+  "QName NaamContactpersoonAfd"
+  naamContactpersoonAfd: String
+  "QName TelefoonnrContactpersoonAfd"
+  telefoonnrContactpersoonAfd: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdTelefoonnrContactpersoonAfd]
+  "QName VestigingSuwi"
+  vestigingSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwi!
+}
+
+"QName Bezoekadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdBezoekadres {
+  "QName Straatadres"
+  straatadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdBezoekadresStraatadres!
+}
+
+"QName Straatadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdBezoekadresStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName Correspondentieadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadres {
+  "QName Antwoordnradres"
+  antwoordnradres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresAntwoordnradres
+  "QName Postbusadres"
+  postbusadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresPostbusadres
+  "QName Straatadres"
+  straatadres: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresStraatadres
+}
+
+"QName Antwoordnradres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresAntwoordnradres {
+  "QName Antwoordnr"
+  antwoordnr: Long
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName Postbusadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresPostbusadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postbusnr"
+  postbusnr: Long
+  "QName Postcd"
+  postcd: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+}
+
+"QName Straatadres"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdCorrespondentieadresStraatadres {
+  "QName Gemeentenaam"
+  gemeentenaam: String
+  "QName Huisnr"
+  huisnr: Long
+  "QName Huisnrtoevoeging"
+  huisnrtoevoeging: String
+  "QName Locatieoms"
+  locatieoms: String
+  "QName Postcd"
+  postcd: String
+  "QName Straatnaam"
+  straatnaam: String
+  "QName Woonbootverwijzing"
+  woonbootverwijzing: String
+  "QName Woonplaatsnaam"
+  woonplaatsnaam: String
+  "QName Woonwagenverwijzing"
+  woonwagenverwijzing: String
+}
+
+"QName EMailAdresContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdEMailAdresContactpersoonAfd {
+  "QName EMailAdres"
+  eMailAdres: String
+  "QName IndSuwiEMailAdres"
+  indSuwiEMailAdres: String
+}
+
+"QName FaxnrContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdFaxnrContactpersoonAfd {
+  "QName Abonneenr"
+  abonneenr: String
+  "QName Netnr"
+  netnr: String
+}
+
+"QName TelefoonnrContactpersoonAfd"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdTelefoonnrContactpersoonAfd {
+  "QName Abonneenr"
+  abonneenr: String
+  "QName Netnr"
+  netnr: String
+}
+
+"QName VestigingSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwi {
+  "QName CdVestigingSuwi"
+  cdVestigingSuwi: String
+  "QName NaamVestigingSuwi"
+  naamVestigingSuwi: String
+  "QName PartijSuwi"
+  partijSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwiPartijSuwi!
+}
+
+"QName PartijSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwiPartijSuwi {
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String
+  "QName KolomSuwi"
+  kolomSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwiPartijSuwiKolomSuwi!
+  "QName NaamPartijSuwi"
+  naamPartijSuwi: String
+}
+
+"QName KolomSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingContactpersoonAfdVestigingSuwiPartijSuwiKolomSuwi {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long
+  "QName NaamKolomSuwi"
+  naamKolomSuwi: String
+  "QName NaamKolomSuwiVerkort"
+  naamKolomSuwiVerkort: String
+}
+
+"QName SectorBeroepsEnBedrijfsleven"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfsleven {
+  "QName CdSector"
+  cdSector: String
+  "QName NaamSector"
+  naamSector: String
+  "QName PartijSuwi"
+  partijSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfslevenPartijSuwi!
+}
+
+"QName PartijSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfslevenPartijSuwi {
+  "QName CdPartijSuwi"
+  cdPartijSuwi: String
+  "QName KolomSuwi"
+  kolomSuwi: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfslevenPartijSuwiKolomSuwi!
+  "QName NaamPartijSuwi"
+  naamPartijSuwi: String
+}
+
+"QName KolomSuwi"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSectorBeroepsEnBedrijfslevenPartijSuwiKolomSuwi {
+  "QName CdKolomSuwi"
+  cdKolomSuwi: Long
+  "QName NaamKolomSuwi"
+  naamKolomSuwi: String
+  "QName NaamKolomSuwiVerkort"
+  naamKolomSuwiVerkort: String
+}
+
+"QName SpecifiekeGegevensWwUitkering"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSpecifiekeGegevensWwUitkering {
+  "QName DatELoongerelateerdeUitkeringWw"
+  datELoongerelateerdeUitkeringWw: String
+  "QName DatEVervolguitkeringWw"
+  datEVervolguitkeringWw: String
+}
+
+"QName SzWet"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingSzWet {
+  "QName CdSzWet"
+  cdSzWet: String!
+}
+
+"QName Uitkeringsperiode"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiode {
+  "QName BrutoUitkeringsbedrag"
+  brutoUitkeringsbedrag: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeBrutoUitkeringsbedrag]
+  "QName DatBUitkeringsperiode"
+  datBUitkeringsperiode: String
+  "QName DatEUitkeringsperiode"
+  datEUitkeringsperiode: String
+  "QName IndVerplichtVerzekerdZfw"
+  indVerplichtVerzekerdZfw: String
+  "QName RedenMaatregelMbtUitkeringUwv"
+  redenMaatregelMbtUitkeringUwv: [UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeRedenMaatregelMbtUitkeringUwv]
+}
+
+"QName BrutoUitkeringsbedrag"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeBrutoUitkeringsbedrag {
+  "QName CdMunteenheid"
+  cdMunteenheid: String
+  "QName CdUitkeringsperiode"
+  cdUitkeringsperiode: String
+  "QName DatBBrutoUitkeringsbedr"
+  datBBrutoUitkeringsbedr: String
+  "QName DatEBrutoUitkeringsbedr"
+  datEBrutoUitkeringsbedr: String
+  "QName WaardeBedr"
+  waardeBedr: Long
+}
+
+"QName RedenMaatregelMbtUitkeringUwv"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeRedenMaatregelMbtUitkeringUwv {
+  "QName CdRedenMaatregelMbtUitkeringUwv"
+  cdRedenMaatregelMbtUitkeringUwv: Long
+  "QName DatBMaatregelMbtUitkering"
+  datBMaatregelMbtUitkering: String
+  "QName DatEMaatregelMbtUitkering"
+  datEMaatregelMbtUitkering: String
+  "QName PercKortingUitkering"
+  percKortingUitkering: UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeRedenMaatregelMbtUitkeringUwvPercKortingUitkering
+}
+
+"QName PercKortingUitkering"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiUitkeringsverhoudingUitkeringsperiodeRedenMaatregelMbtUitkeringUwvPercKortingUitkering {
+  "QName CdPositiefNegatief"
+  cdPositiefNegatief: String
+  "QName Percentage"
+  percentage: String
+}
+
+"QName WerkloosheidClient"
+type UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfoResponseClientSuwiWerkloosheidClient {
+  "QName DatEersteWerkloosheidsdag"
+  datEersteWerkloosheidsdag: String
+  "QName IndAoVoorEersteWerkloosheidsdag"
+  indAoVoorEersteWerkloosheidsdag: String
+  "QName OmsRedenWerkloosheid"
+  omsRedenWerkloosheid: String
+}
+
+"Long type"
+scalar Long
+
+"QName BRPDossierPersoonBewonersvraagv0200"
+input BRPDossierPersoonBewonersvraagv0200AanvraagPersoon
+
+"QName BRPDossierPersoonGSDv0200"
+input BRPDossierPersoonGSDv0200AanvraagPersoon
+
+"QName Bijstandsregelingenv0500"
+input Bijstandsregelingenv0500BijstandsregelingenInfo
+
+"QName DUODossierPersoonv0600"
+input DUODossierPersoonv0600DUOPersoonsInfo
+
+"QName DUODossierStudiefinancieringv0300"
+input DUODossierStudiefinancieringv0300DUOStudiefinancieringInfo
+
+"QName GSDDossierReintegratiev0200"
+input GSDDossierReintegratiev0200GSDReintegratieInfo
+
+"QName KadasterDossierGSDv0300"
+input KadasterDossierGSDv0300PersoonsInfo
+
+"QName RDWDossierGSDv0200"
+input RDWDossierGSDv0200VoertuigbezitInfoPersoon
+
+"QName SVBDossierPersoonGSDv0200"
+input SVBDossierPersoonGSDv0200SVBPersoonsInfo
+
+"QName UWVDossierInkomstenv0700"
+input UWVDossierInkomstenv0700UWVPersoonsIkvInfo {
+  periodeGegevensvraagIko: UWVDossierInkomstenv0700UWVPersoonsIkvInfoPeriodeGegevensvraagIko
+}
+
+"QName PeriodeGegevensvraagIko"
+input UWVDossierInkomstenv0700UWVPersoonsIkvInfoPeriodeGegevensvraagIko {
+  datBPeriode: String
+  datEPeriode: String
+}
+
+"QName UWVDossierWerknemersverzekeringenv0200"
+input UWVDossierWerknemersverzekeringenv0200UWVPersoonsWvInfo
+
+input info {
+  burgerservicenr: String
+}

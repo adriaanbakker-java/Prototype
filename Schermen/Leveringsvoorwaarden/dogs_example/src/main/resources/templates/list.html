@@ -1,0 +1,30 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Showing the dog list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<div th:if="${not #lists.isEmpty(counts)}">
+    <h2>Dog list</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+
+        </tr>
+        <tr th:each="count : ${counts}">
+            <td th:text="${count.id}"></td>
+            <td th:text="${count.name}"></td>
+            <td th:text="${count.age}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+<a href="/add_dog">Add another dog</a>
+<a href="/delete_dog">Delete another dog</a>
+<a href="/list">List dogs</a>
+</html>
